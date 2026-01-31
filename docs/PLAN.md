@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 16:55
+- Last updated: 2026-01-31 16:58
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -44,8 +44,8 @@
 - Content should be easy to update without touching core layout/visual systems.
 
 ## Visual Direction (draft v0.1)
-- Overall tone: polished hire-me with a single Playground tab for in-progress experiments.
-- Playground disclaimer: friendly, short note that items are WIP and not for sensitive info.
+- Overall tone: polished hire-me with a single Playground tab for in-progress experiments (directional, not final).
+- Playground disclaimer (directional): "Playground: experiments in progress; please don't enter sensitive data."
 - Palette: blues from legacy site as primary; charcoal base (avoid white backgrounds).
 - Accents: tiny hits of yellow (e.g., outlines, highlights).
 - Logo: keep glasses-on-lightbulb mark.
@@ -53,8 +53,8 @@
 ## Data Sourcing (draft v0.1)
 - Keep content in-repo (initial default).
 - Blog posts: Markdown with frontmatter (title, date, excerpt, tags, slug).
-- Projects: structured data (JSON or YAML) with optional longform Markdown.
-- Experience/skills/certs/education: curated from LinkedIn export into tracked data files.
+- Projects: structured data in JSON (preferred) with optional longform Markdown.
+- Experience/skills/certs/education: curated from LinkedIn export into tracked data files (JSON preferred).
 - Keep raw LinkedIn export in `.cybercreek/` only.
 
 ## Information Architecture (draft v0.1)

@@ -46,3 +46,7 @@
 ## 2026-01-31 16:55
 - Add visual direction notes and data sourcing draft.
 - Update milestone wording to reflect blog in scope.
+
+## 2026-01-31 16:58
+- Clarify visual direction is directional, add playground disclaimer wording.
+- Set JSON as preferred data format.
