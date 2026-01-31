@@ -30,3 +30,6 @@
 
 ## 2026-01-30 21:12
 - Add IA draft based on existing site tabs.
+
+## 2026-01-30 21:58
+- Add legacy site minimum feature set baseline to the plan.

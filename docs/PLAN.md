@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-30 21:12
+- Last updated: 2026-01-30 21:58
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -32,14 +32,26 @@
 - Blog: optional/future (not planned into IA/MVP)
 - Contact Nate: contact form + direct email + social links
 
+## Minimum Feature Set (legacy site baseline)
+- Global navigation includes: Home, Skills, Experience, Portfolio, References, Certifications, Education, Blog, Contact Nate.
+- Home: short intro + hero image + brief story + CTA area.
+- Skills: grouped skills list with multiple categories.
+- Experience: role list with company, title, dates, and short descriptions.
+- Portfolio: project list with short summaries and links to demos or GitHub.
+- References: short testimonials with names/dates.
+- Certifications: list of certifications (with badges/images where available).
+- Education: BS in Software Development (school + dates).
+- Contact Nate: contact form plus direct email.
+- Optional legacy widgets (not required for MVP): search, recent posts, archives.
+
 ## Milestones (in order)
 ## Completed Milestones
 - (none yet)
 
 ## Upcoming Milestones (in order)
 1. Scope and information architecture
-   - [ ] Confirm pages/sections (home, resume, projects, experiments, contact, etc.).
-   - [ ] Define content requirements for each section.
+   - [ ] Confirm pages/sections (legacy tabs + blog optional).
+   - [ ] Define content requirements per section (based on legacy baseline + LinkedIn).
 2. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
