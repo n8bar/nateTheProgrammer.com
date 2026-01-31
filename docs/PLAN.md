@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-30 21:10
+- Last updated: 2026-01-30 21:12
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -20,6 +20,17 @@
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
 - Content should be easy to update without touching core layout/visual systems.
+
+## Information Architecture (draft v0.1)
+- Home: hero + value prop, featured work, primary CTA
+- Skills: curated skills (core stack + strengths), not full LinkedIn list
+- Experience: IT-only roles, reverse-chronological
+- Portfolio: project grid + case-study highlights
+- References: testimonials/endorsements (only if real quotes exist)
+- Certifications: cert list with dates
+- Education: BS in Software Development only
+- Blog: optional/future (not planned into IA/MVP)
+- Contact Nate: contact form + direct email + social links
 
 ## Milestones (in order)
 ## Completed Milestones

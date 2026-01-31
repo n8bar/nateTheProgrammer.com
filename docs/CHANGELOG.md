@@ -27,3 +27,6 @@
 
 ## 2026-01-30 21:10
 - Mark blog as optional (not planned into IA/MVP yet).
+
+## 2026-01-30 21:12
+- Add IA draft based on existing site tabs.
