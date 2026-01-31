@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 14:27
+- Last updated: 2026-01-31 16:55
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -13,7 +13,7 @@
 
 ## Upcoming Milestones (in order)
 1. Scope and information architecture
-   - [ ] Confirm pages/sections (legacy tabs + blog optional).
+   - [ ] Confirm pages/sections (legacy tabs + blog included).
    - [ ] Define content requirements per section (based on legacy baseline + LinkedIn).
 2. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
@@ -42,6 +42,20 @@
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
 - Content should be easy to update without touching core layout/visual systems.
+
+## Visual Direction (draft v0.1)
+- Overall tone: polished hire-me with a single Playground tab for in-progress experiments.
+- Playground disclaimer: friendly, short note that items are WIP and not for sensitive info.
+- Palette: blues from legacy site as primary; charcoal base (avoid white backgrounds).
+- Accents: tiny hits of yellow (e.g., outlines, highlights).
+- Logo: keep glasses-on-lightbulb mark.
+
+## Data Sourcing (draft v0.1)
+- Keep content in-repo (initial default).
+- Blog posts: Markdown with frontmatter (title, date, excerpt, tags, slug).
+- Projects: structured data (JSON or YAML) with optional longform Markdown.
+- Experience/skills/certs/education: curated from LinkedIn export into tracked data files.
+- Keep raw LinkedIn export in `.cybercreek/` only.
 
 ## Information Architecture (draft v0.1)
 - Home: hero + value prop, featured work, primary CTA

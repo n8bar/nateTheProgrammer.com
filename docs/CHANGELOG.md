@@ -42,3 +42,7 @@
 
 ## 2026-01-31 14:27
 - Move milestones section above Content Sources in the plan.
+
+## 2026-01-31 16:55
+- Add visual direction notes and data sourcing draft.
+- Update milestone wording to reflect blog in scope.
