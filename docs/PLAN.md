@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-30 21:58
+- Last updated: 2026-01-30 22:00
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -43,6 +43,39 @@
 - Education: BS in Software Development (school + dates).
 - Contact Nate: contact form plus direct email.
 - Optional legacy widgets (not required for MVP): search, recent posts, archives.
+
+## Content Requirements (draft v0.1)
+- Home
+  - Hero headline + 1-2 sentence subhead (fresh rewrite).
+  - Primary CTA (contact or portfolio).
+  - 3 featured items (projects or highlights).
+  - Optional hero media (photo or illustration).
+- Skills
+  - Curated list (6-12) grouped by category (e.g., Languages, Frameworks, Platforms).
+  - Source: LinkedIn skills list, curated down.
+- Experience
+  - IT-only roles, reverse-chronological.
+  - Fields: company, title, location, dates, 2-4 bullets per role.
+  - Source: LinkedIn export + manual refinements.
+- Portfolio
+  - 3-8 projects at launch.
+  - Fields: title, short summary, role, tech stack, links (demo/GitHub), 1 image each if available.
+  - Source: GitHub + existing site + manual updates.
+- References
+  - Only if real quotes exist.
+  - Fields: quote, name, relationship/context, date (optional).
+- Certifications
+  - 1-2 certifications at launch.
+  - Fields: name, issuer, date, credential link (optional).
+  - Source: LinkedIn export.
+- Education
+  - BS in Software Development only.
+  - Fields: school, degree, dates.
+- Blog (optional)
+  - Not planned into IA/MVP until explicitly confirmed.
+- Contact Nate
+  - Contact form: name, email, message.
+  - Direct email link + social links (GitHub, LinkedIn; add others if desired).
 
 ## Milestones (in order)
 ## Completed Milestones
