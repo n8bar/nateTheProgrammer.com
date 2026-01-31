@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-30
+- Last updated: 2026-01-30 21:09
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -14,6 +14,7 @@
 - Red Oak role listed as I.T. only (no estimator duties).
 - Site copy will be a fresh rewrite; LinkedIn text is reference only.
 - Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
+- Education: list the BS in Software Development only (omit GED and high school).
 
 ## Constraints
 - Fast load times and accessibility as first-class requirements.

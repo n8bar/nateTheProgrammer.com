@@ -21,3 +21,6 @@
 
 ## 2026-01-30 20:46
 - Track `docs/UX_GUARDRAILS.md`.
+
+## 2026-01-30 21:09
+- Update plan to list only the BS in Software Development (omit GED/high school).
