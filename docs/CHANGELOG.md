@@ -36,3 +36,6 @@
 
 ## 2026-01-30 22:00
 - Add draft content requirements per section.
+
+## 2026-01-31 14:16
+- Promote blog from optional to planned IA/MVP and define blog requirements.

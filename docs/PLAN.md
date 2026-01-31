@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-30 22:00
+- Last updated: 2026-01-31 14:16
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -15,7 +15,7 @@
 - Site copy will be a fresh rewrite; LinkedIn text is reference only.
 - Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
 - Education: list the BS in Software Development only (omit GED and high school).
-- Blog is optional and not planned into IA/MVP until explicitly confirmed.
+- Blog is part of the site; plan for it in IA and MVP.
 
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
@@ -29,7 +29,7 @@
 - References: testimonials/endorsements (only if real quotes exist)
 - Certifications: cert list with dates
 - Education: BS in Software Development only
-- Blog: optional/future (not planned into IA/MVP)
+- Blog: active section with posts list + post detail pages
 - Contact Nate: contact form + direct email + social links
 
 ## Minimum Feature Set (legacy site baseline)
@@ -71,8 +71,10 @@
 - Education
   - BS in Software Development only.
   - Fields: school, degree, dates.
-- Blog (optional)
-  - Not planned into IA/MVP until explicitly confirmed.
+- Blog
+  - Posts index with date, title, short excerpt.
+  - Post detail pages with readable layout and shareable URLs.
+  - Start with legacy posts (even if last post was 2023).
 - Contact Nate
   - Contact form: name, email, message.
   - Direct email link + social links (GitHub, LinkedIn; add others if desired).
