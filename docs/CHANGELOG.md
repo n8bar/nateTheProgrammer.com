@@ -18,3 +18,6 @@
 ## 2026-01-30 20:45
 - Move working style rules into `docs/WORKFLOW.md`.
 - Point AGENTS to `docs/WORKFLOW.md` for process rules.
+
+## 2026-01-30 20:46
+- Track `docs/UX_GUARDRAILS.md`.
