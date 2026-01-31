@@ -39,3 +39,6 @@
 
 ## 2026-01-31 14:16
 - Promote blog from optional to planned IA/MVP and define blog requirements.
+
+## 2026-01-31 14:27
+- Move milestones section above Content Sources in the plan.

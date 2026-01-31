@@ -1,11 +1,33 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 14:16
+- Last updated: 2026-01-31 14:27
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
 - Primary goal: showcase work, make it easy to contact, and leave a strong visual impression.
+
+## Milestones (in order)
+## Completed Milestones
+- (none yet)
+
+## Upcoming Milestones (in order)
+1. Scope and information architecture
+   - [ ] Confirm pages/sections (legacy tabs + blog optional).
+   - [ ] Define content requirements per section (based on legacy baseline + LinkedIn).
+2. UX direction
+   - [ ] Visual theme, typography, motion, and layout system.
+   - [ ] UX guardrails checklist applied per section.
+3. Technical architecture
+   - [ ] Pick platform (framework + hosting target).
+   - [ ] Initialize git repository and remote.
+   - [ ] Decide stack, hosting, and content update workflow.
+   - [ ] Define routing/content structure and data sources.
+4. MVP build
+   - [ ] Implement core pages and global layout.
+   - [ ] Add baseline SEO, analytics, and accessibility checks.
+5. QA + launch
+   - [ ] Performance pass, accessibility pass, content polish.
 
 ## Content Sources
 - Resume baseline: LinkedIn export, excluding non-IT roles.
@@ -78,28 +100,6 @@
 - Contact Nate
   - Contact form: name, email, message.
   - Direct email link + social links (GitHub, LinkedIn; add others if desired).
-
-## Milestones (in order)
-## Completed Milestones
-- (none yet)
-
-## Upcoming Milestones (in order)
-1. Scope and information architecture
-   - [ ] Confirm pages/sections (legacy tabs + blog optional).
-   - [ ] Define content requirements per section (based on legacy baseline + LinkedIn).
-2. UX direction
-   - [ ] Visual theme, typography, motion, and layout system.
-   - [ ] UX guardrails checklist applied per section.
-3. Technical architecture
-   - [ ] Pick platform (framework + hosting target).
-   - [ ] Initialize git repository and remote.
-   - [ ] Decide stack, hosting, and content update workflow.
-   - [ ] Define routing/content structure and data sources.
-4. MVP build
-   - [ ] Implement core pages and global layout.
-   - [ ] Add baseline SEO, analytics, and accessibility checks.
-5. QA + launch
-   - [ ] Performance pass, accessibility pass, content polish.
 
 ## Open Questions
 - Preferred framework and hosting target?
