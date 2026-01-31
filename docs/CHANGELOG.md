@@ -14,3 +14,7 @@
 ## 2026-01-30 20:34
 - Require timestamped changelog entries (AGENTS update).
 - Backfill changelog entries with timestamps.
+
+## 2026-01-30 20:45
+- Move working style rules into `docs/WORKFLOW.md`.
+- Point AGENTS to `docs/WORKFLOW.md` for process rules.
