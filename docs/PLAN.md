@@ -20,22 +20,26 @@
 - Content should be easy to update without touching core layout/visual systems.
 
 ## Milestones (in order)
+## Completed Milestones
+- (none yet)
+
+## Upcoming Milestones (in order)
 1. Scope and information architecture
-   - Confirm pages/sections (home, resume, projects, experiments, contact, etc.).
-   - Define content requirements for each section.
+   - [ ] Confirm pages/sections (home, resume, projects, experiments, contact, etc.).
+   - [ ] Define content requirements for each section.
 2. UX direction
-   - Visual theme, typography, motion, and layout system.
-   - UX guardrails checklist applied per section.
+   - [ ] Visual theme, typography, motion, and layout system.
+   - [ ] UX guardrails checklist applied per section.
 3. Technical architecture
-   - Pick platform (framework + hosting target).
-   - Initialize git repository and remote.
-   - Decide stack, hosting, and content update workflow.
-   - Define routing/content structure and data sources.
+   - [ ] Pick platform (framework + hosting target).
+   - [ ] Initialize git repository and remote.
+   - [ ] Decide stack, hosting, and content update workflow.
+   - [ ] Define routing/content structure and data sources.
 4. MVP build
-   - Implement core pages and global layout.
-   - Add baseline SEO, analytics, and accessibility checks.
+   - [ ] Implement core pages and global layout.
+   - [ ] Add baseline SEO, analytics, and accessibility checks.
 5. QA + launch
-   - Performance pass, accessibility pass, content polish.
+   - [ ] Performance pass, accessibility pass, content polish.
 
 ## Open Questions
 - Preferred framework and hosting target?

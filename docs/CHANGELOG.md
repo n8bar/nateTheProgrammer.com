@@ -5,3 +5,4 @@
 - Update PLAN with LinkedIn resume baseline and platform/git setup tasks.
 - Document LinkedIn export decisions (IT-only roles, exclusions, rewrite approach).
 - Note that LinkedIn summary reference lives in `.cybercreek/LinkedInSummary1.md` (untracked).
+- Split milestones into Completed vs Upcoming with checkbox tracking.
