@@ -8,7 +8,12 @@
 - Primary goal: showcase work, make it easy to contact, and leave a strong visual impression.
 
 ## Content Sources
-- Resume baseline: LinkedIn profile, excluding non-IT roles.
+- Resume baseline: LinkedIn export, excluding non-IT roles.
+- Exclude older/borderline roles (Reliance Electric, Tricom Systems Engineer, Western Precision).
+- Use Tricom Communications Services Web Application Developer role only.
+- Red Oak role listed as I.T. only (no estimator duties).
+- Site copy will be a fresh rewrite; LinkedIn text is reference only.
+- Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
 
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
