@@ -24,3 +24,6 @@
 
 ## 2026-01-30 21:09
 - Update plan to list only the BS in Software Development (omit GED/high school).
+
+## 2026-01-30 21:10
+- Mark blog as optional (not planned into IA/MVP yet).
