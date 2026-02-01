@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 22:04
+- Require the plan to keep only current section versions (no outdated copies).
+
 ## 2026-01-31 22:02
 - Remove draft version tags from plan sections.
 
