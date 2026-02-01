@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:02
+- Last updated: 2026-01-31 22:11
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -114,7 +114,7 @@
 - Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
 - Education: list the BS in Software Development only (omit GED and high school).
 - Blog is part of the site; plan for it in IA and MVP.
-- Non-Home/Contact content will be curated into Ghost (headless) instead of tracked JSON.
+- Non-Home/Contact content will be curated into Ghost (headless) instead of tracked JSON, except Playground (local clones).
 
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
@@ -140,7 +140,7 @@
 - `/experience`: Ghost page `experience`.
 - `/portfolio`: Ghost posts tagged `portfolio` (optional detail via `/portfolio/[slug]`).
 - `/portfolio/[slug]`: Ghost post detail (tag `portfolio`).
-- `/references`: Ghost page `references` (only if real quotes exist).
+- `/references`: Ghost page `references`.
 - `/certifications`: Ghost page `certifications`.
 - `/education`: Ghost page `education`.
 - `/blog`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
@@ -158,7 +158,7 @@
 - Certifications: cert list with dates
 - Education: BS in Software Development only
 - Blog: active section with posts list + post detail pages
-- Contact Nate: contact form + direct email + social links
+- Contact Nate: contact form + social links
 
 ## Minimum Feature Set (legacy site baseline)
 - Global navigation includes: Home, Skills, Experience, Portfolio, References, Certifications, Education, Blog, Contact Nate.
@@ -169,7 +169,7 @@
 - References: short testimonials with names/dates.
 - Certifications: list of certifications (with badges/images where available).
 - Education: BS in Software Development (school + dates).
-- Contact Nate: contact form plus direct email.
+- Contact Nate: contact form.
 - Optional legacy widgets (not required for MVP): search, recent posts, archives.
 
 ## Content Requirements
@@ -205,7 +205,8 @@
   - Start with legacy posts (even if last post was 2023).
 - Contact Nate
   - Contact form: name, email, message.
-  - Direct email link + social links (GitHub, LinkedIn; add others if desired).
+  - Server-only email delivery (address stored in env; not exposed client-side).
+  - Social links (GitHub, LinkedIn; add others if desired).
 
 ## Open Questions
 - Preferred hosting target (after MVP scope stabilizes)?

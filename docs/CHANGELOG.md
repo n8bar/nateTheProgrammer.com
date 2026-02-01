@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-01-31 22:11
+- Rewrite UX guardrails to align with this resume/playground project.
+- Align plan with server-only contact email handling and Playground Ghost exception.
+- Remove outdated conditional language for references in routing.
+
 ## 2026-01-31 22:04
 - Require the plan to keep only current section versions (no outdated copies).
 
