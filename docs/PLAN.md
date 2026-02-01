@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:55
+- Last updated: 2026-01-31 21:56
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -76,7 +76,7 @@
          - [ ] Apply UX guardrails checklist
       - [ ] Playground page
          - [ ] Render disclaimer + safe layout slots
-         - [ ] Fetch Ghost posts tagged `playground`
+         - [ ] Load external repos/demos from playground index file
          - [ ] Render external repo cards/embeds
          - [ ] Apply UX guardrails checklist
    - [ ] Add baseline SEO, analytics, and accessibility checks
@@ -127,7 +127,7 @@
 - Logo: keep glasses-on-lightbulb mark.
 
 ## Data Sourcing (draft v0.1)
-- Keep super-static content in-repo only (Home + Contact copy/layout, Playground shell).
+- Keep super-static content in-repo only (Home + Contact copy/layout, Playground shell + index).
 - Blog posts: Ghost (self-hosted, headless Content API; posts not stored in repo).
 - Skills/experience/portfolio/references/certs/education: Ghost (headless Content API; posts not stored in repo).
 - Keep raw LinkedIn export in `.cybercreek/` only.
@@ -144,7 +144,7 @@
 - `/blog`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
 - `/blog/[slug]`: Ghost post detail; server-side fetch with revalidation.
 - `/contact`: form posts to `/api/contact` (Route Handler); email address stays server-only via env.
-- `/playground`: in-repo layout shell + Ghost posts tagged `playground` pointing to external repos/demos.
+- `/playground`: in-repo layout shell + `src/content/playground.json` listing external repos/demos.
 - Utility routes: `/sitemap.xml` and `/rss.xml` generated server-side (uses Ghost + in-repo content).
 
 ## Information Architecture (draft v0.1)

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 21:56
+- Remove Ghost from playground; use in-repo index for external demos.
+
 ## 2026-01-31 21:55
 - Update playground plan to use Ghost list + external repo embeds.
 - Note that playground layout shell stays in repo while demos live elsewhere.
