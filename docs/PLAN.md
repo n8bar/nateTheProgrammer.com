@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:23
+- Last updated: 2026-01-31 21:27
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -18,8 +18,8 @@
    - [x] Pick framework (Next.js). [completed 26/01/31 20:13]
    - [x] Initialize git repository and remote. [completed 26/01/31 20:30]
    - [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo). [completed 26/01/31 21:14]
-   - [ ] Decide stack (language, styling, tooling).
-   - [ ] Define testing strategy (mixed TDD: unit tests for logic first; UI after the fact).
+   - [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier). [completed 26/01/31 21:27]
+   - [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact). [completed 26/01/31 21:27]
    - [ ] Define routing/content structure and data sources.
 3. UX direction
    - [ ] Visual theme, typography, motion, and layout system.

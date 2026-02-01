@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:27
+- Lock in stack defaults (TS, CSS Modules, pnpm, ESLint/Prettier).
+- Lock in testing strategy tooling (Vitest/RTL + Playwright).
+
 ## 2026-01-31 21:23
 - Add mixed TDD guidance and make test creation a responsibility in workflow.
 - Add testing strategy decision to the technical architecture milestone.
