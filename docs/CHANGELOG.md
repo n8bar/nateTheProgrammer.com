@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 19:36
+- Mark MS1 scope/IA and content requirements as confirmed (flexible baseline).
+
 ## 2026-01-31 19:31
 - Note that unexpected changes should be assumed user-made (and called out) in workflow.
 - Remove Windows IIS secondary VM from DevEnv (not used for this project).

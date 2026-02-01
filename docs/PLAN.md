@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 16:58
+- Last updated: 2026-01-31 19:36
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -13,8 +13,8 @@
 
 ## Upcoming Milestones (in order)
 1. Scope and information architecture
-   - [ ] Confirm pages/sections (legacy tabs + blog included).
-   - [ ] Define content requirements per section (based on legacy baseline + LinkedIn).
+   - [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline).
+   - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline).
 2. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
