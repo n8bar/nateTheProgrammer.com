@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:56
+- Last updated: 2026-01-31 21:58
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -76,7 +76,8 @@
          - [ ] Apply UX guardrails checklist
       - [ ] Playground page
          - [ ] Render disclaimer + safe layout slots
-         - [ ] Load external repos/demos from playground index file
+         - [ ] Load external repos/demos from `playground/*` clones
+         - [ ] Read `playground.json` metadata per repo
          - [ ] Render external repo cards/embeds
          - [ ] Apply UX guardrails checklist
    - [ ] Add baseline SEO, analytics, and accessibility checks
@@ -127,9 +128,10 @@
 - Logo: keep glasses-on-lightbulb mark.
 
 ## Data Sourcing (draft v0.1)
-- Keep super-static content in-repo only (Home + Contact copy/layout, Playground shell + index).
+- Keep super-static content in-repo only (Home + Contact copy/layout, Playground shell).
 - Blog posts: Ghost (self-hosted, headless Content API; posts not stored in repo).
 - Skills/experience/portfolio/references/certs/education: Ghost (headless Content API; posts not stored in repo).
+- Playground entries: external git clones under `playground/` (ignored by repo), each with a `playground.json` metadata file.
 - Keep raw LinkedIn export in `.cybercreek/` only.
 
 ## Routing + Data Sources (draft v0.2)
@@ -144,7 +146,7 @@
 - `/blog`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
 - `/blog/[slug]`: Ghost post detail; server-side fetch with revalidation.
 - `/contact`: form posts to `/api/contact` (Route Handler); email address stays server-only via env.
-- `/playground`: in-repo layout shell + `src/content/playground.json` listing external repos/demos.
+- `/playground`: in-repo layout shell + local `playground/*/playground.json` metadata for external repos/demos.
 - Utility routes: `/sitemap.xml` and `/rss.xml` generated server-side (uses Ghost + in-repo content).
 
 ## Information Architecture (draft v0.1)

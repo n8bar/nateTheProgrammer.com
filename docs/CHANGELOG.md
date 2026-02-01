@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 21:58
+- Define playground as local git clones under `playground/` with per-repo metadata files.
+
 ## 2026-01-31 21:56
 - Remove Ghost from playground; use in-repo index for external demos.
 
