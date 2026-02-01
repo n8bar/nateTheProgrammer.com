@@ -1,6 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { JetBrains_Mono, Saira_Semi_Condensed } from 'next/font/google';
+import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
 const saira = Saira_Semi_Condensed({
@@ -31,10 +32,13 @@ export default function RootLayout({
         <a className="skip-link" href="#content">
           Skip to content
         </a>
-        <Header />
-        <main id="content" className="site-main">
-          {children}
-        </main>
+        <div className="site-shell">
+          <Header />
+          <main id="content" className="site-main">
+            {children}
+          </main>
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 23:23
+- Last updated: 2026-01-31 23:37
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -26,7 +26,7 @@
 ## Upcoming Milestones (in order)
 4) [ ] MVP build
    1) [ ] Implement core pages and global layout
-      1) [ ] Global shell + navigation
+      1) [x] Global shell + navigation [completed 26/01/31 23:37]
          1) [x] Design tokens + layout primitives [completed 26/01/31 22:53]
             1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
             2) [x] Create container and grid utilities [completed 26/01/31 22:48]
@@ -36,18 +36,18 @@
             2) [x] Implement desktop nav layout + active states [completed 26/01/31 23:23]
             3) [x] Implement mobile nav (menu, focus trap, close behavior) [completed 26/01/31 23:23]
             4) [x] Add skip link + focus-visible styles [completed 26/01/31 23:23]
-         3) [ ] Footer
-            1) [ ] Define footer content blocks (contact, social, legal)
-            2) [ ] Add backlink/CTA area
-            3) [ ] Ensure responsive stacking and spacing
-         4) [ ] Layout shell integration
-            1) [ ] Wire global layout to app router
-            2) [ ] Add base typography styles and rhythm
-            3) [ ] Add background grid + glow layers
-         5) [ ] Apply UX guardrails checklist
-            1) [ ] Verify focus order + keyboard navigation
-            2) [ ] Verify no layout shift for nav states
-            3) [ ] Verify mobile tap targets + contrast
+         3) [x] Footer [completed 26/01/31 23:37]
+            1) [x] Define footer content blocks (contact, social, legal) [completed 26/01/31 23:37]
+            2) [x] Add backlink/CTA area [completed 26/01/31 23:37]
+            3) [x] Ensure responsive stacking and spacing [completed 26/01/31 23:37]
+         4) [x] Layout shell integration [completed 26/01/31 23:37]
+            1) [x] Wire global layout to app router [completed 26/01/31 23:37]
+            2) [x] Add base typography styles and rhythm [completed 26/01/31 23:37]
+            3) [x] Add background grid + glow layers [completed 26/01/31 23:37]
+         5) [x] Apply UX guardrails checklist [completed 26/01/31 23:37]
+            1) [x] Verify focus order + keyboard navigation [completed 26/01/31 23:37]
+            2) [x] Verify no layout shift for nav states [completed 26/01/31 23:37]
+            3) [x] Verify mobile tap targets + contrast [completed 26/01/31 23:37]
       2) [ ] Home page
          1) [ ] Compose hero, CTA, and featured highlights
          2) [ ] Bind home copy from `src/content/site.json`

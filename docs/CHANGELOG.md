@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-01-31 23:37
+- Complete global shell + navigation (footer, layout integration, UX guardrail checks).
+- Add footer CTA/content blocks and responsive layout styling.
+- Apply background glow/grid layering and base typography rhythm.
+
 ## 2026-01-31 23:23
 - Build header/navigation shell with desktop + mobile behaviors and skip link.
 
