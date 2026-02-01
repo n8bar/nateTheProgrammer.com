@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:23
+- Add mixed TDD guidance and make test creation a responsibility in workflow.
+- Add testing strategy decision to the technical architecture milestone.
+
 ## 2026-01-31 21:14
 - Decide on self-hosted Ghost (headless) for the blog and mark the workflow decision complete.
 - Update data sourcing to keep super-static content in repo and pull blog posts from Ghost.
