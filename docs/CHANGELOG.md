@@ -50,3 +50,6 @@
 ## 2026-01-31 16:58
 - Clarify visual direction is directional, add playground disclaimer wording.
 - Set JSON as preferred data format.
+
+## 2026-01-31 18:26
+- Add `docs/DevEnv.md` and document dev environment pointers in AGENTS and workflow.

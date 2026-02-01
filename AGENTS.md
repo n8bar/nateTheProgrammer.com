@@ -2,6 +2,7 @@
 
 ## Working Style
 - Follow `docs/WORKFLOW.md` as the single source of process rules.
+- Dev environment details live in `docs/DevEnv.md` (sensitive/local-only info in `.cybercreek/localDevEnv.md`).
 
 
 ## Roles
