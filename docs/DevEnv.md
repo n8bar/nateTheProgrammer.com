@@ -11,7 +11,7 @@
 
 ## Conventions (fill in)
 - Project path: TBD
-- Default ports: TBD
+- Default ports: avoid 22, 80, 3306, 3307, 5173, 9443, 10000 (already in use on the VM).
 - Reverse proxy: TBD
 - Container naming: TBD
 

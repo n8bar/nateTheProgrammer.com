@@ -53,3 +53,6 @@
 
 ## 2026-01-31 18:26
 - Add `docs/DevEnv.md` and document dev environment pointers in AGENTS and workflow.
+
+## 2026-01-31 18:34
+- Document reserved VM ports in `docs/DevEnv.md`.
