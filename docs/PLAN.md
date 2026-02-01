@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 19:38
+- Last updated: 2026-01-31 20:13
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -19,7 +19,7 @@
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
 3. Technical architecture
-   - [ ] Pick framework.
+   - [x] Pick framework (Next.js).
    - [ ] Initialize git repository and remote.
    - [ ] Decide stack and content update workflow.
    - [ ] Define routing/content structure and data sources.

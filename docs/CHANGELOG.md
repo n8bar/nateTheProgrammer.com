@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 20:13
+- Select Next.js as the framework.
+
 ## 2026-01-31 19:38
 - Rename framework decision item for clarity.
 
