@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:50
+- Check off UX guardrails item in UX direction and add it to MVP sub-task lists.
+- Expand MVP build with sub-subitems and sub-sub-subitems.
+
 ## 2026-01-31 21:45
 - Mark Technical architecture milestone complete.
 - Note that References has real quotes and remove conditional language in the plan.

@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:45
+- Last updated: 2026-01-31 21:50
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -22,14 +22,86 @@
 
 ## Upcoming Milestones (in order)
 3. UX direction
-   - [ ] Visual theme, typography, motion, and layout system.
-   - [ ] UX guardrails checklist applied per section.
+   - [ ] Visual theme, typography, motion, and layout system
+   - [x] UX guardrails checklist applied per section. [completed 26/01/31 21:50]
 4. MVP build
-   - [ ] Implement core pages and global layout.
-   - [ ] Add baseline SEO, analytics, and accessibility checks.
-   - [ ] Select hosting target and deployment approach (after MVP scope stabilizes).
+   - [ ] Implement core pages and global layout
+      - [ ] Global shell + navigation
+         - [ ] Build layout grid + header/footer
+         - [ ] Wire responsive nav, focus states, and skip links
+         - [ ] Apply UX guardrails checklist
+      - [ ] Home page
+         - [ ] Compose hero, CTA, and featured highlights
+         - [ ] Bind home copy from `src/content/site.json`
+         - [ ] Apply UX guardrails checklist
+      - [ ] Skills page (Ghost)
+         - [ ] Fetch Ghost page content
+         - [ ] Render rich text blocks
+         - [ ] Apply UX guardrails checklist
+      - [ ] Experience page (Ghost)
+         - [ ] Fetch Ghost page content
+         - [ ] Render timeline layout
+         - [ ] Apply UX guardrails checklist
+      - [ ] Portfolio index (Ghost)
+         - [ ] Fetch Ghost posts tagged `portfolio`
+         - [ ] Render project cards + highlights
+         - [ ] Apply UX guardrails checklist
+      - [ ] Portfolio detail (Ghost)
+         - [ ] Fetch Ghost post by slug
+         - [ ] Render case-study template
+         - [ ] Apply UX guardrails checklist
+      - [ ] References page (Ghost)
+         - [ ] Fetch Ghost page content
+         - [ ] Render quote layout
+         - [ ] Apply UX guardrails checklist
+      - [ ] Certifications page (Ghost)
+         - [ ] Fetch Ghost page content
+         - [ ] Render certifications list
+         - [ ] Apply UX guardrails checklist
+      - [ ] Education page (Ghost)
+         - [ ] Fetch Ghost page content
+         - [ ] Render education details
+         - [ ] Apply UX guardrails checklist
+      - [ ] Blog index (Ghost)
+         - [ ] Fetch Ghost posts for list view
+         - [ ] Render post cards with excerpts
+         - [ ] Apply UX guardrails checklist
+      - [ ] Blog detail (Ghost)
+         - [ ] Fetch Ghost post by slug
+         - [ ] Render post body + meta
+         - [ ] Apply UX guardrails checklist
+      - [ ] Contact page
+         - [ ] Build contact form UI
+         - [ ] Post to `/api/contact` (server-only email)
+         - [ ] Apply UX guardrails checklist
+      - [ ] Playground page
+         - [ ] Render disclaimer + safe layout slots
+         - [ ] Add starter experiment shell
+         - [ ] Apply UX guardrails checklist
+   - [ ] Add baseline SEO, analytics, and accessibility checks
+      - [ ] SEO baseline
+         - [ ] Add meta, OpenGraph, and Twitter tags
+         - [ ] Add structured data (JSON-LD)
+         - [ ] Validate sitemap + RSS output
+      - [ ] Analytics baseline
+         - [ ] Select analytics provider
+         - [ ] Implement pageview tracking
+         - [ ] Verify event payloads
+      - [ ] Accessibility pass
+         - [ ] Run automated checks (Lighthouse/axe)
+         - [ ] Fix high/medium issues
+         - [ ] Apply UX guardrails checklist
+   - [ ] Select hosting target and deployment approach (after MVP scope stabilizes)
+      - [ ] Hosting requirements
+         - [ ] Document traffic, uptime, and perf needs
+         - [ ] Evaluate options (deferred)
+         - [ ] Decide on hosting target
+      - [ ] Deployment workflow
+         - [ ] Define build + deploy steps
+         - [ ] Plan secrets/env management
+         - [ ] Outline rollback strategy
 5. QA + launch
-   - [ ] Performance pass, accessibility pass, content polish.
+   - [ ] Performance pass, accessibility pass, content polish
 
 ## Content Sources
 - Resume baseline: LinkedIn export, excluding non-IT roles.
