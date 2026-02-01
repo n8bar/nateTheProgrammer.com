@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 22:48
+- Implement design tokens and layout primitives (CSS variables, container/grid utilities).
+
 ## 2026-01-31 22:38
 - Reformat plan task lists to use per-level numeric prefixes with checkboxes after numbers.
 - Document numeric prefix format for plan task lists in workflow.

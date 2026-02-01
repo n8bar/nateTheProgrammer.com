@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:38
+- Last updated: 2026-01-31 22:48
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -28,8 +28,8 @@
    1) [ ] Implement core pages and global layout
       1) [ ] Global shell + navigation
          1) [ ] Design tokens + layout primitives
-            1) [ ] Define CSS variables for colors, spacing, type scale
-            2) [ ] Create container and grid utilities
+            1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
+            2) [x] Create container and grid utilities [completed 26/01/31 22:48]
             3) [ ] Validate contrast + line length targets
          2) [ ] Header + navigation
             1) [ ] Build header layout and brand mark slot
