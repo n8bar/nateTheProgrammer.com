@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 23:01
+- Set app version to 2.0.0-alpha.1 to reflect the rewrite.
+
 ## 2026-01-31 22:53
 - Validate contrast ratios and line-length targets for design tokens.
 - Add CONTACT_EMAIL placeholder to `.env.example`.
