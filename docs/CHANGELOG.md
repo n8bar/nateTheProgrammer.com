@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-01-31 23:46
+- Remove nginx placeholder stack (`compose.yaml`) and drop the placeholder `site/index.html`.
+- Update DevEnv runbook to use the Next.js dev server instead of Docker.
+- Remove nginx bind placeholder from `.env.example`.
+
 ## 2026-01-31 23:23
 - Build header/navigation shell with desktop + mobile behaviors and skip link.
 
