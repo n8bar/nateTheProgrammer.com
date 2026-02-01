@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:14
+- Decide on self-hosted Ghost (headless) for the blog and mark the workflow decision complete.
+- Update data sourcing to keep super-static content in repo and pull blog posts from Ghost.
+
 ## 2026-01-31 20:31
 - Require completion timestamps on checked plan items.
 - Backfill completion timestamps for completed MS1/MS2 tasks.

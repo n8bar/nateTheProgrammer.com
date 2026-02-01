@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 20:31
+- Last updated: 2026-01-31 21:14
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -17,7 +17,8 @@
 2. Technical architecture
    - [x] Pick framework (Next.js). [completed 26/01/31 20:13]
    - [x] Initialize git repository and remote. [completed 26/01/31 20:30]
-   - [ ] Decide stack and content update workflow.
+   - [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo). [completed 26/01/31 21:14]
+   - [ ] Decide stack (language, styling, tooling).
    - [ ] Define routing/content structure and data sources.
 3. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
@@ -51,8 +52,8 @@
 - Logo: keep glasses-on-lightbulb mark.
 
 ## Data Sourcing (draft v0.1)
-- Keep content in-repo (initial default).
-- Blog posts: Markdown with frontmatter (title, date, excerpt, tags, slug).
+- Keep super-static content in-repo (initial default).
+- Blog posts: Ghost (self-hosted, headless Content API; posts not stored in repo).
 - Projects: structured data in JSON (preferred) with optional longform Markdown.
 - Experience/skills/certs/education: curated from LinkedIn export into tracked data files (JSON preferred).
 - Keep raw LinkedIn export in `.cybercreek/` only.
