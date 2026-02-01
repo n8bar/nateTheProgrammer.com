@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 20:31
+- Require completion timestamps on checked plan items.
+- Backfill completion timestamps for completed MS1/MS2 tasks.
+
 ## 2026-01-31 20:30
 - Check off git repo initialization in the plan.
 

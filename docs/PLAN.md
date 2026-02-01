@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 20:30
+- Last updated: 2026-01-31 20:31
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -9,14 +9,14 @@
 
 ## Milestones (in order)
 ## Completed Milestones
-1. [x] Scope and information architecture
-   - [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline).
-   - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline).
+1. [x] Scope and information architecture [completed 26/01/31 19:36]
+   - [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline). [completed 26/01/31 19:36]
+   - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline). [completed 26/01/31 19:36]
 
 ## Upcoming Milestones (in order)
 2. Technical architecture
-   - [x] Pick framework (Next.js).
-   - [x] Initialize git repository and remote.
+   - [x] Pick framework (Next.js). [completed 26/01/31 20:13]
+   - [x] Initialize git repository and remote. [completed 26/01/31 20:30]
    - [ ] Decide stack and content update workflow.
    - [ ] Define routing/content structure and data sources.
 3. UX direction
