@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 20:24
+- Move MS1 into Completed with checkmarks and reorder MS2/MS3.
+- Update open questions to remove the framework decision.
+
 ## 2026-01-31 20:13
 - Select Next.js as the framework.
 
