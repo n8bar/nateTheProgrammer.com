@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 21:59
+- Ignore local playground repo clones by default.
+
 ## 2026-01-31 21:58
 - Define playground as local git clones under `playground/` with per-repo metadata files.
 
