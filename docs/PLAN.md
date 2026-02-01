@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:11
+- Last updated: 2026-01-31 22:19
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -19,11 +19,11 @@
    - [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier). [completed 26/01/31 21:27]
    - [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact). [completed 26/01/31 21:27]
    - [x] Define routing/content structure and data sources. [completed 26/01/31 21:45]
+3. [x] UX direction [completed 26/01/31 22:19]
+   - [x] Visual theme, typography, motion, and layout system [completed 26/01/31 22:19]
+   - [x] UX guardrails checklist applied per section. [completed 26/01/31 21:50]
 
 ## Upcoming Milestones (in order)
-3. UX direction
-   - [ ] Visual theme, typography, motion, and layout system
-   - [x] UX guardrails checklist applied per section. [completed 26/01/31 21:50]
 4. MVP build
    - [ ] Implement core pages and global layout
       - [ ] Global shell + navigation
@@ -121,10 +121,13 @@
 - Content should be easy to update without touching core layout/visual systems.
 
 ## Visual Direction
-- Overall tone: polished hire-me with a single Playground tab for in-progress experiments (directional, not final).
-- Playground disclaimer (directional): "Playground: experiments in progress; please don't enter sensitive data."
-- Palette: blues from legacy site as primary; charcoal base (avoid white backgrounds).
-- Accents: tiny hits of yellow (e.g., outlines, highlights).
+- Theme: Blueprint Night (locked).
+- Typography: Saira Semi Condensed (primary), JetBrains Mono (meta/labels).
+- Palette: charcoal base, accent blue (#2f6bff), gold outlines (#ffd166), muted slate text.
+- Background: subtle blueprint grid overlay with soft radial glows.
+- Motion: gentle fade-up reveals, low-amplitude hover lift, honor prefers-reduced-motion.
+- Layout: left-rail nav, asymmetric grid, card-based sections with timeline accents.
+- Playground disclaimer: "Playground: experiments in progress; please don't enter sensitive data."
 - Logo: keep glasses-on-lightbulb mark.
 
 ## Data Sourcing
