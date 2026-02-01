@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 20:29
+- Last updated: 2026-01-31 20:30
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -16,7 +16,7 @@
 ## Upcoming Milestones (in order)
 2. Technical architecture
    - [x] Pick framework (Next.js).
-   - [ ] Initialize git repository and remote.
+   - [x] Initialize git repository and remote.
    - [ ] Decide stack and content update workflow.
    - [ ] Define routing/content structure and data sources.
 3. UX direction

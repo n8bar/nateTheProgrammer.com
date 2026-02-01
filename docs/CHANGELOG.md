@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 20:30
+- Check off git repo initialization in the plan.
+
 ## 2026-01-31 20:29
 - Require continuous milestone numbering across Completed and Upcoming sections.
 - Renumber upcoming milestones to continue after Completed.
