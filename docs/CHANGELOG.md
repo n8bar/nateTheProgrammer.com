@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 23:05
+- Mark design tokens + layout primitives parent task complete after all subitems finished.
+
 ## 2026-01-31 23:03
 - Document parent completion rule when the last sibling task is done.
 

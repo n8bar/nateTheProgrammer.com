@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:53
+- Last updated: 2026-01-31 23:05
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -27,7 +27,7 @@
 4) [ ] MVP build
    1) [ ] Implement core pages and global layout
       1) [ ] Global shell + navigation
-         1) [ ] Design tokens + layout primitives
+         1) [x] Design tokens + layout primitives [completed 26/01/31 22:53]
             1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
             2) [x] Create container and grid utilities [completed 26/01/31 22:48]
             3) [x] Validate contrast + line length targets [completed 26/01/31 22:53]
