@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:31
+- Last updated: 2026-01-31 21:38
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -20,7 +20,7 @@
    - [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo). [completed 26/01/31 21:14]
    - [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier). [completed 26/01/31 21:27]
    - [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact). [completed 26/01/31 21:27]
-   - [x] Define routing/content structure and data sources. [completed 26/01/31 21:31]
+   - [x] Define routing/content structure and data sources. [completed 26/01/31 21:38]
 3. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
@@ -40,6 +40,7 @@
 - Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
 - Education: list the BS in Software Development only (omit GED and high school).
 - Blog is part of the site; plan for it in IA and MVP.
+- Non-Home/Contact content will be curated into Ghost (headless) instead of tracked JSON.
 
 ## Constraints
 - Fast load times and accessibility as first-class requirements.
@@ -53,22 +54,22 @@
 - Logo: keep glasses-on-lightbulb mark.
 
 ## Data Sourcing (draft v0.1)
-- Keep super-static content in-repo only (navigation, resume data, site copy).
+- Keep super-static content in-repo only (Home + Contact copy and layout).
 - Blog posts: Ghost (self-hosted, headless Content API; posts not stored in repo).
-- Projects: structured data in JSON (preferred) with optional longform Markdown.
-- Experience/skills/certs/education: curated from LinkedIn export into tracked data files (JSON preferred).
+- Skills/experience/portfolio/references/certs/education: Ghost (headless Content API; posts not stored in repo).
 - Keep raw LinkedIn export in `.cybercreek/` only.
 
-## Routing + Data Sources (draft v0.1)
-- `/` (Home): `src/content/site.json` (hero/CTA/featured) + `src/content/projects.json` for featured items.
-- `/skills`: `src/content/skills.json`.
-- `/experience`: `src/content/experience.json`.
-- `/portfolio`: `src/content/projects.json` + optional `src/content/projects/*.mdx` for case studies.
-- `/references`: `src/content/references.json` (only if real quotes exist).
-- `/certifications`: `src/content/certifications.json`.
-- `/education`: `src/content/education.json`.
-- `/blog`: Ghost Content API (list) with ISR caching (default revalidate 10 min; adjustable).
-- `/blog/[slug]`: Ghost Content API (post detail); server-side fetch with revalidation.
+## Routing + Data Sources (draft v0.2)
+- `/` (Home): `src/content/site.json` (hero/CTA/featured).
+- `/skills`: Ghost page `skills` (rich text/Markdown).
+- `/experience`: Ghost page `experience`.
+- `/portfolio`: Ghost posts tagged `portfolio` (optional detail via `/portfolio/[slug]`).
+- `/portfolio/[slug]`: Ghost post detail (tag `portfolio`).
+- `/references`: Ghost page `references` (only if real quotes exist).
+- `/certifications`: Ghost page `certifications`.
+- `/education`: Ghost page `education`.
+- `/blog`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
+- `/blog/[slug]`: Ghost post detail; server-side fetch with revalidation.
 - `/contact`: form posts to `/api/contact` (Route Handler); email address stays server-only via env.
 - `/playground`: in-repo experiments; gated with disclaimer copy from `src/content/site.json`.
 - Utility routes: `/sitemap.xml` and `/rss.xml` generated server-side (uses Ghost + in-repo content).
