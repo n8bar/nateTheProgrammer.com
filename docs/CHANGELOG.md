@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 23:03
+- Document parent completion rule when the last sibling task is done.
+
 ## 2026-01-31 23:01
 - Set app version to 2.0.0-alpha.1 to reflect the rewrite.
 

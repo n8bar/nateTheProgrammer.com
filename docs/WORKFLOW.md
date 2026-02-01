@@ -12,6 +12,7 @@
 - In `docs/PLAN.md`, keep only the current version of any section; if versions are used, replace the previous version instead of keeping old copies.
 - In `docs/PLAN.md`, task lists use per-level numeric prefixes with the checkbox after the number (example: `1) [ ] Task`).
 - If needed for reference, use multilevel decimal notation in discussion only (do not add decimals to the plan items).
+- When the final sibling in a task group is completed, mark its parent item completed too.
 - If the user is asking for your input/feedback (e.g. “what do you think?”, “should we…?”, “does this make sense?”), answer first and confirm before making changes—even if the request sounds actionable.
 - If asked to implement code before a spec exists, pause to confirm and recommend documenting the scope first (write the spec, then ship the code) unless the user explicitly insists otherwise.
 - Before any push/PR, keep all docs in sync: update specs first when scope shifts, then code, and ensure everything under `docs/` (plus README links) reflects the same state in the same commit.
