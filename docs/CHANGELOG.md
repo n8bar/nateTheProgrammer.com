@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 23:23
+- Build header/navigation shell with desktop + mobile behaviors and skip link.
+
 ## 2026-01-31 23:05
 - Mark design tokens + layout primitives parent task complete after all subitems finished.
 

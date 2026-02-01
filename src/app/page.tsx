@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="container stack-lg" style={{ padding: '4rem 0' }}>
+    <div className="container stack-lg">
       <section className="stack-sm">
         <span className="eyebrow">Nate The Programmer</span>
         <h1>Blueprint Night — Global Shell Preview</h1>
@@ -28,6 +28,6 @@ export default function Home() {
           </p>
         </article>
       </section>
-    </main>
+    </div>
   );
 }

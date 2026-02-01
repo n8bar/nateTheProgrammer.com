@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 23:05
+- Last updated: 2026-01-31 23:23
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -31,11 +31,11 @@
             1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
             2) [x] Create container and grid utilities [completed 26/01/31 22:48]
             3) [x] Validate contrast + line length targets [completed 26/01/31 22:53]
-         2) [ ] Header + navigation
-            1) [ ] Build header layout and brand mark slot
-            2) [ ] Implement desktop nav layout + active states
-            3) [ ] Implement mobile nav (menu, focus trap, close behavior)
-            4) [ ] Add skip link + focus-visible styles
+         2) [x] Header + navigation [completed 26/01/31 23:23]
+            1) [x] Build header layout and brand mark slot [completed 26/01/31 23:23]
+            2) [x] Implement desktop nav layout + active states [completed 26/01/31 23:23]
+            3) [x] Implement mobile nav (menu, focus trap, close behavior) [completed 26/01/31 23:23]
+            4) [x] Add skip link + focus-visible styles [completed 26/01/31 23:23]
          3) [ ] Footer
             1) [ ] Define footer content blocks (contact, social, legal)
             2) [ ] Add backlink/CTA area
