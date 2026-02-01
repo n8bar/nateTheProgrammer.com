@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 22:24
+- Clarify UX guardrails apply to the host site/playground shell, not embedded demos.
+
 ## 2026-01-31 22:19
 - Lock Blueprint Night as the visual direction and complete UX direction milestone.
 

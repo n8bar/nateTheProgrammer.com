@@ -1,6 +1,6 @@
 # UX Guardrails (Reference)
 
-Industry-aligned practices to apply across this resume + playground site.
+Industry-aligned practices to apply across this resume site and the Playground shell (not the embedded demos themselves).
 
 ## Baseline standards
 - Nielsen's 10 heuristics: match real-world language, visibility of status, user control, consistency, error prevention/recovery, recognition over recall, efficiency for power users, minimalist copy, clear errors/help.
@@ -16,7 +16,7 @@ Industry-aligned practices to apply across this resume + playground site.
 - Motion respect: subtle by default, honor prefers-reduced-motion.
 - Performance-first: avoid heavy JS for static pages, lazy-load images, keep LCP/CLS in check.
 - Ghost content resilience: handle missing images/excerpts gracefully with defaults.
-- Playground safety: clearly label external demos, open external links safely, avoid embedding risky origins by default.
+- Playground safety: the host shell must clearly label external demos, open external links safely, and avoid embedding risky origins by default. Embedded demos/repos keep their own UX rules.
 
 ## Practical checklist
 - Inline guidance over pop-ups; keep critical guidance above the fold.
