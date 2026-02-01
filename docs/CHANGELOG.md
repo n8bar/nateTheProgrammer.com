@@ -56,3 +56,6 @@
 
 ## 2026-01-31 18:34
 - Document reserved VM ports in `docs/DevEnv.md`.
+
+## 2026-01-31 19:08
+- Update `docs/DevEnv.md` with VM-specific defaults and runbook.
