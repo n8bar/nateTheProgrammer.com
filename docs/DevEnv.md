@@ -12,6 +12,7 @@
 ## Conventions
 - Project path: `/opt/ntp`.
 - Default ports: avoid 22, 3306, 3307, 5173, 9443, 10000. Port 80 is already in use; this project binds to a dedicated secondary IP.
+- Host bind IP: set `NTP_BIND_IP` in `.env` (untracked). Use `.env.example` as a template.
 - Reverse proxy: none; per-project port binds (nginx container for NTP).
 - Container naming: docker compose project name `ntp` (network `ntp_default`).
 

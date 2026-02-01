@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-01-31 19:20
+- Make docker bind IP configurable via `NTP_BIND_IP` and add `.env.example`.
+- Ignore `.env` and document bind IP setup in DevEnv.
+- Track `compose.yaml` and `site/` in repo (placeholder site + nginx config).
+
 ## 2026-01-30 19:54
 - Initialize docs folder with CHANGELOG and PLAN.
 - Update PLAN with LinkedIn resume baseline and platform/git setup tasks.
