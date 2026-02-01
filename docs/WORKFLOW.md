@@ -12,3 +12,5 @@
 - Apply the UX guardrails in [`docs/UX_GUARDRAILS.md`](docs/UX_GUARDRAILS.md) on every UX touch: Nielsen/WCAG as baseline; inline guidance, preserved input, no layout shift, focus/error handling, mobile/accessibility.
 - Codex owns the terminal tooling: you drive the shell, git, and related commands—assume the user doesn’t have a shell open unless they say otherwise.
 - Dev environment details live in `docs/DevEnv.md` (sensitive/local-only info in `.cybercreek/localDevEnv.md`).
+- Whenever `.env` changes, update `.env.example` with anonymized values.
+- If you encounter changes you didn't make, assume the user made them and mention you noticed.

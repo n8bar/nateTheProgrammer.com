@@ -6,7 +6,6 @@
 
 ## Current Environment
 - Primary dev VM: AlmaLinux 9 with Docker (hostname: AL9).
-- Secondary VM: Windows IIS (use only when needed).
 - Note: other sites share the host; avoid port collisions.
 
 ## Conventions

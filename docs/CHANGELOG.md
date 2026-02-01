@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-01-31 19:31
+- Note that unexpected changes should be assumed user-made (and called out) in workflow.
+- Remove Windows IIS secondary VM from DevEnv (not used for this project).
+
+## 2026-01-31 19:28
+- Require `.env.example` updates (anonymized) whenever `.env` changes.
+
 ## 2026-01-31 19:20
 - Make docker bind IP configurable via `NTP_BIND_IP` and add `.env.example`.
 - Ignore `.env` and document bind IP setup in DevEnv.
