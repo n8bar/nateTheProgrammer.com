@@ -8,6 +8,7 @@
 - If a plan splits milestones into Completed and Upcoming sections, keep numbering continuous across both sections.
 - When checking off a task, append `[completed yy/mm/dd hh:ii]` to the item.
 - Testing approach: use mixed TDD (write tests first for stable logic/helpers; UI/layout tested after the fact). The agent is responsible for creating and maintaining tests.
+- When milestones are renumbered or reordered, always refer to them by the current numbering (do not use old numbers).
 - If the user is asking for your input/feedback (e.g. “what do you think?”, “should we…?”, “does this make sense?”), answer first and confirm before making changes—even if the request sounds actionable.
 - If asked to implement code before a spec exists, pause to confirm and recommend documenting the scope first (write the spec, then ship the code) unless the user explicitly insists otherwise.
 - Before any push/PR, keep all docs in sync: update specs first when scope shifts, then code, and ensure everything under `docs/` (plus README links) reflects the same state in the same commit.

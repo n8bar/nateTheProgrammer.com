@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 21:34
+- Require milestone references to use current numbering after reorder.
+
 ## 2026-01-31 21:31
 - Define routing/content structure and data sources (Ghost + in-repo JSON/MDX).
 - Document route map and server-only contact handling.
