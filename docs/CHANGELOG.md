@@ -11,6 +11,9 @@
 ## 2026-01-31 22:15
 - Apply gold outline to all Blueprint Night cards.
 
+## 2026-01-31 22:17
+- Apply gold outline to Blueprint Night header border.
+
 ## 2026-01-31 22:04
 - Require the plan to keep only current section versions (no outdated copies).
 
