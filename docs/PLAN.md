@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 20:24
+- Last updated: 2026-01-31 20:29
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -14,19 +14,19 @@
    - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline).
 
 ## Upcoming Milestones (in order)
-1. Technical architecture
+2. Technical architecture
    - [x] Pick framework (Next.js).
    - [ ] Initialize git repository and remote.
    - [ ] Decide stack and content update workflow.
    - [ ] Define routing/content structure and data sources.
-2. UX direction
+3. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
-3. MVP build
+4. MVP build
    - [ ] Implement core pages and global layout.
    - [ ] Add baseline SEO, analytics, and accessibility checks.
    - [ ] Select hosting target and deployment approach (after MVP scope stabilizes).
-4. QA + launch
+5. QA + launch
    - [ ] Performance pass, accessibility pass, content polish.
 
 ## Content Sources

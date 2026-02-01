@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 20:29
+- Require continuous milestone numbering across Completed and Upcoming sections.
+- Renumber upcoming milestones to continue after Completed.
+
 ## 2026-01-31 20:26
 - Clarify that numbered milestones/todos imply the default focus order.
 
