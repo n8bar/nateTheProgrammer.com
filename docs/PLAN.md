@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:19
+- Last updated: 2026-01-31 22:26
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -27,9 +27,27 @@
 4. MVP build
    - [ ] Implement core pages and global layout
       - [ ] Global shell + navigation
-         - [ ] Build layout grid + header/footer
-         - [ ] Wire responsive nav, focus states, and skip links
+         - [ ] Design tokens + layout primitives
+            - [ ] Define CSS variables for colors, spacing, type scale
+            - [ ] Create container and grid utilities
+            - [ ] Validate contrast + line length targets
+         - [ ] Header + navigation
+            - [ ] Build header layout and brand mark slot
+            - [ ] Implement desktop nav layout + active states
+            - [ ] Implement mobile nav (menu, focus trap, close behavior)
+            - [ ] Add skip link + focus-visible styles
+         - [ ] Footer
+            - [ ] Define footer content blocks (contact, social, legal)
+            - [ ] Add backlink/CTA area
+            - [ ] Ensure responsive stacking and spacing
+         - [ ] Layout shell integration
+            - [ ] Wire global layout to app router
+            - [ ] Add base typography styles and rhythm
+            - [ ] Add background grid + glow layers
          - [ ] Apply UX guardrails checklist
+            - [ ] Verify focus order + keyboard navigation
+            - [ ] Verify no layout shift for nav states
+            - [ ] Verify mobile tap targets + contrast
       - [ ] Home page
          - [ ] Compose hero, CTA, and featured highlights
          - [ ] Bind home copy from `src/content/site.json`

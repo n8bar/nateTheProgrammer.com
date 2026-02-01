@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 22:26
+- Expand Global shell + navigation task into a detailed checklist.
+
 ## 2026-01-31 22:24
 - Clarify UX guardrails apply to the host site/playground shell, not embedded demos.
 
