@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 22:02
+- Remove draft version tags from plan sections.
+
 ## 2026-01-31 21:59
 - Ignore local playground repo clones by default.
 

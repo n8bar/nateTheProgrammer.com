@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:58
+- Last updated: 2026-01-31 22:02
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -120,21 +120,21 @@
 - Fast load times and accessibility as first-class requirements.
 - Content should be easy to update without touching core layout/visual systems.
 
-## Visual Direction (draft v0.1)
+## Visual Direction
 - Overall tone: polished hire-me with a single Playground tab for in-progress experiments (directional, not final).
 - Playground disclaimer (directional): "Playground: experiments in progress; please don't enter sensitive data."
 - Palette: blues from legacy site as primary; charcoal base (avoid white backgrounds).
 - Accents: tiny hits of yellow (e.g., outlines, highlights).
 - Logo: keep glasses-on-lightbulb mark.
 
-## Data Sourcing (draft v0.1)
+## Data Sourcing
 - Keep super-static content in-repo only (Home + Contact copy/layout, Playground shell).
 - Blog posts: Ghost (self-hosted, headless Content API; posts not stored in repo).
 - Skills/experience/portfolio/references/certs/education: Ghost (headless Content API; posts not stored in repo).
 - Playground entries: external git clones under `playground/` (ignored by repo), each with a `playground.json` metadata file.
 - Keep raw LinkedIn export in `.cybercreek/` only.
 
-## Routing + Data Sources (draft v0.2)
+## Routing + Data Sources
 - `/` (Home): `src/content/site.json` (hero/CTA/featured).
 - `/skills`: Ghost page `skills` (rich text/Markdown).
 - `/experience`: Ghost page `experience`.
@@ -149,7 +149,7 @@
 - `/playground`: in-repo layout shell + local `playground/*/playground.json` metadata for external repos/demos.
 - Utility routes: `/sitemap.xml` and `/rss.xml` generated server-side (uses Ghost + in-repo content).
 
-## Information Architecture (draft v0.1)
+## Information Architecture
 - Home: hero + value prop, featured work, primary CTA
 - Skills: curated skills (core stack + strengths), not full LinkedIn list
 - Experience: IT-only roles, reverse-chronological
@@ -172,7 +172,7 @@
 - Contact Nate: contact form plus direct email.
 - Optional legacy widgets (not required for MVP): search, recent posts, archives.
 
-## Content Requirements (draft v0.1)
+## Content Requirements
 - Home
   - Hero headline + 1-2 sentence subhead (fresh rewrite).
   - Primary CTA (contact or portfolio).
