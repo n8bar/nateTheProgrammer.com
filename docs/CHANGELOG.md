@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 22:38
+- Reformat plan task lists to use per-level numeric prefixes with checkboxes after numbers.
+- Document numeric prefix format for plan task lists in workflow.
+
 ## 2026-01-31 22:26
 - Expand Global shell + navigation task into a detailed checklist.
 

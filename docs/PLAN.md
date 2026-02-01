@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 22:26
+- Last updated: 2026-01-31 22:38
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -9,119 +9,119 @@
 
 ## Milestones (in order)
 ## Completed Milestones
-1. [x] Scope and information architecture [completed 26/01/31 19:36]
-   - [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline). [completed 26/01/31 19:36]
-   - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline). [completed 26/01/31 19:36]
-2. [x] Technical architecture [completed 26/01/31 21:45]
-   - [x] Pick framework (Next.js). [completed 26/01/31 20:13]
-   - [x] Initialize git repository and remote. [completed 26/01/31 20:30]
-   - [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo). [completed 26/01/31 21:14]
-   - [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier). [completed 26/01/31 21:27]
-   - [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact). [completed 26/01/31 21:27]
-   - [x] Define routing/content structure and data sources. [completed 26/01/31 21:45]
-3. [x] UX direction [completed 26/01/31 22:19]
-   - [x] Visual theme, typography, motion, and layout system [completed 26/01/31 22:19]
-   - [x] UX guardrails checklist applied per section. [completed 26/01/31 21:50]
+1) [x] Scope and information architecture [completed 26/01/31 19:36]
+   1) [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline) [completed 26/01/31 19:36]
+   2) [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline) [completed 26/01/31 19:36]
+2) [x] Technical architecture [completed 26/01/31 21:45]
+   1) [x] Pick framework (Next.js) [completed 26/01/31 20:13]
+   2) [x] Initialize git repository and remote [completed 26/01/31 20:30]
+   3) [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo) [completed 26/01/31 21:14]
+   4) [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier) [completed 26/01/31 21:27]
+   5) [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact) [completed 26/01/31 21:27]
+   6) [x] Define routing/content structure and data sources [completed 26/01/31 21:45]
+3) [x] UX direction [completed 26/01/31 22:19]
+   1) [x] Visual theme, typography, motion, and layout system [completed 26/01/31 22:19]
+   2) [x] UX guardrails checklist applied per section [completed 26/01/31 21:50]
 
 ## Upcoming Milestones (in order)
-4. MVP build
-   - [ ] Implement core pages and global layout
-      - [ ] Global shell + navigation
-         - [ ] Design tokens + layout primitives
-            - [ ] Define CSS variables for colors, spacing, type scale
-            - [ ] Create container and grid utilities
-            - [ ] Validate contrast + line length targets
-         - [ ] Header + navigation
-            - [ ] Build header layout and brand mark slot
-            - [ ] Implement desktop nav layout + active states
-            - [ ] Implement mobile nav (menu, focus trap, close behavior)
-            - [ ] Add skip link + focus-visible styles
-         - [ ] Footer
-            - [ ] Define footer content blocks (contact, social, legal)
-            - [ ] Add backlink/CTA area
-            - [ ] Ensure responsive stacking and spacing
-         - [ ] Layout shell integration
-            - [ ] Wire global layout to app router
-            - [ ] Add base typography styles and rhythm
-            - [ ] Add background grid + glow layers
-         - [ ] Apply UX guardrails checklist
-            - [ ] Verify focus order + keyboard navigation
-            - [ ] Verify no layout shift for nav states
-            - [ ] Verify mobile tap targets + contrast
-      - [ ] Home page
-         - [ ] Compose hero, CTA, and featured highlights
-         - [ ] Bind home copy from `src/content/site.json`
-         - [ ] Apply UX guardrails checklist
-      - [ ] Skills page (Ghost)
-         - [ ] Fetch Ghost page content
-         - [ ] Render rich text blocks
-         - [ ] Apply UX guardrails checklist
-      - [ ] Experience page (Ghost)
-         - [ ] Fetch Ghost page content
-         - [ ] Render timeline layout
-         - [ ] Apply UX guardrails checklist
-      - [ ] Portfolio index (Ghost)
-         - [ ] Fetch Ghost posts tagged `portfolio`
-         - [ ] Render project cards + highlights
-         - [ ] Apply UX guardrails checklist
-      - [ ] Portfolio detail (Ghost)
-         - [ ] Fetch Ghost post by slug
-         - [ ] Render case-study template
-         - [ ] Apply UX guardrails checklist
-      - [ ] References page (Ghost)
-         - [ ] Fetch Ghost page content
-         - [ ] Render quote layout
-         - [ ] Apply UX guardrails checklist
-      - [ ] Certifications page (Ghost)
-         - [ ] Fetch Ghost page content
-         - [ ] Render certifications list
-         - [ ] Apply UX guardrails checklist
-      - [ ] Education page (Ghost)
-         - [ ] Fetch Ghost page content
-         - [ ] Render education details
-         - [ ] Apply UX guardrails checklist
-      - [ ] Blog index (Ghost)
-         - [ ] Fetch Ghost posts for list view
-         - [ ] Render post cards with excerpts
-         - [ ] Apply UX guardrails checklist
-      - [ ] Blog detail (Ghost)
-         - [ ] Fetch Ghost post by slug
-         - [ ] Render post body + meta
-         - [ ] Apply UX guardrails checklist
-      - [ ] Contact page
-         - [ ] Build contact form UI
-         - [ ] Post to `/api/contact` (server-only email)
-         - [ ] Apply UX guardrails checklist
-      - [ ] Playground page
-         - [ ] Render disclaimer + safe layout slots
-         - [ ] Load external repos/demos from `playground/*` clones
-         - [ ] Read `playground.json` metadata per repo
-         - [ ] Render external repo cards/embeds
-         - [ ] Apply UX guardrails checklist
-   - [ ] Add baseline SEO, analytics, and accessibility checks
-      - [ ] SEO baseline
-         - [ ] Add meta, OpenGraph, and Twitter tags
-         - [ ] Add structured data (JSON-LD)
-         - [ ] Validate sitemap + RSS output
-      - [ ] Analytics baseline
-         - [ ] Select analytics provider
-         - [ ] Implement pageview tracking
-         - [ ] Verify event payloads
-      - [ ] Accessibility pass
-         - [ ] Run automated checks (Lighthouse/axe)
-         - [ ] Fix high/medium issues
-         - [ ] Apply UX guardrails checklist
-   - [ ] Select hosting target and deployment approach (after MVP scope stabilizes)
-      - [ ] Hosting requirements
-         - [ ] Document traffic, uptime, and perf needs
-         - [ ] Evaluate options (deferred)
-         - [ ] Decide on hosting target
-      - [ ] Deployment workflow
-         - [ ] Define build + deploy steps
-         - [ ] Plan secrets/env management
-         - [ ] Outline rollback strategy
-5. QA + launch
-   - [ ] Performance pass, accessibility pass, content polish
+4) [ ] MVP build
+   1) [ ] Implement core pages and global layout
+      1) [ ] Global shell + navigation
+         1) [ ] Design tokens + layout primitives
+            1) [ ] Define CSS variables for colors, spacing, type scale
+            2) [ ] Create container and grid utilities
+            3) [ ] Validate contrast + line length targets
+         2) [ ] Header + navigation
+            1) [ ] Build header layout and brand mark slot
+            2) [ ] Implement desktop nav layout + active states
+            3) [ ] Implement mobile nav (menu, focus trap, close behavior)
+            4) [ ] Add skip link + focus-visible styles
+         3) [ ] Footer
+            1) [ ] Define footer content blocks (contact, social, legal)
+            2) [ ] Add backlink/CTA area
+            3) [ ] Ensure responsive stacking and spacing
+         4) [ ] Layout shell integration
+            1) [ ] Wire global layout to app router
+            2) [ ] Add base typography styles and rhythm
+            3) [ ] Add background grid + glow layers
+         5) [ ] Apply UX guardrails checklist
+            1) [ ] Verify focus order + keyboard navigation
+            2) [ ] Verify no layout shift for nav states
+            3) [ ] Verify mobile tap targets + contrast
+      2) [ ] Home page
+         1) [ ] Compose hero, CTA, and featured highlights
+         2) [ ] Bind home copy from `src/content/site.json`
+         3) [ ] Apply UX guardrails checklist
+      3) [ ] Skills page (Ghost)
+         1) [ ] Fetch Ghost page content
+         2) [ ] Render rich text blocks
+         3) [ ] Apply UX guardrails checklist
+      4) [ ] Experience page (Ghost)
+         1) [ ] Fetch Ghost page content
+         2) [ ] Render timeline layout
+         3) [ ] Apply UX guardrails checklist
+      5) [ ] Portfolio index (Ghost)
+         1) [ ] Fetch Ghost posts tagged `portfolio`
+         2) [ ] Render project cards + highlights
+         3) [ ] Apply UX guardrails checklist
+      6) [ ] Portfolio detail (Ghost)
+         1) [ ] Fetch Ghost post by slug
+         2) [ ] Render case-study template
+         3) [ ] Apply UX guardrails checklist
+      7) [ ] References page (Ghost)
+         1) [ ] Fetch Ghost page content
+         2) [ ] Render quote layout
+         3) [ ] Apply UX guardrails checklist
+      8) [ ] Certifications page (Ghost)
+         1) [ ] Fetch Ghost page content
+         2) [ ] Render certifications list
+         3) [ ] Apply UX guardrails checklist
+      9) [ ] Education page (Ghost)
+         1) [ ] Fetch Ghost page content
+         2) [ ] Render education details
+         3) [ ] Apply UX guardrails checklist
+      10) [ ] Blog index (Ghost)
+         1) [ ] Fetch Ghost posts for list view
+         2) [ ] Render post cards with excerpts
+         3) [ ] Apply UX guardrails checklist
+      11) [ ] Blog detail (Ghost)
+         1) [ ] Fetch Ghost post by slug
+         2) [ ] Render post body + meta
+         3) [ ] Apply UX guardrails checklist
+      12) [ ] Contact page
+         1) [ ] Build contact form UI
+         2) [ ] Post to `/api/contact` (server-only email)
+         3) [ ] Apply UX guardrails checklist
+      13) [ ] Playground page
+         1) [ ] Render disclaimer + safe layout slots
+         2) [ ] Load external repos/demos from `playground/*` clones
+         3) [ ] Read `playground.json` metadata per repo
+         4) [ ] Render external repo cards/embeds
+         5) [ ] Apply UX guardrails checklist
+   2) [ ] Add baseline SEO, analytics, and accessibility checks
+      1) [ ] SEO baseline
+         1) [ ] Add meta, OpenGraph, and Twitter tags
+         2) [ ] Add structured data (JSON-LD)
+         3) [ ] Validate sitemap + RSS output
+      2) [ ] Analytics baseline
+         1) [ ] Select analytics provider
+         2) [ ] Implement pageview tracking
+         3) [ ] Verify event payloads
+      3) [ ] Accessibility pass
+         1) [ ] Run automated checks (Lighthouse/axe)
+         2) [ ] Fix high/medium issues
+         3) [ ] Apply UX guardrails checklist
+   3) [ ] Select hosting target and deployment approach (after MVP scope stabilizes)
+      1) [ ] Hosting requirements
+         1) [ ] Document traffic, uptime, and perf needs
+         2) [ ] Evaluate options (deferred)
+         3) [ ] Decide on hosting target
+      2) [ ] Deployment workflow
+         1) [ ] Define build + deploy steps
+         2) [ ] Plan secrets/env management
+         3) [ ] Outline rollback strategy
+5) [ ] QA + launch
+   1) [ ] Performance pass, accessibility pass, content polish
 
 ## Content Sources
 - Resume baseline: LinkedIn export, excluding non-IT roles.
