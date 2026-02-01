@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:55
+- Update playground plan to use Ghost list + external repo embeds.
+- Note that playground layout shell stays in repo while demos live elsewhere.
+
 ## 2026-01-31 21:50
 - Check off UX guardrails item in UX direction and add it to MVP sub-task lists.
 - Expand MVP build with sub-subitems and sub-sub-subitems.
