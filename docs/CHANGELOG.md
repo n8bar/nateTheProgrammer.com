@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 19:37
+- Separate framework choice from hosting; defer hosting decision to later MVP stage.
+
 ## 2026-01-31 19:36
 - Mark MS1 scope/IA and content requirements as confirmed (flexible baseline).
 

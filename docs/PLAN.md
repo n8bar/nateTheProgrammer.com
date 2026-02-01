@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 19:36
+- Last updated: 2026-01-31 19:37
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -19,13 +19,14 @@
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
 3. Technical architecture
-   - [ ] Pick platform (framework + hosting target).
+   - [ ] Pick platform (framework only).
    - [ ] Initialize git repository and remote.
-   - [ ] Decide stack, hosting, and content update workflow.
+   - [ ] Decide stack and content update workflow.
    - [ ] Define routing/content structure and data sources.
 4. MVP build
    - [ ] Implement core pages and global layout.
    - [ ] Add baseline SEO, analytics, and accessibility checks.
+   - [ ] Select hosting target and deployment approach (after MVP scope stabilizes).
 5. QA + launch
    - [ ] Performance pass, accessibility pass, content polish.
 
