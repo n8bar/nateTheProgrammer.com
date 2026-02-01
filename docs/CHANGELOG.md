@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:31
+- Define routing/content structure and data sources (Ghost + in-repo JSON/MDX).
+- Document route map and server-only contact handling.
+
 ## 2026-01-31 21:27
 - Lock in stack defaults (TS, CSS Modules, pnpm, ESLint/Prettier).
 - Lock in testing strategy tooling (Vitest/RTL + Playwright).
