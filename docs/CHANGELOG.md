@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 19:38
+- Rename framework decision item for clarity.
+
 ## 2026-01-31 19:37
 - Separate framework choice from hosting; defer hosting decision to later MVP stage.
 
