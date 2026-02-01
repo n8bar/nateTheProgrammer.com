@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 21:45
+- Mark Technical architecture milestone complete.
+- Note that References has real quotes and remove conditional language in the plan.
+
 ## 2026-01-31 21:38
 - Move non-Home/Contact sections to Ghost-managed content (no repo commits for updates).
 - Update routing/data sources to use Ghost pages/posts for skills/experience/portfolio/certs/education.

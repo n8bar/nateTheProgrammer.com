@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Workshop Neon — NTP Theme Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Saira+Semi+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0c10;
+        --bg-2: #101820;
+        --text: #f2f7ff;
+        --muted: #a6b2c7;
+        --accent: #22f0ff;
+        --accent-2: #ffb347;
+        --glow: rgba(34, 240, 255, 0.35);
+        --shadow: rgba(4, 8, 14, 0.8);
+        --font: "Saira Semi Condensed", "Segoe UI", system-ui, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        color: var(--text);
+        background: radial-gradient(circle at top right, rgba(34, 240, 255, 0.2), transparent 45%),
+          radial-gradient(circle at 15% 55%, rgba(255, 179, 71, 0.18), transparent 50%),
+          linear-gradient(135deg, #050608, #0f1218 55%, #0b1118 100%);
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: repeating-linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.04),
+          rgba(255, 255, 255, 0.04) 1px,
+          transparent 1px,
+          transparent 120px
+        );
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 2.5rem clamp(1.25rem, 2vw, 2.5rem) 4rem;
+        display: grid;
+        gap: 2rem;
+      }
+
+      header {
+        display: grid;
+        gap: 1.2rem;
+        border-radius: 26px;
+        padding: 2.5rem;
+        background: rgba(10, 14, 20, 0.78);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 30px 60px var(--shadow);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: clamp(2.8rem, 4vw, 3.8rem);
+      }
+
+      header p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 680px;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .button {
+        padding: 0.8rem 1.6rem;
+        border-radius: 999px;
+        border: none;
+        font-weight: 600;
+        font-size: 1rem;
+        background: var(--accent);
+        color: #001115;
+        box-shadow: 0 16px 40px var(--glow);
+      }
+
+      .ghost {
+        padding: 0.8rem 1.6rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        color: var(--accent-2);
+        background: transparent;
+      }
+
+      .meta {
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        color: var(--accent-2);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .card {
+        padding: 1.4rem;
+        border-radius: 18px;
+        background: rgba(11, 16, 23, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 18px 45px var(--shadow);
+        animation: rise 0.8s ease both;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .card h3 {
+        margin: 0.4rem 0;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.9rem;
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(34, 240, 255, 0.12);
+        color: var(--accent);
+        font-family: var(--mono);
+      }
+
+      .section-title {
+        margin: 0;
+        font-size: 1.6rem;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: minmax(220px, 1fr) 1.4fr;
+        gap: 1.5rem;
+      }
+
+      .quote {
+        font-size: 1.2rem;
+        color: #f7fbff;
+      }
+
+      .quote::before {
+        content: "\201C";
+        color: var(--accent);
+        font-size: 2.4rem;
+        margin-right: 0.2rem;
+      }
+
+      @keyframes rise {
+        from {
+          opacity: 0;
+          transform: translateY(18px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .split {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="meta">Workshop Neon · NateTheProgrammer</div>
+        <h1>Build fast. Ship clean. Leave a trail of wow.</h1>
+        <p>
+          Electric energy with disciplined structure. This direction leans bold and modern while keeping
+          content easy to scan.
+        </p>
+        <div class="actions">
+          <button class="button">Contact Nate</button>
+          <button class="ghost">Browse Portfolio</button>
+        </div>
+      </header>
+
+      <section class="split">
+        <div>
+          <h2 class="section-title">Core Skills</h2>
+          <p class="meta">Front-end · Full-stack · Automation</p>
+          <div style="margin-top: 1rem; display: grid; gap: 0.6rem;">
+            <span class="pill">Next.js</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Ghost CMS</span>
+            <span class="pill">API Integrations</span>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="card" style="--delay: 0.1s;">
+            <div class="meta">Experience</div>
+            <h3>Senior Developer</h3>
+            <p>Led UI revamps, performance audits, and end-to-end delivery.</p>
+          </div>
+          <div class="card" style="--delay: 0.2s;">
+            <div class="meta">Portfolio</div>
+            <h3>Automation Console</h3>
+            <p>Reduced manual steps with cohesive workflows and dashboards.</p>
+          </div>
+          <div class="card" style="--delay: 0.3s;">
+            <div class="meta">Certifications</div>
+            <h3>Cloud + Security</h3>
+            <p>Proof of continuous learning, curated for relevance.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="card" style="--delay: 0.4s;">
+          <div class="meta">Portfolio</div>
+          <h3>Client Portal</h3>
+          <p>Clean layouts with strong usability and KPI visibility.</p>
+        </div>
+        <div class="card" style="--delay: 0.5s;">
+          <div class="meta">References</div>
+          <p class="quote">Nate is the kind of dev you can hand a gnarly problem to and sleep well.</p>
+          <div class="meta">Product Manager · 2024</div>
+        </div>
+        <div class="card" style="--delay: 0.6s;">
+          <div class="meta">Blog</div>
+          <h3>Shipping Notes</h3>
+          <p>Short, tactical updates pulled from Ghost without repo commits.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

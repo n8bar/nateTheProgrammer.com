@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blueprint Night — NTP Theme Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Saira+Semi+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0f14;
+        --bg-2: #121823;
+        --text: #e6edf3;
+        --muted: #95a3b8;
+        --line: rgba(86, 113, 145, 0.35);
+        --accent: #2f6bff;
+        --accent-2: #ffd166;
+        --chip: rgba(47, 107, 255, 0.16);
+        --shadow: rgba(10, 16, 26, 0.6);
+        --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        --font: "Saira Semi Condensed", "Segoe UI", system-ui, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        background: radial-gradient(circle at top left, rgba(47, 107, 255, 0.18), transparent 45%),
+          radial-gradient(circle at 20% 60%, rgba(255, 209, 102, 0.12), transparent 45%),
+          var(--bg);
+        color: var(--text);
+        min-height: 100vh;
+        line-height: 1.5;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(50, 74, 102, 0.25) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(50, 74, 102, 0.25) 1px, transparent 1px);
+        background-size: 36px 36px;
+        opacity: 0.2;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2.5rem clamp(1.5rem, 2vw, 2.5rem) 4rem;
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 2.5rem;
+      }
+
+      nav {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+        background: rgba(12, 18, 27, 0.72);
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        padding: 1.5rem;
+        box-shadow: 0 20px 40px var(--shadow);
+      }
+
+      nav h2 {
+        margin: 0 0 1rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.04em;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      nav li {
+        font-size: 1rem;
+        color: var(--muted);
+      }
+
+      nav li span {
+        color: var(--accent-2);
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        margin-right: 0.4rem;
+      }
+
+      header {
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, rgba(18, 24, 35, 0.92), rgba(12, 16, 25, 0.65));
+        box-shadow: 0 24px 60px var(--shadow);
+      }
+
+      header h1 {
+        font-size: clamp(2.6rem, 4vw, 3.4rem);
+        margin: 0 0 0.75rem;
+      }
+
+      header p {
+        margin: 0 0 1.5rem;
+        color: var(--muted);
+        max-width: 640px;
+      }
+
+      .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+
+      .chip {
+        padding: 0.35rem 0.75rem;
+        border-radius: 999px;
+        background: var(--chip);
+        color: var(--accent-2);
+        font-size: 0.9rem;
+        font-family: var(--mono);
+      }
+
+      .section {
+        margin-top: 2.5rem;
+        display: grid;
+        gap: 1rem;
+        animation: fadeUp 0.8s ease both;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .section h3 {
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: 0.04em;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 1.4rem;
+        background: rgba(10, 14, 22, 0.75);
+        box-shadow: 0 18px 40px var(--shadow);
+      }
+
+      .card h4 {
+        margin: 0 0 0.5rem;
+        font-size: 1.2rem;
+      }
+
+      .meta {
+        font-family: var(--mono);
+        font-size: 0.78rem;
+        color: var(--accent-2);
+        letter-spacing: 0.04em;
+      }
+
+      .timeline {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .timeline-item {
+        display: grid;
+        grid-template-columns: 24px 1fr;
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        margin-top: 0.4rem;
+        box-shadow: 0 0 12px rgba(47, 107, 255, 0.6);
+      }
+
+      .quote {
+        font-size: 1.1rem;
+        color: #dbe5f4;
+      }
+
+      .quote::before {
+        content: "\201C";
+        color: var(--accent-2);
+        font-size: 2rem;
+        margin-right: 0.25rem;
+      }
+
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .button {
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 600;
+        border: none;
+        box-shadow: 0 12px 30px rgba(47, 107, 255, 0.35);
+      }
+
+      .ghost {
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        color: var(--accent-2);
+        background: transparent;
+        font-weight: 600;
+      }
+
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 900px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+        nav {
+          position: static;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <h2>NTP Blueprint</h2>
+        <ul>
+          <li><span>01</span>Home</li>
+          <li><span>02</span>Skills</li>
+          <li><span>03</span>Experience</li>
+          <li><span>04</span>Portfolio</li>
+          <li><span>05</span>References</li>
+          <li><span>06</span>Certifications</li>
+          <li><span>07</span>Education</li>
+          <li><span>08</span>Blog</li>
+          <li><span>09</span>Contact</li>
+        </ul>
+      </nav>
+
+      <section>
+        <header>
+          <div class="meta">NATE THE PROGRAMMER</div>
+          <h1>Precision-built software, shipped with intent.</h1>
+          <p>
+            Resume site meets experiment lab. This blueprint locks in focus, clarity, and trust while
+            leaving room for bold front-end work.
+          </p>
+          <div class="cta">
+            <button class="button">Contact Nate</button>
+            <button class="ghost">View Portfolio</button>
+          </div>
+          <div class="chip-row" style="margin-top: 1.5rem;">
+            <span class="chip">Next.js</span>
+            <span class="chip">Ghost Headless</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Full-Stack</span>
+          </div>
+        </header>
+
+        <div class="section" style="--delay: 0.1s;">
+          <h3>Skills Snapshot</h3>
+          <div class="grid-2">
+            <div class="card">
+              <div class="meta">Front-end</div>
+              <h4>Interfaces with signal</h4>
+              <p>React, Next.js, accessibility-minded UI, motion with purpose.</p>
+            </div>
+            <div class="card">
+              <div class="meta">Back-end</div>
+              <h4>APIs that stay calm</h4>
+              <p>Node services, integrations, and workflow automation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" style="--delay: 0.2s;">
+          <h3>Experience Timeline</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="card">
+                <div class="meta">2021 — Present</div>
+                <h4>Senior Developer · ExampleCo</h4>
+                <p>Led modernizations, shipped customer-facing tooling, and improved release cadence.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="dot"></div>
+              <div class="card">
+                <div class="meta">2018 — 2021</div>
+                <h4>Web Application Developer · Tricom</h4>
+                <p>Built internal apps, automated reporting, and delivered client portals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" style="--delay: 0.3s;">
+          <h3>Portfolio Highlights</h3>
+          <div class="grid-2">
+            <div class="card">
+              <div class="meta">Playground</div>
+              <h4>Telemetry Console</h4>
+              <p>Realtime dashboards, data storytelling, and modular analytics.</p>
+            </div>
+            <div class="card">
+              <div class="meta">Client Build</div>
+              <h4>Invoice Automation</h4>
+              <p>Streamlined ops with clean UI and resilient back-end flows.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section" style="--delay: 0.4s;">
+          <h3>References</h3>
+          <div class="card">
+            <p class="quote">Nate brings clarity to complicated projects and stays calm under pressure.</p>
+            <div class="meta">Engineering Lead · 2023</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Editorial Signal — NTP Theme Preview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Saira+Semi+Condensed:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0f1116;
+        --paper: rgba(20, 24, 30, 0.9);
+        --text: #f3f0e8;
+        --muted: #c4bdaf;
+        --accent: #c9a227;
+        --accent-2: #5f738d;
+        --shadow: rgba(6, 8, 12, 0.7);
+        --font: "Saira Semi Condensed", "Segoe UI", system-ui, sans-serif;
+        --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: var(--font);
+        color: var(--text);
+        background: radial-gradient(circle at 25% 20%, rgba(201, 162, 39, 0.15), transparent 50%),
+          linear-gradient(180deg, #0b0d11 0%, #11151c 35%, #0f1218 100%);
+        min-height: 100vh;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(120deg, rgba(255, 255, 255, 0.03) 0%, transparent 35%),
+          linear-gradient(0deg, rgba(255, 255, 255, 0.04), transparent 55%);
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 2.5rem clamp(1.5rem, 2vw, 2.5rem) 4rem;
+        display: grid;
+        gap: 2.5rem;
+      }
+
+      header {
+        display: grid;
+        gap: 1.5rem;
+        padding: 2.75rem;
+        border-radius: 28px;
+        background: var(--paper);
+        border: 1px solid rgba(201, 162, 39, 0.25);
+        box-shadow: 0 24px 60px var(--shadow);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: clamp(2.7rem, 4vw, 3.6rem);
+      }
+
+      header p {
+        margin: 0;
+        color: var(--muted);
+        max-width: 640px;
+      }
+
+      .meta {
+        font-family: var(--mono);
+        letter-spacing: 0.12em;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.2rem;
+      }
+
+      .panel {
+        padding: 1.4rem;
+        border-radius: 20px;
+        background: rgba(18, 22, 29, 0.85);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 16px 40px var(--shadow);
+        animation: fadeIn 0.9s ease both;
+        animation-delay: var(--delay, 0s);
+      }
+
+      .panel h3 {
+        margin: 0.3rem 0 0.6rem;
+      }
+
+      .columns {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1.8rem;
+      }
+
+      .quote {
+        font-size: 1.25rem;
+        color: #f5f0e4;
+      }
+
+      .quote::before {
+        content: "\201C";
+        color: var(--accent);
+        font-size: 2.4rem;
+        margin-right: 0.2rem;
+      }
+
+      .cta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .button {
+        padding: 0.75rem 1.6rem;
+        border-radius: 999px;
+        border: none;
+        background: var(--accent);
+        color: #1a1202;
+        font-weight: 600;
+      }
+
+      .ghost {
+        padding: 0.75rem 1.6rem;
+        border-radius: 999px;
+        border: 1px solid rgba(201, 162, 39, 0.4);
+        background: transparent;
+        color: var(--accent);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(14px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 900px) {
+        .columns {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation: none !important;
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="meta">Editorial Signal · NateTheProgrammer</div>
+        <h1>Quiet confidence. Clear signal. Crafted work.</h1>
+        <p>
+          An editorial layout with generous spacing, premium tone, and room for thoughtful storytelling.
+        </p>
+        <div class="cta">
+          <button class="button">Contact Nate</button>
+          <button class="ghost">Explore Portfolio</button>
+        </div>
+      </header>
+
+      <section class="columns">
+        <div class="panel" style="--delay: 0.1s;">
+          <div class="meta">Experience</div>
+          <h3>Full-stack leadership, shipped deliberately.</h3>
+          <p>
+            Focused on UX clarity, automation, and resilience. This section reads like a profile
+            with highlight callouts.
+          </p>
+        </div>
+        <div class="panel" style="--delay: 0.2s;">
+          <div class="meta">Education</div>
+          <h3>BS Software Development</h3>
+          <p>Formal education paired with continued self-driven learning.</p>
+        </div>
+      </section>
+
+      <section class="grid">
+        <div class="panel" style="--delay: 0.3s;">
+          <div class="meta">Portfolio</div>
+          <h3>Client Delivery Suite</h3>
+          <p>Case study coverage with measurable outcomes and tidy visuals.</p>
+        </div>
+        <div class="panel" style="--delay: 0.4s;">
+          <div class="meta">Skills</div>
+          <h3>UI Systems + APIs</h3>
+          <p>Next.js, TypeScript, Ghost integration, and performance-focused design.</p>
+        </div>
+        <div class="panel" style="--delay: 0.5s;">
+          <div class="meta">References</div>
+          <p class="quote">Nate delivers polished work and communicates with precision.</p>
+          <div class="meta">Director of Engineering · 2022</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

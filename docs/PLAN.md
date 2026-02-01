@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 21:38
+- Last updated: 2026-01-31 21:45
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).
@@ -12,15 +12,15 @@
 1. [x] Scope and information architecture [completed 26/01/31 19:36]
    - [x] Confirm pages/sections (legacy tabs + blog included, flexible baseline). [completed 26/01/31 19:36]
    - [x] Define content requirements per section (based on legacy baseline + LinkedIn, flexible baseline). [completed 26/01/31 19:36]
-
-## Upcoming Milestones (in order)
-2. Technical architecture
+2. [x] Technical architecture [completed 26/01/31 21:45]
    - [x] Pick framework (Next.js). [completed 26/01/31 20:13]
    - [x] Initialize git repository and remote. [completed 26/01/31 20:30]
    - [x] Decide content update workflow (self-hosted Ghost headless blog; posts not stored in repo). [completed 26/01/31 21:14]
    - [x] Decide stack (TypeScript, CSS Modules + CSS variables, pnpm, ESLint + Prettier). [completed 26/01/31 21:27]
    - [x] Define testing strategy (mixed TDD: Vitest + RTL for logic, Playwright smoke; UI after the fact). [completed 26/01/31 21:27]
-   - [x] Define routing/content structure and data sources. [completed 26/01/31 21:38]
+   - [x] Define routing/content structure and data sources. [completed 26/01/31 21:45]
+
+## Upcoming Milestones (in order)
 3. UX direction
    - [ ] Visual theme, typography, motion, and layout system.
    - [ ] UX guardrails checklist applied per section.
@@ -79,7 +79,7 @@
 - Skills: curated skills (core stack + strengths), not full LinkedIn list
 - Experience: IT-only roles, reverse-chronological
 - Portfolio: project grid + case-study highlights
-- References: testimonials/endorsements (only if real quotes exist)
+- References: testimonials/endorsements (real quotes exist)
 - Certifications: cert list with dates
 - Education: BS in Software Development only
 - Blog: active section with posts list + post detail pages
@@ -115,7 +115,7 @@
   - Fields: title, short summary, role, tech stack, links (demo/GitHub), 1 image each if available.
   - Source: GitHub + existing site + manual updates.
 - References
-  - Only if real quotes exist.
+  - Real quotes exist; include them.
   - Fields: quote, name, relationship/context, date (optional).
 - Certifications
   - 1-2 certifications at launch.
