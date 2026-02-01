@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-01-31 22:53
+- Validate contrast ratios and line-length targets for design tokens.
+- Add CONTACT_EMAIL placeholder to `.env.example`.
+
 ## 2026-01-31 22:48
 - Implement design tokens and layout primitives (CSS variables, container/grid utilities).
 
