@@ -4,6 +4,9 @@
 - Reformat plan task lists to use per-level numeric prefixes with checkboxes after numbers.
 - Document numeric prefix format for plan task lists in workflow.
 
+## 2026-01-31 22:41
+- Allow multilevel decimals for reference only (not in plan items).
+
 ## 2026-01-31 22:26
 - Expand Global shell + navigation task into a detailed checklist.
 
