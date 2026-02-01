@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-01-31 20:26
+- Clarify that numbered milestones/todos imply the default focus order.
+
 ## 2026-01-31 20:24
 - Move MS1 into Completed with checkmarks and reorder MS2/MS3.
 - Update open questions to remove the framework decision.

@@ -4,7 +4,7 @@
 - Keep `docs/CHANGELOG.md` updated alongside `docs/PLAN.md` when scope/decisions shift. When adding changes, use the date and time (timestamp) from the system you're running on (format: YYYY-MM-DD HH:MM).
 - Specs come first: align on the requirement in the docs, implement, then update the docs to check off what shipped; only reverse-engineer specs from existing code when we’ve explicitly agreed to do so.
 - Docs are primarily internal architecture/engineering notes for us and future maintainers, not end-user documentation.
-- Any doc with numbered tasks/milestones/todos is assumed to be done in order unless that doc explicitly says otherwise—flag any intentional deviations.
+- Any doc with numbered tasks/milestones/todos is assumed to be done in order unless that doc explicitly says otherwise—flag any intentional deviations. This order is the default focus unless you specify otherwise; no need to ask which item to tackle when a clear next item exists.
 - If the user is asking for your input/feedback (e.g. “what do you think?”, “should we…?”, “does this make sense?”), answer first and confirm before making changes—even if the request sounds actionable.
 - If asked to implement code before a spec exists, pause to confirm and recommend documenting the scope first (write the spec, then ship the code) unless the user explicitly insists otherwise.
 - Before any push/PR, keep all docs in sync: update specs first when scope shifts, then code, and ensure everything under `docs/` (plus README links) reflects the same state in the same commit.
