@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { JetBrains_Mono, Saira_Semi_Condensed } from 'next/font/google';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 const saira = Saira_Semi_Condensed({
   subsets: ['latin'],
@@ -37,6 +38,7 @@ export default function RootLayout({
         <main id="content" className="site-main">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

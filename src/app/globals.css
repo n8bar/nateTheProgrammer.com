@@ -359,6 +359,135 @@ p {
   outline-offset: 2px;
 }
 
+.site-footer {
+  border-top: 1px solid var(--color-outline);
+  background: rgba(11, 15, 20, 0.85);
+  backdrop-filter: blur(10px);
+}
+
+.footer-inner {
+  display: grid;
+  gap: var(--space-6);
+  padding: var(--space-7) 0 var(--space-6);
+}
+
+.footer-cta {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.footer-cta-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.footer-cta-text {
+  margin: 0;
+  max-width: var(--measure);
+}
+
+.footer-cta-button {
+  justify-self: start;
+  margin-top: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-outline);
+  background: var(--color-accent-soft);
+  color: var(--color-text);
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-cta-button:hover,
+.footer-cta-button:focus-visible {
+  color: var(--color-text);
+  background: rgba(255, 209, 102, 0.16);
+  transform: translateY(-1px);
+}
+
+.footer-columns {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.footer-col {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.footer-col-title {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: var(--color-muted);
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.footer-link {
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+.footer-link:hover,
+.footer-link:focus-visible {
+  color: var(--color-accent);
+}
+
+.footer-base {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-5) 0 var(--space-7);
+  border-top: 1px solid var(--color-line);
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.footer-legal {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.footer-backtop {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+}
+
+.footer-backtop:hover,
+.footer-backtop:focus-visible {
+  color: var(--color-accent);
+}
+
+@media (min-width: 760px) {
+  .footer-inner {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: start;
+    gap: var(--space-8);
+  }
+}
+
 @media (min-width: 900px) {
   .nav-desktop {
     display: block;

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-06 17:04
+- Build the global footer: CTA/backlink area (Contact link, server-only email per UX guardrails), Site + Elsewhere link columns (GitHub/LinkedIn, external links use `rel="noopener noreferrer"`), and legal line; responsive stacking via CSS grid. Wire `Footer` into the root layout.
+- Note: LinkedIn URL is a placeholder (`linkedin.com/in/n8bar`) pending confirmation.
+
 ## 2026-06-06 16:24
 - Serve the project from its dedicated host IP `192.168.68.28` (already reserved on `enp0s3` for this project), matching the per-app per-IP convention on the VM.
 - Containerize dev serving: add `Dockerfile` (dev image), `.dockerignore`, and `compose.yaml` publishing `192.168.68.28:80 -> 3000` with hot reload (source bind mount + `WATCHPACK_POLLING`).

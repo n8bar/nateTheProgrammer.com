@@ -1,7 +1,7 @@
 # Plan
 
 ## Status
-- Last updated: 2026-06-06 16:24
+- Last updated: 2026-06-06 17:04
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 
 ## Project Overview
@@ -37,10 +37,10 @@
             2) [x] Implement desktop nav layout + active states [completed 26/01/31 23:23]
             3) [x] Implement mobile nav (menu, focus trap, close behavior) [completed 26/01/31 23:23]
             4) [x] Add skip link + focus-visible styles [completed 26/01/31 23:23]
-         3) [ ] Footer
-            1) [ ] Define footer content blocks (contact, social, legal)
-            2) [ ] Add backlink/CTA area
-            3) [ ] Ensure responsive stacking and spacing
+         3) [x] Footer [completed 26/06/06 17:04]
+            1) [x] Define footer content blocks (contact, social, legal) [completed 26/06/06 17:04]
+            2) [x] Add backlink/CTA area [completed 26/06/06 17:04]
+            3) [x] Ensure responsive stacking and spacing [completed 26/06/06 17:04]
          4) [ ] Layout shell integration
             1) [ ] Wire global layout to app router
             2) [ ] Add base typography styles and rhythm
