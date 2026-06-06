@@ -1,0 +1,21 @@
+name: ntp
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    environment:
+      # Poll-based file watching so HMR works across the bind mount on Linux.
+      WATCHPACK_POLLING: "true"
+    ports:
+      # Dedicated host IP on :80, matching the per-app convention on this VM.
+      # NTP_BIND_IP is read from .env.
+      - "${NTP_BIND_IP}:80:3000"
+    volumes:
+      - .:/app
+      # Anonymous volumes preserve the image's install/build over the bind mount.
+      - /app/node_modules
+      - /app/.next
+    restart: unless-stopped

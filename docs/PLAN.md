@@ -1,7 +1,8 @@
 # Plan
 
 ## Status
-- Last updated: 2026-01-31 23:23
+- Last updated: 2026-06-06 16:24
+- Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 
 ## Project Overview
 - Resume site + internet playground for nateTheProgrammer (n8).

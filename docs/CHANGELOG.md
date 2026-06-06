@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-06-06 16:24
+- Serve the project from its dedicated host IP `192.168.68.28` (already reserved on `enp0s3` for this project), matching the per-app per-IP convention on the VM.
+- Containerize dev serving: add `Dockerfile` (dev image), `.dockerignore`, and `compose.yaml` publishing `192.168.68.28:80 -> 3000` with hot reload (source bind mount + `WATCHPACK_POLLING`).
+- Document `NTP_BIND_IP` (`192.168.68.28`) as the compose host-port source and sync `.env.example`.
+- Update `docs/DevEnv.md` runbook to the containerized workflow (`docker compose up -d --build`), with the bare `pnpm dev` flow kept as a fallback.
+- Housekeeping (operational, not committed): chown `/opt/ntp` from root to `n8`, install pnpm for `n8`, rename `AGENTS.md` -> `CLAUDE.md`.
+
 ## 2026-01-31 23:46
 - Remove nginx placeholder stack (`compose.yaml`) and drop the placeholder `site/index.html`.
 - Update DevEnv runbook to use the Next.js dev server instead of Docker.
