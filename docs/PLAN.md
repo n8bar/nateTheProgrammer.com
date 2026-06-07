@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-06 21:05
+- Last updated: 2026-06-06 21:42
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -49,9 +49,9 @@ This plan is the route to meeting the design specification. The intended outcome
             2) [x] Add base typography styles and rhythm [completed 26/06/06 21:05]
             3) [x] Add background grid + glow layers [completed 26/06/06 21:05]
          5) [ ] Apply UX guardrails checklist
-            1) [ ] Verify focus order + keyboard navigation
-            2) [ ] Verify no layout shift for nav states
-            3) [ ] Verify mobile tap targets + contrast
+            1) [x] Verify focus order + keyboard navigation [completed 26/06/06 21:42] — skip link, mobile-menu focus trap + Escape + focus restore, visible focus-visible rings, ARIA on toggle/dialog all verified.
+            2) [x] Verify no layout shift for nav states [completed 26/06/06 21:42] — active state changes color/background only (no resize); next/font fallback avoids font CLS; added `scrollbar-gutter: stable` so opening the mobile menu (body overflow hidden) causes no shift.
+            3) [ ] Verify mobile tap targets + contrast — tap targets done (hamburger bumped to 44px min; mobile menu links ~50px; body 16.3:1 and muted 7.5:1 text pass AA). OPEN: accent blue `#2f6bff` as small text fails AA (4.27:1 base / 3.95 panel / 3.73 active pill; needs 4.5) — affects eyebrows, active nav, prose links. Fix pending palette decision (see Open Questions).
       2) [ ] Home page (the lead: intro + featured case studies + proof + contact CTA)
          1) [ ] Compose hero, value prop, and primary CTA
          2) [ ] Feature the case studies (CryptoZing, TermiWeb, DoItList) with one-line proof each
@@ -151,5 +151,6 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Open Questions
 - Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
+- Accent contrast: `#2f6bff` fails AA as small text (4.27:1). Approve a lighter accent-for-text token (`~#6f97ff`, ~6.9:1) used only for accent-sized text, keeping `#2f6bff` for large text/icons/borders? Spec Visual Direction lists `#2f6bff`, so this touches the locked palette.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?

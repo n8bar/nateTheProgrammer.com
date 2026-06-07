@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-06 21:42
+- UX guardrails verification pass on the global shell. Focus order/keyboard nav and no-layout-shift verified and checked off.
+- Add `scrollbar-gutter: stable` (no shift when the mobile menu toggles body overflow) and bump the mobile nav toggle to a 44px min tap target.
+- Contrast finding (open): accent `#2f6bff` fails AA as small text (4.27:1 base / 3.95 panel / 3.73 active pill). Body and muted text pass. Recommended fix logged as an open question: a lighter accent-for-text token (~`#6f97ff`) while keeping `#2f6bff` for large text/icons/borders.
+
 ## 2026-06-06 21:16
 - Align the footer with the proof-first direction: reframe the CTA to lead with proof and speak to hiring managers first ("See the work, then let's talk."), and add a Selected work column for the case-study set (CryptoZing, TermiWeb, DoItList) linking to `/work/<slug>`.
 - Adjust footer layout so three link columns sit cleanly beside the CTA. Note assumed case-study slugs in PLAN Routing.
