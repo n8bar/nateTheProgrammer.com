@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-06 20:44
+- Split out `docs/DesignSpec.md` as the design specification: intended outcomes, behavior, functionality, and standards (the *what*/*why*) — purpose/positioning, audience, experience principles, IA intent, content standards, visual/sensory standards, behavior, accessibility (references `UX_GUARDRAILS.md`), and quality bars. The spec does not reference the plan or describe how to build.
+- Trim `docs/PLAN.md` to the route only: removed the Positioning & Priorities, Visual Direction, Constraints, Information Architecture, and Content Requirements sections (now in the spec) and added a pointer up to the spec. PLAN keeps milestones, content sources, data sourcing, and routing.
+- Add a workflow rule defining the distinct, non-overlapping roles of DesignSpec (what/why) vs PLAN (how).
+- Note in `UX_GUARDRAILS.md` that it is the accessibility/UX layer the design spec references.
+
 ## 2026-06-06 19:58
 - Reset the information architecture to a lean, proof-first structure (driver: local `.brainstorm` decision + coaching notes, untracked).
 - Primary nav cut from 10 items to 5: Home, Work, Experience, Writing, Contact. Playground demoted to secondary (footer). Update `Header` nav and `Footer` links accordingly.

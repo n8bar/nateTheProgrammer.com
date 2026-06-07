@@ -2,6 +2,8 @@
 
 Industry-aligned practices to apply across this resume site and the Playground shell (not the embedded demos themselves).
 
+This is the authoritative accessibility and UX-behavior layer of the design spec; [`docs/DesignSpec.md`](DesignSpec.md) references it.
+
 ## Baseline standards
 - Nielsen's 10 heuristics: match real-world language, visibility of status, user control, consistency, error prevention/recovery, recognition over recall, efficiency for power users, minimalist copy, clear errors/help.
 - WCAG 2.2 AA: focus order, keyboard operability, status messages, contrast, target sizes, headings/labels.

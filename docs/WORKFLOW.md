@@ -3,6 +3,7 @@
 ## Process Rules
 - Keep `docs/CHANGELOG.md` updated alongside `docs/PLAN.md` when scope/decisions shift. When adding changes, use the date and time (timestamp) from the system you're running on (format: YYYY-MM-DD HH:MM).
 - Specs come first: align on the requirement in the docs, implement, then update the docs to check off what shipped; only reverse-engineer specs from existing code when we’ve explicitly agreed to do so.
+- Doc roles are distinct and must not bleed: `docs/DesignSpec.md` is the design specification (intended outcomes, behavior, functionality, standards — the *what* and *why*), and `docs/PLAN.md` is the route to it (milestones, action items, implementation decisions — the *how*). The spec never describes how to build and never references the plan; the plan never redefines the standards. When scope shifts, update the spec first, then the plan, then code.
 - Docs are primarily internal architecture/engineering notes for us and future maintainers, not end-user documentation.
 - Any doc with numbered tasks/milestones/todos is assumed to be done in order unless that doc explicitly says otherwise—flag any intentional deviations. This order is the default focus unless you specify otherwise; no need to ask which item to tackle when a clear next item exists.
 - If a plan splits milestones into Completed and Upcoming sections, keep numbering continuous across both sections.
