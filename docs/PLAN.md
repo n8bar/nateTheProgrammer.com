@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-06 20:44
+- Last updated: 2026-06-06 21:05
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -44,10 +44,10 @@ This plan is the route to meeting the design specification. The intended outcome
             1) [x] Define footer content blocks (contact, social, legal) [completed 26/06/06 17:04]
             2) [x] Add backlink/CTA area [completed 26/06/06 17:04]
             3) [x] Ensure responsive stacking and spacing [completed 26/06/06 17:04]
-         4) [ ] Layout shell integration
-            1) [ ] Wire global layout to app router
-            2) [ ] Add base typography styles and rhythm
-            3) [ ] Add background grid + glow layers
+         4) [x] Layout shell integration [completed 26/06/06 21:05]
+            1) [x] Wire global layout to app router [completed 26/06/06 21:05]
+            2) [x] Add base typography styles and rhythm [completed 26/06/06 21:05]
+            3) [x] Add background grid + glow layers [completed 26/06/06 21:05]
          5) [ ] Apply UX guardrails checklist
             1) [ ] Verify focus order + keyboard navigation
             2) [ ] Verify no layout shift for nav states
@@ -122,7 +122,10 @@ This plan is the route to meeting the design specification. The intended outcome
 - Site copy will be a fresh rewrite; LinkedIn text is reference only.
 - Reference file: `.cybercreek/LinkedInSummary1.md` (untracked).
 - Education: list the BS in Software Development only (omit GED and high school).
-- Case-study facts: from GitHub (github.com/n8bar) + Nate; DoItList is observable live on the dev VM.
+- Case studies (repos + live links found; deeper problem/build/results facts still to come from Nate):
+  - CryptoZing — https://github.com/n8bar/CryptoZing (PHP) — Bitcoin invoicing with on-chain payment tracking — live: https://cryptozing.app
+  - TermiWeb — https://github.com/n8bar/TermiWeb (TypeScript) — open-source browser terminal for a Windows host — live: https://termiweb.com
+  - DoItList — https://github.com/n8bar/DoItList (Elixir / Phoenix LiveView + Postgres) — task trees with rolled-up progress — live on the dev VM
 - Writing supports the main story; keep credible legacy posts, drop filler.
 
 ## Data Sourcing
@@ -147,6 +150,6 @@ This plan is the route to meeting the design specification. The intended outcome
 - Retired routes (folded into the above): `/skills`, `/references`, `/certifications`, `/education`; `/portfolio` → `/work`; `/blog` → `/writing`.
 
 ## Open Questions
-- Confirm the three case studies (CryptoZing, TermiWeb, DoItList) and gather per-study facts (problem/build/results/links) — needed when Work content is built, not for the shell.
+- Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?

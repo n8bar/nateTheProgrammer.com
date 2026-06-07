@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-06 21:05
+- Layout shell integration: add a base typography scale and rhythm (heading hierarchy via clamp, prose flow, blockquotes for testimonials, inline/code blocks, horizontal rule) and a second fixed background glow layer above the blueprint grid. Confirm the global layout is wired through the app router.
+- Capture the three case-study repos/live links in PLAN Content Sources (CryptoZing, TermiWeb, DoItList); deeper per-study facts still pending from Nate.
+
 ## 2026-06-06 20:52
 - Set the real LinkedIn URL in the footer (`linkedin.com/in/nate-barlow`); remove the placeholder TODO and resolve the open question.
 
