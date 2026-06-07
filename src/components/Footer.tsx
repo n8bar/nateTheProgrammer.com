@@ -10,8 +10,7 @@ const SITE_LINKS = [
 
 const SOCIAL_LINKS = [
   { href: 'https://github.com/n8bar', label: 'GitHub' },
-  // TODO: confirm the real LinkedIn profile URL before launch.
-  { href: 'https://www.linkedin.com/in/n8bar', label: 'LinkedIn' },
+  { href: 'https://www.linkedin.com/in/nate-barlow/', label: 'LinkedIn' },
 ];
 
 export default function Footer() {

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-06 20:52
+- Set the real LinkedIn URL in the footer (`linkedin.com/in/nate-barlow`); remove the placeholder TODO and resolve the open question.
+
 ## 2026-06-06 20:44
 - Split out `docs/DesignSpec.md` as the design specification: intended outcomes, behavior, functionality, and standards (the *what*/*why*) — purpose/positioning, audience, experience principles, IA intent, content standards, visual/sensory standards, behavior, accessibility (references `UX_GUARDRAILS.md`), and quality bars. The spec does not reference the plan or describe how to build.
 - Trim `docs/PLAN.md` to the route only: removed the Positioning & Priorities, Visual Direction, Constraints, Information Architecture, and Content Requirements sections (now in the spec) and added a pointer up to the spec. PLAN keeps milestones, content sources, data sourcing, and routing.

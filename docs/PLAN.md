@@ -147,7 +147,6 @@ This plan is the route to meeting the design specification. The intended outcome
 - Retired routes (folded into the above): `/skills`, `/references`, `/certifications`, `/education`; `/portfolio` → `/work`; `/blog` → `/writing`.
 
 ## Open Questions
-- Confirm the three case studies (CryptoZing, TermiWeb, DoItList) and gather per-study facts (problem/build/results/links).
-- Confirm the real LinkedIn profile URL (footer currently uses a placeholder).
+- Confirm the three case studies (CryptoZing, TermiWeb, DoItList) and gather per-study facts (problem/build/results/links) — needed when Work content is built, not for the shell.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?
