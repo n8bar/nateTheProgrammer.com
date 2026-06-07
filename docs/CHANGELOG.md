@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-07 08:09
+- Resolve the accent contrast finding: add `--color-accent-text` (#6f97ff, ~6.9:1) for accent-sized text (eyebrows, active nav, prose links, link hovers), keeping #2f6bff for large text, the brand mark, icons, and borders. All accent text now passes WCAG AA.
+- Update the design spec palette to record the AA accent-text variant.
+- Close out the global shell: check off the UX guardrails checklist and the Global shell + navigation milestone.
+
 ## 2026-06-06 21:42
 - UX guardrails verification pass on the global shell. Focus order/keyboard nav and no-layout-shift verified and checked off.
 - Add `scrollbar-gutter: stable` (no shift when the mobile menu toggles body overflow) and bump the mobile nav toggle to a 44px min tap target.

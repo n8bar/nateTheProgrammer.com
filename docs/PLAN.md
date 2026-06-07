@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-06 21:42
+- Last updated: 2026-06-07 08:09
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -30,7 +30,7 @@ This plan is the route to meeting the design specification. The intended outcome
 ## Upcoming Milestones (in order)
 4) [ ] MVP build
    1) [ ] Implement core pages and global layout
-      1) [ ] Global shell + navigation
+      1) [x] Global shell + navigation [completed 26/06/07 08:09]
          1) [x] Design tokens + layout primitives [completed 26/01/31 22:53]
             1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
             2) [x] Create container and grid utilities [completed 26/01/31 22:48]
@@ -48,10 +48,10 @@ This plan is the route to meeting the design specification. The intended outcome
             1) [x] Wire global layout to app router [completed 26/06/06 21:05]
             2) [x] Add base typography styles and rhythm [completed 26/06/06 21:05]
             3) [x] Add background grid + glow layers [completed 26/06/06 21:05]
-         5) [ ] Apply UX guardrails checklist
+         5) [x] Apply UX guardrails checklist [completed 26/06/07 08:09]
             1) [x] Verify focus order + keyboard navigation [completed 26/06/06 21:42] — skip link, mobile-menu focus trap + Escape + focus restore, visible focus-visible rings, ARIA on toggle/dialog all verified.
             2) [x] Verify no layout shift for nav states [completed 26/06/06 21:42] — active state changes color/background only (no resize); next/font fallback avoids font CLS; added `scrollbar-gutter: stable` so opening the mobile menu (body overflow hidden) causes no shift.
-            3) [ ] Verify mobile tap targets + contrast — tap targets done (hamburger bumped to 44px min; mobile menu links ~50px; body 16.3:1 and muted 7.5:1 text pass AA). OPEN: accent blue `#2f6bff` as small text fails AA (4.27:1 base / 3.95 panel / 3.73 active pill; needs 4.5) — affects eyebrows, active nav, prose links. Fix pending palette decision (see Open Questions).
+            3) [x] Verify mobile tap targets + contrast [completed 26/06/07 08:09] — tap targets done (hamburger 44px min; mobile menu links ~50px). Contrast: body 16.3:1 and muted 7.5:1 pass AA; added `--color-accent-text` (#6f97ff, ~6.9:1) for accent-sized text (eyebrows, active nav, prose links), keeping #2f6bff for large text/icons/borders — all accent text now passes AA.
       2) [ ] Home page (the lead: intro + featured case studies + proof + contact CTA)
          1) [ ] Compose hero, value prop, and primary CTA
          2) [ ] Feature the case studies (CryptoZing, TermiWeb, DoItList) with one-line proof each
@@ -151,6 +151,5 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Open Questions
 - Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
-- Accent contrast: `#2f6bff` fails AA as small text (4.27:1). Approve a lighter accent-for-text token (`~#6f97ff`, ~6.9:1) used only for accent-sized text, keeping `#2f6bff` for large text/icons/borders? Spec Visual Direction lists `#2f6bff`, so this touches the locked palette.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?

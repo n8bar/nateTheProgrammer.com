@@ -47,7 +47,7 @@ This document defines the intended outcomes, behavior, functionality, and standa
 ## Visual & Sensory Standards
 - Theme: Blueprint Night.
 - Typography: Saira Semi Condensed for primary text; JetBrains Mono for metadata and labels.
-- Palette: charcoal base, accent blue (#2f6bff), gold outlines (#ffd166), muted slate text.
+- Palette: charcoal base, accent blue (#2f6bff) for large text/icons/borders with a lighter accent (#6f97ff) for accent-sized text to meet AA contrast, gold outlines (#ffd166), muted slate text.
 - Background: a subtle blueprint grid with soft radial glows.
 - Composition: an asymmetric grid with card-based sections and timeline accents; generous, consistent rhythm.
 - Brand mark: the glasses-on-lightbulb logo.
