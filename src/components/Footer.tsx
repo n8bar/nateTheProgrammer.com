@@ -30,10 +30,10 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-cta">
           <span className="eyebrow">Get in touch</span>
-          <h2 className="footer-cta-title">See the work, then let&rsquo;s talk.</h2>
+          <h2 className="footer-cta-title">See the work, then let&rsquo;s discuss.</h2>
           <p className="footer-cta-text text-muted">
-            I build practical software end to end. If you&rsquo;re hiring or have a project in
-            mind, I&rsquo;d like to hear about it.
+            I build practical software end to end. If you&rsquo;re looking for talent or have an
+            interesting project in mind, I&rsquo;d love to learn about it.
           </p>
           {/* Contact address stays server-only (UX guardrails) — link to the form, never print the email. */}
           <Link href="/contact" className="footer-cta-button">
