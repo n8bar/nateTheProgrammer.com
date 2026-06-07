@@ -4,16 +4,12 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
+// Proof-first nav: lead with Work, keep secondary material (Playground) in the footer.
 const NAV_ITEMS = [
   { href: '/', label: 'Home' },
-  { href: '/skills', label: 'Skills' },
+  { href: '/work', label: 'Work' },
   { href: '/experience', label: 'Experience' },
-  { href: '/portfolio', label: 'Portfolio' },
-  { href: '/references', label: 'References' },
-  { href: '/certifications', label: 'Certifications' },
-  { href: '/education', label: 'Education' },
-  { href: '/blog', label: 'Blog' },
-  { href: '/playground', label: 'Playground' },
+  { href: '/writing', label: 'Writing' },
   { href: '/contact', label: 'Contact' },
 ];
 

@@ -2,9 +2,10 @@ import Link from 'next/link';
 
 const SITE_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/portfolio', label: 'Portfolio' },
+  { href: '/work', label: 'Work' },
   { href: '/experience', label: 'Experience' },
-  { href: '/blog', label: 'Blog' },
+  { href: '/writing', label: 'Writing' },
+  { href: '/playground', label: 'Playground' },
 ];
 
 const SOCIAL_LINKS = [

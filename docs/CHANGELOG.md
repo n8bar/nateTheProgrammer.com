@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-06-06 19:58
+- Reset the information architecture to a lean, proof-first structure (driver: local `.brainstorm` decision + coaching notes, untracked).
+- Primary nav cut from 10 items to 5: Home, Work, Experience, Writing, Contact. Playground demoted to secondary (footer). Update `Header` nav and `Footer` links accordingly.
+- Fold standalone Skills/References/Certifications/Education pages into inline proof (Home + Experience credentials block); rename Portfolio -> Work and Blog -> Writing.
+- Add a Positioning & Priorities section (audience, prominence order, first proof set: CryptoZing/TermiWeb/DoItList) and reframe Content Requirements/Routing/Data Sourcing around proof over legacy inventory.
+- Replace the legacy-baseline feature set with the proof-first framing in `docs/PLAN.md`.
+
 ## 2026-06-06 17:04
 - Build the global footer: CTA/backlink area (Contact link, server-only email per UX guardrails), Site + Elsewhere link columns (GitHub/LinkedIn, external links use `rel="noopener noreferrer"`), and legal line; responsive stacking via CSS grid. Wire `Footer` into the root layout.
 - Note: LinkedIn URL is a placeholder (`linkedin.com/in/n8bar`) pending confirmation.
