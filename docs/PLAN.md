@@ -140,7 +140,7 @@ This plan is the route to meeting the design specification. The intended outcome
 ## Routing + Data Sources
 - `/` (Home): `src/content/site.json` (hero/value prop/CTA, featured case-study refs, skills summary, testimonials).
 - `/work`: Ghost posts tagged `work` (case-study index).
-- `/work/[slug]`: Ghost post detail (case-study template).
+- `/work/[slug]`: Ghost post detail (case-study template). Assumed slugs: `cryptozing`, `termiweb`, `doitlist` (the footer's Selected work links target these; set Ghost slugs to match).
 - `/experience`: Ghost page `experience`, plus an in-repo Credentials block (skills/education/certs) from `site.json`.
 - `/writing`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
 - `/writing/[slug]`: Ghost post detail; server-side fetch with revalidation.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-06 21:16
+- Align the footer with the proof-first direction: reframe the CTA to lead with proof and speak to hiring managers first ("See the work, then let's talk."), and add a Selected work column for the case-study set (CryptoZing, TermiWeb, DoItList) linking to `/work/<slug>`.
+- Adjust footer layout so three link columns sit cleanly beside the CTA. Note assumed case-study slugs in PLAN Routing.
+
 ## 2026-06-06 21:05
 - Layout shell integration: add a base typography scale and rhythm (heading hierarchy via clamp, prose flow, blockquotes for testimonials, inline/code blocks, horizontal rule) and a second fixed background glow layer above the blueprint grid. Confirm the global layout is wired through the app router.
 - Capture the three case-study repos/live links in PLAN Content Sources (CryptoZing, TermiWeb, DoItList); deeper per-study facts still pending from Nate.

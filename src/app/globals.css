@@ -539,8 +539,8 @@ hr {
 
 .footer-columns {
   display: grid;
-  gap: var(--space-6);
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
 .footer-col {
@@ -612,7 +612,7 @@ hr {
 
 @media (min-width: 760px) {
   .footer-inner {
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
     align-items: start;
     gap: var(--space-8);
   }
