@@ -89,9 +89,7 @@ export default function Footer() {
 
       <div className="container footer-base">
         <Link href="/" className="footer-brand">
-          <span className="brand-mark" aria-hidden>
-            ◎
-          </span>
+          <img className="brand-mark" src="/ntp-logo.png" alt="" aria-hidden="true" />
           <span>NateTheProgrammer</span>
         </Link>
         <p className="footer-legal text-muted">© {year} NateTheProgrammer. All rights reserved.</p>

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-15 22:00
+- Restore the real brand assets from the old site (natetheprogrammer.com): the glasses-on-lightbulb logo (`public/ntp-logo.png`) now replaces the `◎` placeholder in the header and footer, and the favicon/app icons are in place (`src/app/favicon.ico`, `icon.png`, `apple-icon.png`). Build stays green; Next auto-serves the icon routes.
+
 ## 2026-06-15 21:45
 - Self-host fonts: switch from `next/font/google` to `next/font/local` with latin woff2 files in `src/app/fonts/` (Saira Semi Condensed 300–700, JetBrains Mono 400–600). `next build` is now green and no longer depends on a build-time fetch to Google Fonts. CSS variable names unchanged, so styling is untouched.
 

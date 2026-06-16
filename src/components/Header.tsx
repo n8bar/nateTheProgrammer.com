@@ -76,7 +76,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <Link href="/" className="brand">
-          <span className="brand-mark">◎</span>
+          <img className="brand-mark" src="/ntp-logo.png" alt="" aria-hidden="true" />
           <span className="brand-text">NateTheProgrammer</span>
         </Link>
 
