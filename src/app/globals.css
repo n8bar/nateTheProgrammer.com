@@ -822,3 +822,128 @@ hr {
   justify-content: space-between;
   gap: var(--space-4);
 }
+
+/* ---- Home ---- */
+.home-hero {
+  padding: var(--space-5) 0 var(--space-3);
+}
+
+.home-hero h1 {
+  max-width: 18ch;
+}
+
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-3);
+}
+
+.hero-cta-secondary {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-accent-text);
+}
+
+.hero-cta-secondary:hover,
+.hero-cta-secondary:focus-visible {
+  color: var(--color-text);
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.section-head h2 {
+  margin: 0;
+}
+
+.section-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-accent-text);
+}
+
+.section-link:hover,
+.section-link:focus-visible {
+  color: var(--color-text);
+}
+
+.skills-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.skill-group {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.skill-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-accent-text);
+}
+
+.skill-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+  color: var(--color-text);
+}
+
+.quote-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.quote-card {
+  margin: 0;
+  padding: var(--space-5);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  gap: var(--space-3);
+}
+
+.quote-card p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.quote-card cite {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-style: normal;
+  color: var(--color-muted);
+}
+
+.home-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.home-cta h2 {
+  margin: 0;
+}

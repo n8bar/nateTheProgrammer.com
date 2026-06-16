@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-15 21:45
+- Last updated: 2026-06-15 22:20
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -52,12 +52,12 @@ This plan is the route to meeting the design specification. The intended outcome
             1) [x] Verify focus order + keyboard navigation [completed 26/06/06 21:42] — skip link, mobile-menu focus trap + Escape + focus restore, visible focus-visible rings, ARIA on toggle/dialog all verified.
             2) [x] Verify no layout shift for nav states [completed 26/06/06 21:42] — active state changes color/background only (no resize); next/font fallback avoids font CLS; added `scrollbar-gutter: stable` so opening the mobile menu (body overflow hidden) causes no shift.
             3) [x] Verify mobile tap targets + contrast [completed 26/06/07 08:09] — tap targets done (hamburger 44px min; mobile menu links ~50px). Contrast: body 16.3:1 and muted 7.5:1 pass AA; added `--color-accent-text` (#6f97ff, ~6.9:1) for accent-sized text (eyebrows, active nav, prose links), keeping #2f6bff for large text/icons/borders — all accent text now passes AA.
-      2) [ ] Home page (the lead: intro + featured case studies + proof + contact CTA)
-         1) [ ] Compose hero, value prop, and primary CTA
-         2) [ ] Feature the case studies (CryptoZing, TermiWeb, DoItList) with one-line proof each
-         3) [ ] Surface supporting proof inline (curated skills summary, a testimonial or two)
-         4) [ ] Bind home copy from `src/content/site.json`
-         5) [ ] Apply UX guardrails checklist
+      2) [x] Home page (the lead: intro + featured case studies + proof + contact CTA) [completed 26/06/15 22:20]
+         1) [x] Compose hero, value prop, and primary CTA [completed 26/06/15 22:20]
+         2) [x] Feature the top case studies (CCFuel, Ticker, Black Cloud) with one-line proof each (shared `WorkCard`) [completed 26/06/15 22:20]
+         3) [x] Surface supporting proof inline — curated skills summary + two real testimonials (from old site's references) [completed 26/06/15 22:20]
+         4) [x] Bind home copy from `src/content/site.ts` (in-repo; .ts not .json for type safety) [completed 26/06/15 22:20]
+         5) [x] Apply UX guardrails checklist [completed 26/06/15 22:20]
       3) [x] Work index (case studies) [completed 26/06/15 21:28] — built before Home (user-directed); content from `src/content/work.ts`.
          1) [x] Load case studies from in-repo content (`src/content/work.ts`) [completed 26/06/15 21:28]
          2) [x] Render case-study cards (context/status, tagline, tech, link) [completed 26/06/15 21:28]

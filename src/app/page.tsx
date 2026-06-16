@@ -1,32 +1,82 @@
+import Link from 'next/link';
+import { getCaseStudies } from '@/content/work';
+import { hero, skills, testimonials } from '@/content/site';
+import WorkCard from '@/components/WorkCard';
+
 export default function Home() {
+  const featured = getCaseStudies().slice(0, 3);
+  const quotes = testimonials.slice(0, 2);
+
   return (
     <div className="container stack-lg">
-      <section className="stack-sm">
-        <span className="eyebrow">Nate The Programmer</span>
-        <h1>Blueprint Night — Global Shell Preview</h1>
-        <p className="prose text-muted">
-          Design tokens and layout primitives are live. This is a minimal shell to verify
-          typography, spacing, contrast, and grid behavior before we build the full layout.
-        </p>
+      <section className="home-hero stack-sm">
+        <span className="eyebrow">{hero.eyebrow}</span>
+        <h1>{hero.headline}</h1>
+        <p className="lead text-muted prose">{hero.subhead}</p>
+        <div className="hero-cta">
+          <Link href="/work" className="footer-cta-button">
+            See the work
+          </Link>
+          <Link href="/contact" className="hero-cta-secondary">
+            Get in touch →
+          </Link>
+        </div>
       </section>
 
-      <section className="grid grid-2">
-        <article className="card stack-sm">
-          <span className="eyebrow">Tokens</span>
-          <h3>Typography + Spacing</h3>
+      <section className="stack">
+        <div className="section-head">
+          <h2>Selected work</h2>
+          <Link href="/work" className="section-link">
+            All work →
+          </Link>
+        </div>
+        <div className="work-grid">
+          {featured.map((s) => (
+            <WorkCard key={s.slug} study={s} />
+          ))}
+        </div>
+      </section>
+
+      <section className="stack">
+        <h2>What I work with</h2>
+        <div className="skills-grid">
+          {skills.map((group) => (
+            <div key={group.label} className="skill-group">
+              <span className="skill-group-label">{group.label}</span>
+              <ul className="skill-items">
+                {group.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="stack">
+        <h2>What people say</h2>
+        <div className="quote-grid">
+          {quotes.map((q) => (
+            <blockquote key={q.name} className="quote-card">
+              <p>“{q.quote}”</p>
+              <cite>
+                {q.name} — {q.title}
+              </cite>
+            </blockquote>
+          ))}
+        </div>
+      </section>
+
+      <section className="home-cta card">
+        <div className="stack-sm">
+          <h2>Let’s talk.</h2>
           <p className="text-muted">
-            Saira Semi Condensed for primary text, JetBrains Mono for metadata, and a compact
-            spacing scale for rhythm.
+            If you’re hiring or have an interesting project in mind, I’d like to hear about it.
           </p>
-        </article>
-        <article className="card stack-sm">
-          <span className="eyebrow">Layout</span>
-          <h3>Grid + Containers</h3>
-          <p className="text-muted">
-            Responsive container width, grid utilities, and baseline card styling aligned to the
-            Blueprint Night theme.
-          </p>
-        </article>
+        </div>
+        <Link href="/contact" className="footer-cta-button">
+          Contact Nate
+        </Link>
       </section>
     </div>
   );

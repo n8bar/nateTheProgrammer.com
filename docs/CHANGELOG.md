@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-15 22:20
+- Build the Home page (the lead): hero + value prop + primary CTA, featured case studies (shared `WorkCard`, top three), a curated skills summary, two real testimonials, and a closing contact CTA.
+- Add in-repo home content `src/content/site.ts` (hero copy, curated skills, four real testimonials pulled from the old site's references page — verbatim/faithfully trimmed).
+- Extract `WorkCard` and reuse it on Home and `/work` (DRY).
+
 ## 2026-06-15 22:00
 - Restore the real brand assets from the old site (natetheprogrammer.com): the glasses-on-lightbulb logo (`public/ntp-logo.png`) now replaces the `◎` placeholder in the header and footer, and the favicon/app icons are in place (`src/app/favicon.ico`, `icon.png`, `apple-icon.png`). Build stays green; Next auto-serves the icon routes.
 

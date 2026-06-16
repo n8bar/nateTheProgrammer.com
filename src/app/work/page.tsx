@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getCaseStudies } from '@/content/work';
+import WorkCard from '@/components/WorkCard';
 
 export const metadata: Metadata = {
   title: 'Work — NateTheProgrammer',
@@ -23,30 +23,7 @@ export default function WorkPage() {
 
       <section className="work-grid">
         {studies.map((s) => (
-          <article key={s.slug} className="work-card">
-            <Link href={`/work/${s.slug}`} className="work-card-link">
-              {s.image ? (
-                <div className="work-card-media">
-                  <img src={s.image.src} alt={s.image.alt} loading="lazy" />
-                </div>
-              ) : null}
-              <div className="work-card-body">
-                <p className="work-card-meta">
-                  {s.context} · {s.status}
-                </p>
-                <h2 className="work-card-title">{s.title}</h2>
-                <p className="work-card-tagline text-muted">{s.tagline}</p>
-                <div className="tech-list">
-                  {s.tech.slice(0, 4).map((t) => (
-                    <span key={t} className="tech-tag">
-                      {t}
-                    </span>
-                  ))}
-                </div>
-                <span className="work-card-cta">Read case study →</span>
-              </div>
-            </Link>
-          </article>
+          <WorkCard key={s.slug} study={s} />
         ))}
       </section>
     </div>
