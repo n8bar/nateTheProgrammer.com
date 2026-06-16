@@ -1000,3 +1000,125 @@ hr {
 .home-cta h2 {
   margin: 0;
 }
+
+/* ---- Contact ---- */
+.contact-layout {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 760px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-8);
+  }
+}
+
+.contact-form {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.field {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.field label {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.9rem;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.field input:focus-visible,
+.field textarea:focus-visible {
+  outline: 2px solid var(--color-outline);
+  outline-offset: 1px;
+  border-color: var(--color-outline);
+}
+
+.field input[aria-invalid='true'],
+.field textarea[aria-invalid='true'] {
+  border-color: #ff6b6b;
+}
+
+/* Reserved space so error text never shifts the layout. */
+.field-msg {
+  margin: 0;
+  min-height: 1.1rem;
+  font-size: 0.8rem;
+  color: #ff8a8a;
+}
+
+.form-alert {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid #ff6b6b;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 107, 107, 0.1);
+  color: #ffb3b3;
+}
+
+.form-success {
+  padding: var(--space-6);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.form-success h2 {
+  margin: 0 0 var(--space-2);
+}
+
+/* Honeypot — visually hidden, still in the DOM for bots. */
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.contact-aside {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.contact-socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.contact-socials a {
+  color: var(--color-muted);
+}
+
+.contact-socials a:hover,
+.contact-socials a:focus-visible {
+  color: var(--color-accent-text);
+}

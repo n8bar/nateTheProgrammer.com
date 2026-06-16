@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-15 22:48
+- Build the Contact page: accessible name/email/message form (reserved error space so validation causes no layout shift, inputs preserved on error, clear success/error states, honeypot), plus social links. The contact email is never exposed to the client.
+- Add `/api/contact` Route Handler: server-side validation; on success the submission is captured in the server log (interim) — email delivery via SMTP/provider is the remaining wire-up.
+
 ## 2026-06-15 22:20
 - Build the Home page (the lead): hero + value prop + primary CTA, featured case studies (shared `WorkCard`, top three), a curated skills summary, two real testimonials, and a closing contact CTA.
 - Add in-repo home content `src/content/site.ts` (hero copy, curated skills, four real testimonials pulled from the old site's references page — verbatim/faithfully trimmed).
