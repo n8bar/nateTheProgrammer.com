@@ -1,19 +1,28 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { JetBrains_Mono, Saira_Semi_Condensed } from 'next/font/google';
+import localFont from 'next/font/local';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const saira = Saira_Semi_Condensed({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+// Self-hosted (latin) so builds never depend on a network fetch to Google Fonts.
+const saira = localFont({
+  src: [
+    { path: './fonts/saira-300.woff2', weight: '300', style: 'normal' },
+    { path: './fonts/saira-400.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/saira-500.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/saira-600.woff2', weight: '600', style: 'normal' },
+    { path: './fonts/saira-700.woff2', weight: '700', style: 'normal' },
+  ],
   variable: '--font-saira',
   display: 'swap',
 });
 
-const jetbrains = JetBrains_Mono({
-  subsets: ['latin'],
-  weight: ['400', '500', '600'],
+const jetbrains = localFont({
+  src: [
+    { path: './fonts/jetbrains-400.woff2', weight: '400', style: 'normal' },
+    { path: './fonts/jetbrains-500.woff2', weight: '500', style: 'normal' },
+    { path: './fonts/jetbrains-600.woff2', weight: '600', style: 'normal' },
+  ],
   variable: '--font-jetbrains',
   display: 'swap',
 });

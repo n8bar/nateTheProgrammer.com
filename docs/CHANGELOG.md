@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-15 21:45
+- Self-host fonts: switch from `next/font/google` to `next/font/local` with latin woff2 files in `src/app/fonts/` (Saira Semi Condensed 300–700, JetBrains Mono 400–600). `next build` is now green and no longer depends on a build-time fetch to Google Fonts. CSS variable names unchanged, so styling is untouched.
+
 ## 2026-06-15 21:28
 - Build the Work section (the proof-first centerpiece): `/work` index (case-study cards) and `/work/[slug]` detail template (problem / what I built / outcome, meta, links, image), statically generated.
 - Render from in-repo typed content (`src/content/work.ts`) instead of Ghost — five curated case studies (Colorado City fuel system, Ticker Automotive, Black Cloud POS, CryptoZing, TermiWeb); update DesignSpec proof set, PLAN data sourcing + routing accordingly.
