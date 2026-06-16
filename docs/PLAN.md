@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-07 08:09
+- Last updated: 2026-06-15 21:28
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -58,14 +58,14 @@ This plan is the route to meeting the design specification. The intended outcome
          3) [ ] Surface supporting proof inline (curated skills summary, a testimonial or two)
          4) [ ] Bind home copy from `src/content/site.json`
          5) [ ] Apply UX guardrails checklist
-      3) [ ] Work index (case studies)
-         1) [ ] Fetch Ghost posts tagged `work`
-         2) [ ] Render case-study cards (problem, outcome, tech, links)
-         3) [ ] Apply UX guardrails checklist
-      4) [ ] Work detail
-         1) [ ] Fetch Ghost post by slug
-         2) [ ] Render case-study template (what was built, problem solved, why it's trustworthy, results, links)
-         3) [ ] Apply UX guardrails checklist
+      3) [x] Work index (case studies) [completed 26/06/15 21:28] — built before Home (user-directed); content from `src/content/work.ts`.
+         1) [x] Load case studies from in-repo content (`src/content/work.ts`) [completed 26/06/15 21:28]
+         2) [x] Render case-study cards (context/status, tagline, tech, link) [completed 26/06/15 21:28]
+         3) [x] Apply UX guardrails checklist [completed 26/06/15 21:28]
+      4) [x] Work detail [completed 26/06/15 21:28]
+         1) [x] Static params + detail by slug (notFound on miss) [completed 26/06/15 21:28]
+         2) [x] Render case-study template (problem / what I built / outcome, meta, links, image) [completed 26/06/15 21:28]
+         3) [x] Apply UX guardrails checklist [completed 26/06/15 21:28]
       5) [ ] Experience page (results-framed)
          1) [ ] Fetch Ghost page content
          2) [ ] Render roles framed around responsibilities + results (not a bare timeline)
@@ -130,7 +130,7 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Data Sourcing
 - Keep super-static, stable content in-repo (`src/content/site.json`): Home copy, curated skills summary, education, certifications, testimonials, plus Contact and Playground shells.
-- Case studies (Work): Ghost posts tagged `work` (headless Content API; not stored in repo).
+- Case studies (Work): in-repo, typed (`src/content/work.ts`) — a small curated proof set where layout control matters; case-study images in `public/work/`. (Ghost deferred; revisit if the set grows.)
 - Experience narrative: Ghost page `experience`.
 - Writing (blog): Ghost posts (headless Content API; not stored in repo).
 - Playground entries: external git clones under `playground/` (ignored by repo), each with a `playground.json` metadata file.
@@ -139,8 +139,8 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Routing + Data Sources
 - `/` (Home): `src/content/site.json` (hero/value prop/CTA, featured case-study refs, skills summary, testimonials).
-- `/work`: Ghost posts tagged `work` (case-study index).
-- `/work/[slug]`: Ghost post detail (case-study template). Assumed slugs: `cryptozing`, `termiweb`, `doitlist` (the footer's Selected work links target these; set Ghost slugs to match).
+- `/work`: case-study index from `src/content/work.ts`.
+- `/work/[slug]`: case-study detail (statically generated). Slugs: `colorado-city-fuel`, `ticker-automotive`, `blackcloud-pos`, `cryptozing`, `termiweb`.
 - `/experience`: Ghost page `experience`, plus an in-repo Credentials block (skills/education/certs) from `site.json`.
 - `/writing`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
 - `/writing/[slug]`: Ghost post detail; server-side fetch with revalidation.
@@ -151,5 +151,6 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Open Questions
 - Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
+- Production build (`next build`) currently fails fetching Google Fonts (`next/font/google` → fonts.gstatic.com) from this environment — self-host the fonts (`next/font/local`) before deploy. Dev server is unaffected (renders fine). Pre-existing since the initial scaffold.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?

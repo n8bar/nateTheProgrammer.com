@@ -31,7 +31,7 @@ This document defines the intended outcomes, behavior, functionality, and standa
 
 ## The Work (proof set)
 - For each featured project, a serious visitor should grasp: what was built, the problem it solved, the outcome, and why the work is trustworthy.
-- Launch proof set: CryptoZing, TermiWeb, DoItList.
+- Launch proof set: Colorado City municipal fuel system, Ticker Automotive, Black Cloud POS, CryptoZing, TermiWeb.
 - Case studies favor depth and credibility over count.
 
 ## Content Standards

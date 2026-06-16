@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-15 21:28
+- Build the Work section (the proof-first centerpiece): `/work` index (case-study cards) and `/work/[slug]` detail template (problem / what I built / outcome, meta, links, image), statically generated.
+- Render from in-repo typed content (`src/content/work.ts`) instead of Ghost — five curated case studies (Colorado City fuel system, Ticker Automotive, Black Cloud POS, CryptoZing, TermiWeb); update DesignSpec proof set, PLAN data sourcing + routing accordingly.
+- Add the Black Cloud drive-thru menu screenshot to `public/work/`; captured by standing the app up from its SQL backup and rendering pos.php at 1080×1920.
+- Update footer Selected work slugs to match (drop dead `doitlist` link).
+
 ## 2026-06-07 08:09
 - Resolve the accent contrast finding: add `--color-accent-text` (#6f97ff, ~6.9:1) for accent-sized text (eyebrows, active nav, prose links, link hovers), keeping #2f6bff for large text, the brand mark, icons, and borders. All accent text now passes WCAG AA.
 - Update the design spec palette to record the AA accent-text variant.

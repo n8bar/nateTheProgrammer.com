@@ -1,11 +1,10 @@
 import Link from 'next/link';
 
-// Lead with proof: surface the case-study set. Slugs assumed cryptozing/termiweb/doitlist
-// (see PLAN Routing); these resolve once the Work detail pages exist.
+// Lead with proof: surface a few case studies (slugs match src/content/work.ts).
 const WORK_LINKS = [
+  { href: '/work/colorado-city-fuel', label: 'Municipal Fuel System' },
+  { href: '/work/ticker-automotive', label: 'Ticker Automotive' },
   { href: '/work/cryptozing', label: 'CryptoZing' },
-  { href: '/work/termiweb', label: 'TermiWeb' },
-  { href: '/work/doitlist', label: 'DoItList' },
 ];
 
 const SITE_LINKS = [
