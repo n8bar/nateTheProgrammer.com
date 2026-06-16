@@ -27,22 +27,54 @@ export async function POST(req: Request) {
     return NextResponse.json({ ok: false, errors }, { status: 400 });
   }
 
-  // Destination stays server-only (never sent to the client).
+  // Destination + transport stay server-only (never sent to the client).
   const to = process.env.CONTACT_EMAIL;
+  const apiKey = process.env.RESEND_API_KEY;
+  const from = process.env.CONTACT_FROM ?? 'NateTheProgrammer <noreply@natetheprogrammer.com>';
 
-  // Delivery: when an SMTP transport is configured we will send here. Until then,
-  // capture the submission server-side so nothing is lost (visible in the server log).
-  // TODO: send via configured transport (SMTP/provider) to `to`.
+  // Deliver via Resend when configured.
+  if (apiKey && to) {
+    try {
+      const res = await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          from,
+          to: [to],
+          reply_to: email,
+          subject: `Contact form — ${name}`,
+          text: `New message from the site contact form.\n\nName: ${name}\nEmail: ${email}\n\n${message}`,
+        }),
+      });
+
+      if (!res.ok) {
+        const detail = await res.text().catch(() => '');
+        console.error('[contact] resend send failed', res.status, detail.slice(0, 500));
+        // Capture so a failed send never loses the lead.
+        console.log('[contact] submission (delivery failed, captured)', JSON.stringify({ name, email, message }));
+        return NextResponse.json(
+          { ok: false, error: 'Could not send right now — please try again.' },
+          { status: 502 },
+        );
+      }
+      return NextResponse.json({ ok: true });
+    } catch (err) {
+      console.error('[contact] resend error', err);
+      console.log('[contact] submission (delivery error, captured)', JSON.stringify({ name, email, message }));
+      return NextResponse.json(
+        { ok: false, error: 'Could not send right now — please try again.' },
+        { status: 502 },
+      );
+    }
+  }
+
+  // No transport configured — capture server-side so nothing is lost.
   console.log(
-    '[contact] submission',
-    JSON.stringify({
-      destination: to ? 'configured' : 'MISSING_CONTACT_EMAIL',
-      name,
-      email,
-      message,
-      at: new Date().toISOString(),
-    }),
+    '[contact] submission (no transport)',
+    JSON.stringify({ name, email, message, at: new Date().toISOString() }),
   );
-
   return NextResponse.json({ ok: true });
 }

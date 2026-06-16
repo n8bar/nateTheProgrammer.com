@@ -152,6 +152,6 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Open Questions
 - Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
-- Contact email delivery: pick a transport (self-hosted SMTP, or a provider like Resend/Postmark) and add creds so `/api/contact` actually emails `CONTACT_EMAIL`. Until then, submissions are logged server-side (`docker compose logs web`).
+- Contact email delivery: wired to Resend (HTTP API, key in `.env`); key is valid. BLOCKED on verifying the `natetheprogrammer.com` domain in Resend (add DNS SPF/DKIM records at resend.com/domains). Once verified, real delivery works with no code change. Failed sends are captured server-side meanwhile.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?
