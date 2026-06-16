@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { getCaseStudies } from '@/content/work';
 import { hero, skills, testimonials } from '@/content/site';
-import WorkCard from '@/components/WorkCard';
 
 export default function Home() {
   const featured = getCaseStudies().slice(0, 3);
@@ -30,11 +29,21 @@ export default function Home() {
             All work →
           </Link>
         </div>
-        <div className="work-grid">
+        <ol className="featured-list">
           {featured.map((s) => (
-            <WorkCard key={s.slug} study={s} />
+            <li key={s.slug}>
+              <Link href={`/work/${s.slug}`} className="featured-item">
+                <span className="featured-text">
+                  <span className="featured-title">{s.title}</span>
+                  <span className="featured-proof text-muted">{s.tagline}</span>
+                </span>
+                <span className="featured-arrow" aria-hidden>
+                  →
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ol>
       </section>
 
       <section className="stack">

@@ -874,6 +874,59 @@ hr {
   color: var(--color-text);
 }
 
+/* Home featured work: a lean teaser list, distinct from the /work card grid. */
+.featured-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.featured-list li {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.featured-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding: var(--space-4) var(--space-2);
+  color: inherit;
+}
+
+.featured-item:hover,
+.featured-item:focus-visible {
+  color: inherit;
+  background: rgba(255, 209, 102, 0.06);
+}
+
+.featured-text {
+  display: grid;
+  gap: 4px;
+}
+
+.featured-title {
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  font-weight: 600;
+}
+
+.featured-proof {
+  max-width: 70ch;
+}
+
+.featured-arrow {
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--color-accent-text);
+  transition: transform 0.2s ease;
+}
+
+.featured-item:hover .featured-arrow {
+  transform: translateX(3px);
+}
+
 .skills-grid {
   display: grid;
   gap: var(--space-5);
