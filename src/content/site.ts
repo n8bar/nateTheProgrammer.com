@@ -56,7 +56,7 @@ export const education: Education[] = [
 ];
 
 export const certifications: Certification[] = [
-  { name: 'CJIS Security Awareness', issuer: 'FBI CJIS', status: 'Earned' },
+  { name: 'CJIS Security Awareness', issuer: 'FBI CJIS', status: 'Earned 2021' },
   { name: 'ITIL Foundation', issuer: 'Axelos', status: 'Earned 2020' },
   { name: 'Software Development Fundamentals (MTA)', issuer: 'Microsoft', status: 'Earned 2018' },
   { name: 'Site Development Associate', issuer: 'CIW', status: 'Earned 2019' },
