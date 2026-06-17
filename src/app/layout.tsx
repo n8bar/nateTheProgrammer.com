@@ -28,8 +28,29 @@ const jetbrains = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'NateTheProgrammer',
-  description: 'Resume site + internet playground for NateTheProgrammer.',
+  metadataBase: new URL('https://natetheprogrammer.com'),
+  title: {
+    default: 'NateTheProgrammer — IT Engineering Professional',
+    template: '%s — NateTheProgrammer',
+  },
+  description:
+    'Nate Barlow — an IT Engineering Professional who builds practical software organizations run on. Case studies, experience, and a simple way to get in touch.',
+  applicationName: 'NateTheProgrammer',
+  authors: [{ name: 'Nate Barlow', url: 'https://natetheprogrammer.com' }],
+  creator: 'Nate Barlow',
+  openGraph: {
+    type: 'website',
+    siteName: 'NateTheProgrammer',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@n8barlow',
+  },
+  robots: { index: true, follow: true },
+  alternates: {
+    types: { 'application/rss+xml': '/rss.xml' },
+  },
 };
 
 export default function RootLayout({

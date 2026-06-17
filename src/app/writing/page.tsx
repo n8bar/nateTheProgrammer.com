@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getPosts } from '@/content/writing';
 
 export const metadata: Metadata = {
-  title: 'Writing — NateTheProgrammer',
+  title: 'Writing',
   description: 'Occasional writing — experiments and a few milestones along the way.',
 };
 

@@ -6,8 +6,22 @@ export default function Home() {
   const featured = getCaseStudies().slice(0, 3);
   const quotes = testimonials.slice(0, 2);
 
+  const personLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Nate Barlow',
+    alternateName: 'NateTheProgrammer',
+    url: 'https://natetheprogrammer.com',
+    jobTitle: 'IT Engineering Professional',
+    sameAs: ['https://github.com/n8bar', 'https://www.linkedin.com/in/nate-barlow/'],
+  };
+
   return (
     <div className="container stack-lg">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personLd) }}
+      />
       <section className="home-hero stack-sm">
         <span className="eyebrow">{hero.eyebrow}</span>
         <h1>{hero.headline}</h1>

@@ -3,7 +3,7 @@ import { getCaseStudies } from '@/content/work';
 import WorkCard from '@/components/WorkCard';
 
 export const metadata: Metadata = {
-  title: 'Work — NateTheProgrammer',
+  title: 'Work',
   description: 'Selected case studies: systems built, shipped, and run in production.',
 };
 

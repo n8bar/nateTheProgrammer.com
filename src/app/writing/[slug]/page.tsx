@@ -14,8 +14,15 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
-  if (!post) return { title: 'Writing — NateTheProgrammer' };
-  return { title: `${post.title} — NateTheProgrammer`, description: post.excerpt };
+  if (!post) return { title: 'Writing' };
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      type: 'article',
+      publishedTime: new Date(`${post.date}T00:00:00Z`).toISOString(),
+    },
+  };
 }
 
 function formatDate(iso: string): string {
@@ -31,8 +38,23 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
   const post = getPost(slug);
   if (!post) notFound();
 
+  const blogLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: { '@type': 'Person', name: 'Nate Barlow', url: 'https://natetheprogrammer.com' },
+    url: `https://natetheprogrammer.com/writing/${post.slug}`,
+  };
+
   return (
     <article className="container stack-lg">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogLd) }}
+      />
       <div>
         <Link href="/writing" className="back-link">
           ← All writing

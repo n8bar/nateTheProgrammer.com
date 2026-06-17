@@ -4,7 +4,7 @@ import { roles } from '@/content/experience';
 import { skills, education, certifications } from '@/content/site';
 
 export const metadata: Metadata = {
-  title: 'Experience — NateTheProgrammer',
+  title: 'Experience',
   description:
     'IT engineering roles framed around responsibilities and results, plus skills, education, and certifications.',
 };

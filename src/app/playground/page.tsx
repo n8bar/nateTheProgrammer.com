@@ -3,7 +3,7 @@ import { readdir, readFile } from 'fs/promises';
 import path from 'path';
 
 export const metadata: Metadata = {
-  title: 'Playground — NateTheProgrammer',
+  title: 'Playground',
   description: 'Experiments in progress — not core proof, just things in the works.',
 };
 

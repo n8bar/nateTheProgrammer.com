@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-17 03:32
+- SEO baseline: global metadata with `metadataBase`, a title template (`%s — NateTheProgrammer`), and OpenGraph + Twitter cards; per-page title/description flow into both. Writing posts use `og:type=article`.
+- Generated OpenGraph image (1200×630, Blueprint Night) via `next/og` (`opengraph-image.tsx` + a bundled Saira TTF), reused for Twitter.
+- Add `robots.txt`, `sitemap.xml` (all routes + work/writing slugs), and an RSS feed at `/rss.xml` for Writing.
+- Structured data (JSON-LD): Person on Home, BlogPosting on each post.
+
 ## 2026-06-17 02:56
 - Add certifications (CJIS, ITIL, CompTIA A+) with honest status framing: only non-expiring or maintained certs are presented as held; A+ is shown as "Achieved 2019 · not renewed" (not currently certified). CJIS shown as maintained/current.
 - Build the Playground page (secondary, not in primary nav): the spec disclaimer, a graceful empty state, and a loader that reads `playground/*/playground.json` clones and renders cards (external links open safely). `/playground` is dynamic.

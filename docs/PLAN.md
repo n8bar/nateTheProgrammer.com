@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-17 02:56
+- Last updated: 2026-06-17 03:32
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -91,10 +91,10 @@ This plan is the route to meeting the design specification. The intended outcome
          4) [x] Render external repo cards (external links open safely) [completed 26/06/17 02:56]
          5) [x] Apply UX guardrails checklist [completed 26/06/17 02:56]
    2) [ ] Add baseline SEO, analytics, and accessibility checks
-      1) [ ] SEO baseline
-         1) [ ] Add meta, OpenGraph, and Twitter tags
-         2) [ ] Add structured data (JSON-LD)
-         3) [ ] Validate sitemap + RSS output
+      1) [x] SEO baseline [completed 26/06/17 03:32]
+         1) [x] Add meta, OpenGraph, and Twitter tags (title template, metadataBase, per-page OG; generated 1200×630 OG image via next/og + twitter-image) [completed 26/06/17 03:32]
+         2) [x] Add structured data (JSON-LD): Person on Home, BlogPosting on posts [completed 26/06/17 03:32]
+         3) [x] Validate sitemap + RSS output (`/sitemap.xml`, `/robots.txt`, `/rss.xml`) [completed 26/06/17 03:32]
       2) [ ] Analytics baseline
          1) [ ] Select analytics provider
          2) [ ] Implement pageview tracking
