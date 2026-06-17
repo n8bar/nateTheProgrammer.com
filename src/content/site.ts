@@ -5,7 +5,7 @@ export type SkillGroup = { label: string; items: string[] };
 export type Testimonial = { quote: string; name: string; title: string };
 
 export const hero = {
-  eyebrow: 'IT Engineering Professional',
+  eyebrow: 'Software Engineer',
   headline: 'I build practical software that organizations run on.',
   subhead:
     'I’m Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and my own products. Practical, credible, and still hands-on.',

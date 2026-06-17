@@ -30,11 +30,11 @@ const jetbrains = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://natetheprogrammer.com'),
   title: {
-    default: 'NateTheProgrammer — IT Engineering Professional',
+    default: 'NateTheProgrammer — Software Engineer',
     template: '%s — NateTheProgrammer',
   },
   description:
-    'Nate Barlow — an IT Engineering Professional who builds practical software organizations run on. Case studies, experience, and a simple way to get in touch.',
+    'Nate Barlow — a software engineer who builds practical software organizations run on. Case studies, experience, and a simple way to get in touch.',
   applicationName: 'NateTheProgrammer',
   authors: [{ name: 'Nate Barlow', url: 'https://natetheprogrammer.com' }],
   creator: 'Nate Barlow',

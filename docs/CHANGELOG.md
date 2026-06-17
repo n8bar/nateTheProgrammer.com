@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-17 16:32
+- Reposition from "IT Engineering Professional" to "Software Engineer" across the site (hero eyebrow, page title, OG image, meta description, JSON-LD jobTitle) and the design spec — the brand is nateTheProgrammer, and the proof is software.
+
 ## 2026-06-17 03:32
 - SEO baseline: global metadata with `metadataBase`, a title template (`%s — NateTheProgrammer`), and OpenGraph + Twitter cards; per-page title/description flow into both. Writing posts use `og:type=article`.
 - Generated OpenGraph image (1200×630, Blueprint Night) via `next/og` (`opengraph-image.tsx` + a bundled Saira TTF), reused for Twitter.

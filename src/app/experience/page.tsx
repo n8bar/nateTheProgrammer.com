@@ -6,7 +6,7 @@ import { skills, education, certifications } from '@/content/site';
 export const metadata: Metadata = {
   title: 'Experience',
   description:
-    'IT engineering roles framed around responsibilities and results, plus skills, education, and certifications.',
+    'Roles framed around responsibilities and results, plus skills, education, and certifications.',
 };
 
 export default function ExperiencePage() {

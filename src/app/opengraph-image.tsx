@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-export const alt = 'NateTheProgrammer — IT Engineering Professional';
+export const alt = 'NateTheProgrammer — Software Engineer';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -25,7 +25,7 @@ export default async function OpengraphImage() {
         }}
       >
         <div style={{ display: 'flex', fontSize: 30, letterSpacing: 5, color: '#6f97ff' }}>
-          IT ENGINEERING PROFESSIONAL
+          SOFTWARE ENGINEER
         </div>
         <div style={{ display: 'flex', fontSize: 96, color: '#e6edf3', lineHeight: 1.05 }}>
           NateTheProgrammer

@@ -12,7 +12,7 @@ export default function Home() {
     name: 'Nate Barlow',
     alternateName: 'NateTheProgrammer',
     url: 'https://natetheprogrammer.com',
-    jobTitle: 'IT Engineering Professional',
+    jobTitle: 'Software Engineer',
     sameAs: ['https://github.com/n8bar', 'https://www.linkedin.com/in/nate-barlow/'],
   };
 

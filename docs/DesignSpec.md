@@ -6,7 +6,7 @@ This document defines the intended outcomes, behavior, functionality, and standa
 - Last updated: 2026-06-08 22:02
 
 ## Purpose & Positioning
-- The site presents Nate Barlow as a practical, credible, current IT Engineering Professional who builds useful things, exercises sound judgment, and is worth contacting.
+- The site presents Nate Barlow as a practical, credible, current software engineer who builds useful things, exercises sound judgment, and is worth contacting.
 - It leads with proof, keeps secondary material in the background, and makes the next step easy.
 - Success looks like: a serious visitor quickly understands who Nate is, trusts the work, and knows how to make contact.
 
