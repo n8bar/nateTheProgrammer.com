@@ -1277,3 +1277,26 @@ hr {
 .post-excerpt {
   max-width: 70ch;
 }
+
+/* ---- Playground ---- */
+.playground-disclaimer {
+  margin: var(--space-2) 0 0;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 209, 102, 0.08);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+.playground-empty {
+  padding: var(--space-7) var(--space-6);
+  border: 1px dashed var(--color-line);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.playground-empty p {
+  margin: 0;
+}

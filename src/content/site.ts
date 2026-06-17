@@ -47,13 +47,18 @@ export const testimonials: Testimonial[] = [
 ];
 
 export type Education = { school: string; credential: string; period: string };
-export type Certification = { name: string; issuer: string; year: string };
+// `status` carries the honest temporal framing: "achieved" for lapsed certs,
+// "current"/"no expiration" only where genuinely held.
+export type Certification = { name: string; issuer: string; status: string };
 
 export const education: Education[] = [
   { school: 'Western Governors University', credential: 'B.S., Software Development', period: '2019 – 2021' },
 ];
 
 export const certifications: Certification[] = [
-  { name: 'Software Development Fundamentals (MTA)', issuer: 'Microsoft', year: '2018' },
-  { name: 'Site Development Associate', issuer: 'CIW', year: '2019' },
+  { name: 'CJIS Security Awareness', issuer: 'FBI CJIS', status: 'Maintained — current' },
+  { name: 'ITIL Foundation', issuer: 'Axelos', status: 'Earned 2020 · no expiration' },
+  { name: 'Software Development Fundamentals (MTA)', issuer: 'Microsoft', status: 'Earned 2018 · no expiration' },
+  { name: 'Site Development Associate', issuer: 'CIW', status: 'Earned 2019 · no expiration' },
+  { name: 'CompTIA A+', issuer: 'CompTIA', status: 'Achieved 2019 · not renewed' },
 ];

@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-17 01:45
+- Last updated: 2026-06-17 02:56
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -29,7 +29,7 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Upcoming Milestones (in order)
 4) [ ] MVP build
-   1) [ ] Implement core pages and global layout
+   1) [x] Implement core pages and global layout [completed 26/06/17 02:56]
       1) [x] Global shell + navigation [completed 26/06/07 08:09]
          1) [x] Design tokens + layout primitives [completed 26/01/31 22:53]
             1) [x] Define CSS variables for colors, spacing, type scale [completed 26/01/31 22:48]
@@ -84,12 +84,12 @@ This plan is the route to meeting the design specification. The intended outcome
          2) [x] Post to `/api/contact` Route Handler — server-side validation; email address stays server-only (never sent to client) [completed 26/06/15 22:48]
             - Delivery: wired to Resend and verified working (domain natetheprogrammer.com verified; key in gitignored `.env`). Failed sends are still captured server-side as a safety net.
          3) [x] Apply UX guardrails checklist [completed 26/06/15 22:48]
-      9) [ ] Playground page (secondary; not in primary nav)
-         1) [ ] Render disclaimer + safe layout slots
-         2) [ ] Load external repos/demos from `playground/*` clones
-         3) [ ] Read `playground.json` metadata per repo
-         4) [ ] Render external repo cards/embeds
-         5) [ ] Apply UX guardrails checklist
+      9) [x] Playground page (secondary; not in primary nav) [completed 26/06/17 02:56]
+         1) [x] Render disclaimer + safe layout slots (graceful empty state; no clones yet) [completed 26/06/17 02:56]
+         2) [x] Load external repos/demos from `playground/*` clones (fs read, force-dynamic) [completed 26/06/17 02:56]
+         3) [x] Read `playground.json` metadata per repo [completed 26/06/17 02:56]
+         4) [x] Render external repo cards (external links open safely) [completed 26/06/17 02:56]
+         5) [x] Apply UX guardrails checklist [completed 26/06/17 02:56]
    2) [ ] Add baseline SEO, analytics, and accessibility checks
       1) [ ] SEO baseline
          1) [ ] Add meta, OpenGraph, and Twitter tags

@@ -83,7 +83,7 @@ export default function ExperiencePage() {
                 <li key={c.name}>
                   <span className="cred-primary">{c.name}</span>
                   <span className="cred-secondary text-muted">
-                    {c.issuer} · {c.year}
+                    {c.issuer} · {c.status}
                   </span>
                 </li>
               ))}

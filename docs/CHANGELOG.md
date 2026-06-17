@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-17 02:56
+- Add certifications (CJIS, ITIL, CompTIA A+) with honest status framing: only non-expiring or maintained certs are presented as held; A+ is shown as "Achieved 2019 · not renewed" (not currently certified). CJIS shown as maintained/current.
+- Build the Playground page (secondary, not in primary nav): the spec disclaimer, a graceful empty state, and a loader that reads `playground/*/playground.json` clones and renders cards (external links open safely). `/playground` is dynamic.
+- Completes "Implement core pages and global layout" — all primary pages + Playground now exist.
+
 ## 2026-06-17 01:45
 - Build the Writing section (simple in-repo version; Ghost deferred): `/writing` index + `/writing/[slug]` detail, statically generated.
 - Port the author's real posts from the old WordPress site via its REST API into `src/content/writing.ts` (6 posts with text; two image-only posts skipped). Body is a small block model (paragraph/heading/code).
