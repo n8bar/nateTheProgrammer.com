@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-15 22:48
+- Last updated: 2026-06-17 01:04
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -82,7 +82,7 @@ This plan is the route to meeting the design specification. The intended outcome
       8) [x] Contact page [completed 26/06/15 22:48]
          1) [x] Build contact form UI (name/email/message, accessible labels, reserved error space = no layout shift, preserve-on-error, success/error states, honeypot) [completed 26/06/15 22:48]
          2) [x] Post to `/api/contact` Route Handler — server-side validation; email address stays server-only (never sent to client) [completed 26/06/15 22:48]
-            - Delivery: submissions are captured in the server log until an email transport is configured; SMTP/provider send is the remaining wire-up (see Open Questions).
+            - Delivery: wired to Resend and verified working (domain natetheprogrammer.com verified; key in gitignored `.env`). Failed sends are still captured server-side as a safety net.
          3) [x] Apply UX guardrails checklist [completed 26/06/15 22:48]
       9) [ ] Playground page (secondary; not in primary nav)
          1) [ ] Render disclaimer + safe layout slots
@@ -152,6 +152,5 @@ This plan is the route to meeting the design specification. The intended outcome
 
 ## Open Questions
 - Gather deeper per-study facts (problem/build/results) for the three case studies — repos/tech/live links are captured in Content Sources; needed when Work content is built, not for the shell.
-- Contact email delivery: wired to Resend (HTTP API, key in `.env`); key is valid. BLOCKED on verifying the `natetheprogrammer.com` domain in Resend (add DNS SPF/DKIM records at resend.com/domains). Once verified, real delivery works with no code change. Failed sends are captured server-side meanwhile.
 - Preferred hosting target (after MVP scope stabilizes)?
 - Target launch window?

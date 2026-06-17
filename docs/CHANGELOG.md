@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-17 01:04
+- Contact delivery is live: `natetheprogrammer.com` verified in Resend (DKIM/SPF/MX/DMARC resolving); a real test send through `/api/contact` returned success. No code change from the prior wiring — just domain verification.
+
 ## 2026-06-15 22:48
 - Build the Contact page: accessible name/email/message form (reserved error space so validation causes no layout shift, inputs preserved on error, clear success/error states, honeypot), plus social links. The contact email is never exposed to the client.
 - Add `/api/contact` Route Handler: server-side validation; on success the submission is captured in the server log (interim) — email delivery via SMTP/provider is the remaining wire-up.
