@@ -1235,3 +1235,45 @@ hr {
 .cred-secondary {
   font-size: 0.85rem;
 }
+
+/* ---- Writing ---- */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-line);
+}
+
+.post-item {
+  border-bottom: 1px solid var(--color-line);
+}
+
+.post-link {
+  display: grid;
+  gap: 4px;
+  padding: var(--space-4) var(--space-2);
+  color: inherit;
+}
+
+.post-link:hover,
+.post-link:focus-visible {
+  color: inherit;
+  background: rgba(255, 209, 102, 0.06);
+}
+
+.post-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.post-title {
+  font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+  font-weight: 600;
+}
+
+.post-excerpt {
+  max-width: 70ch;
+}

@@ -3,7 +3,7 @@
 This plan is the route to meeting the design specification. The intended outcomes, behavior, and standards live in [`docs/DesignSpec.md`](DesignSpec.md); this document tracks the milestones and implementation decisions that get us there.
 
 ## Status
-- Last updated: 2026-06-17 01:15
+- Last updated: 2026-06-17 01:45
 - Dev serving: containerized on dedicated IP `192.168.68.28:80` (see `docs/DevEnv.md`). Production hosting target remains deferred (milestone 4.3).
 - IA reset (2026-06-06): moved from a legacy-mirroring, 10-page site map to a lean, proof-first structure. Driver: local brainstorm notes `.brainstorm/2026-06-06-site-reset-decision.md` and `-coaching.md` (untracked). The resulting standard is captured in the design spec.
 
@@ -71,14 +71,14 @@ This plan is the route to meeting the design specification. The intended outcome
          2) [x] Render roles framed around responsibilities + results (not a bare timeline) [completed 26/06/17 01:15]
          3) [x] Render compact Credentials block (curated skills, education, certifications) from `src/content/site.ts` [completed 26/06/17 01:15]
          4) [x] Apply UX guardrails checklist [completed 26/06/17 01:15]
-      6) [ ] Writing index (Ghost)
-         1) [ ] Fetch Ghost posts for list view
-         2) [ ] Render post cards with excerpts
-         3) [ ] Apply UX guardrails checklist
-      7) [ ] Writing detail (Ghost)
-         1) [ ] Fetch Ghost post by slug
-         2) [ ] Render post body + meta
-         3) [ ] Apply UX guardrails checklist
+      6) [x] Writing index [completed 26/06/17 01:45] — in-repo (`src/content/writing.ts`), posts ported from the old WordPress site (real writing); Ghost deferred.
+         1) [x] List posts from in-repo content [completed 26/06/17 01:45]
+         2) [x] Render post list with date + excerpt [completed 26/06/17 01:45]
+         3) [x] Apply UX guardrails checklist [completed 26/06/17 01:45]
+      7) [x] Writing detail [completed 26/06/17 01:45]
+         1) [x] Static params + post by slug (notFound on miss) [completed 26/06/17 01:45]
+         2) [x] Render post body (p/h2/code blocks) + date [completed 26/06/17 01:45]
+         3) [x] Apply UX guardrails checklist [completed 26/06/17 01:45]
       8) [x] Contact page [completed 26/06/15 22:48]
          1) [x] Build contact form UI (name/email/message, accessible labels, reserved error space = no layout shift, preserve-on-error, success/error states, honeypot) [completed 26/06/15 22:48]
          2) [x] Post to `/api/contact` Route Handler — server-side validation; email address stays server-only (never sent to client) [completed 26/06/15 22:48]
@@ -133,7 +133,7 @@ This plan is the route to meeting the design specification. The intended outcome
 - Keep super-static, stable content in-repo (`src/content/site.json`): Home copy, curated skills summary, education, certifications, testimonials, plus Contact and Playground shells.
 - Case studies (Work): in-repo, typed (`src/content/work.ts`) — a small curated proof set where layout control matters; case-study images in `public/work/`. (Ghost deferred; revisit if the set grows.)
 - Experience roles + credentials: in-repo (`src/content/experience.ts`, plus education/certifications in `src/content/site.ts`). Ghost deferred.
-- Writing (blog): Ghost posts (headless Content API; not stored in repo).
+- Writing (blog): in-repo (`src/content/writing.ts`), posts ported from the old WordPress site. Ghost deferred.
 - Playground entries: external git clones under `playground/` (ignored by repo), each with a `playground.json` metadata file.
 - Keep raw LinkedIn export in `.cybercreek/` only.
 - Rationale: skills/education/certifications/references are stable and surfaced inline as proof, so they live in-repo rather than as standalone Ghost pages.
@@ -143,8 +143,8 @@ This plan is the route to meeting the design specification. The intended outcome
 - `/work`: case-study index from `src/content/work.ts`.
 - `/work/[slug]`: case-study detail (statically generated). Slugs: `colorado-city-fuel`, `ticker-automotive`, `blackcloud-pos`, `cryptozing`, `termiweb`.
 - `/experience`: in-repo roles (`src/content/experience.ts`) + Credentials block (skills/education/certs) from `src/content/site.ts`.
-- `/writing`: Ghost posts (list) with ISR caching (default revalidate 10 min; adjustable).
-- `/writing/[slug]`: Ghost post detail; server-side fetch with revalidation.
+- `/writing`: post list from `src/content/writing.ts`.
+- `/writing/[slug]`: post detail (statically generated from in-repo content).
 - `/contact`: form posts to `/api/contact` (Route Handler); email address stays server-only via env.
 - `/playground`: in-repo layout shell + local `playground/*/playground.json` metadata for external repos/demos (secondary; linked from footer, not primary nav).
 - Utility routes: `/sitemap.xml` and `/rss.xml` generated server-side (uses Ghost + in-repo content).
