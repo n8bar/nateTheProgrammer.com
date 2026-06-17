@@ -1122,3 +1122,116 @@ hr {
 .contact-socials a:focus-visible {
   color: var(--color-accent-text);
 }
+
+/* ---- Experience ---- */
+.role-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-6);
+}
+
+.role {
+  display: grid;
+  gap: var(--space-2);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.role:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.role-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.role-title {
+  margin: 0;
+  font-size: clamp(1.15rem, 1rem + 0.6vw, 1.4rem);
+}
+
+.role-company {
+  font-weight: 500;
+  color: var(--color-muted);
+}
+
+.role-period {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.role-location {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+.role-summary {
+  margin: 0;
+}
+
+.role-highlights {
+  margin: var(--space-1) 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.role-highlights li::marker {
+  color: var(--color-accent-text);
+}
+
+.role-related {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--color-accent-text);
+}
+
+.role-related:hover,
+.role-related:focus-visible {
+  color: var(--color-text);
+}
+
+.credentials-grid {
+  display: grid;
+  gap: var(--space-6);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.cred-block {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.cred-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.cred-items li {
+  display: grid;
+  gap: 2px;
+}
+
+.cred-primary {
+  font-weight: 600;
+}
+
+.cred-secondary {
+  font-size: 0.85rem;
+}

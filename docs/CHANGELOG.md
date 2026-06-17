@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-17 01:15
+- Build the Experience page: IT roles framed around responsibilities and results (fresh rewrite from the LinkedIn export, not pasted), each with period/location and result-oriented highlights; the current municipal role links to the fuel system case study. Plus a compact Credentials block — curated skills, education, certifications.
+- Add in-repo content `src/content/experience.ts` (roles) and education/certifications to `src/content/site.ts`. Source is in-repo (Ghost deferred); update PLAN data sourcing + routing accordingly.
+
 ## 2026-06-17 01:04
 - Contact delivery is live: `natetheprogrammer.com` verified in Resend (DKIM/SPF/MX/DMARC resolving); a real test send through `/api/contact` returned success. No code change from the prior wiring — just domain verification.
 

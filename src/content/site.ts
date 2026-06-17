@@ -45,3 +45,15 @@ export const testimonials: Testimonial[] = [
     title: 'V.P. Operations, Conversion Technologies',
   },
 ];
+
+export type Education = { school: string; credential: string; period: string };
+export type Certification = { name: string; issuer: string; year: string };
+
+export const education: Education[] = [
+  { school: 'Western Governors University', credential: 'B.S., Software Development', period: '2019 – 2021' },
+];
+
+export const certifications: Certification[] = [
+  { name: 'Software Development Fundamentals (MTA)', issuer: 'Microsoft', year: '2018' },
+  { name: 'Site Development Associate', issuer: 'CIW', year: '2019' },
+];
