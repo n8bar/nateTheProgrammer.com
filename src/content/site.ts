@@ -9,7 +9,7 @@ export const hero = {
   headline: 'Whatever your software needs to do, I handle it.',
   proof: 'A town’s fuel pumps, a shop’s interactive menu, a vibe-coder’s boredom.',
   subhead:
-    'I’m Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and my own products. Practical, credible, and still hands-on.',
+    'I’m Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and my own products. Making software efficient, effective, and easy.',
 };
 
 export const skills: SkillGroup[] = [
