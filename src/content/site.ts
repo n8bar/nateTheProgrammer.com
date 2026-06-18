@@ -6,9 +6,10 @@ export type Testimonial = { quote: string; name: string; title: string };
 
 export const hero = {
   eyebrow: 'Software Engineer',
-  headline: 'I build practical software that organizations run on.',
+  headline: 'Whatever your software needs to do, Nate handles it.',
+  proof: 'A town’s fuel pumps, a shop’s interactive menu, a vibe-coder’s boredom.',
   subhead:
-    'I’m Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and my own products. Practical, credible, and still hands-on.',
+    'Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and his own products. Practical, credible, and still hands-on.',
 };
 
 export const skills: SkillGroup[] = [

@@ -26,6 +26,7 @@ export default function Home() {
       <section className="home-hero stack-sm">
         <span className="eyebrow">{hero.eyebrow}</span>
         <h1>{hero.headline}</h1>
+        <p className="hero-proof">{hero.proof}</p>
         <p className="lead text-muted prose">{hero.subhead}</p>
         <div className="hero-cta">
           <Link href="/work" className="footer-cta-button">

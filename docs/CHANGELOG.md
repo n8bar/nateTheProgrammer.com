@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-17 20:16
+- Rework the hero into declaration + proof: "Whatever your software needs to do, Nate handles it." over "A town's fuel pumps, a shop's interactive menu, a vibe-coder's boredom."; third-person subhead; OG image tagline updated to match.
+- Scale the whole rem-based type scale ~33% larger (root `font-size: 133%`).
+
 ## 2026-06-17 18:21
 - Match the back (←), to-top (↑), and external (↗) glyphs to the gold triangle: `Arrow` now takes a `dir` (left/up/up-right), same shape rotated, with the hover nudge following the point.
 

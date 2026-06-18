@@ -44,6 +44,8 @@
 html {
   /* Reserve the scrollbar gutter so toggling body overflow (mobile menu) causes no shift. */
   scrollbar-gutter: stable;
+  /* Scale the whole rem-based type scale ~33% larger. */
+  font-size: 133%;
 }
 
 html,
@@ -874,7 +876,14 @@ a:focus-visible .arrow--up-right {
 }
 
 .home-hero h1 {
-  max-width: 18ch;
+  max-width: 20ch;
+}
+
+.hero-proof {
+  margin: 0;
+  max-width: var(--measure);
+  font-size: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  color: var(--color-text);
 }
 
 .hero-cta {
