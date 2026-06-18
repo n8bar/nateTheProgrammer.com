@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-18 00:01
+- Add a root `README.md`: stack-at-a-glance, run commands, and a "where to edit what" map.
+
 ## 2026-06-17 23:12
 - Pull the CryptoZing article "Bitcoin Payment Confirmations Explained" into Writing (now leads the index); republished with a canonical link to the original on cryptozing.app plus a visible "Originally published on CryptoZing" attribution.
 - Switch the hero (and OG image) to first person: "Whatever your software needs to do, I handle it." / "I'm Nate Barlow…" — consistent with the rest of the site.
