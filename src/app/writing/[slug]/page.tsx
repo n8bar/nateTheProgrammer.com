@@ -19,6 +19,7 @@ export async function generateMetadata({
   return {
     title: post.title,
     description: post.excerpt,
+    ...(post.canonical ? { alternates: { canonical: post.canonical } } : {}),
     openGraph: {
       type: 'article',
       publishedTime: new Date(`${post.date}T00:00:00Z`).toISOString(),
@@ -79,6 +80,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           return <p key={i}>{block.text}</p>;
         })}
       </div>
+
+      {post.canonical ? (
+        <p className="post-origin text-muted">
+          Originally published on{' '}
+          <a href={post.canonical} target="_blank" rel="noopener noreferrer">
+            CryptoZing
+          </a>
+          .
+        </p>
+      ) : null}
     </article>
   );
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-17 23:12
+- Pull the CryptoZing article "Bitcoin Payment Confirmations Explained" into Writing (now leads the index); republished with a canonical link to the original on cryptozing.app plus a visible "Originally published on CryptoZing" attribution.
+- Switch the hero (and OG image) to first person: "Whatever your software needs to do, I handle it." / "I'm Nate Barlow…" — consistent with the rest of the site.
+
 ## 2026-06-17 20:16
 - Rework the hero into declaration + proof: "Whatever your software needs to do, Nate handles it." over "A town's fuel pumps, a shop's interactive menu, a vibe-coder's boredom."; third-person subhead; OG image tagline updated to match.
 - Scale the whole rem-based type scale ~33% larger (root `font-size: 133%`).

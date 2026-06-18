@@ -8,9 +8,215 @@ export type Post = {
   date: string;
   excerpt: string;
   body: PostBlock[];
+  canonical?: string; // set when republished from elsewhere (points at the original)
 };
 
 export const posts: Post[] = [
+  {
+    "slug": "bitcoin-pending-vs-confirmed-payments",
+    "canonical": "https://cryptozing.app/learn/bitcoin-pending-vs-confirmed-payments/",
+    "title": "Bitcoin Payment Confirmations Explained: What Pending Means",
+    "date": "2026-04-12",
+    "excerpt": "When someone sends a Bitcoin payment, it doesn't go straight from sent to final — there's an in-between stage that matters, and good invoicing has to handle it.",
+    "body": [
+      {
+        "type": "p",
+        "text": "Bitcoin Payments. What makes them trustworthy?"
+      },
+      {
+        "type": "p",
+        "text": "When someone sends a Bitcoin payment, it does not go straight from \"sent\" to \"final.\""
+      },
+      {
+        "type": "p",
+        "text": "There is an in-between stage that matters. First the transaction becomes visible to the network. Then, later, it becomes confirmed in a block. People often blur those together, but they are not the same thing."
+      },
+      {
+        "type": "p",
+        "text": "That distinction is what this is about."
+      },
+      {
+        "type": "h2",
+        "text": "What a pending Bitcoin payment means"
+      },
+      {
+        "type": "p",
+        "text": "A pending Bitcoin payment is a transaction that has been broadcast to the network but has not yet been included in a block."
+      },
+      {
+        "type": "p",
+        "text": "In practical terms, that usually means the payment is visible. You can often see that a transaction exists, inspect the amount, and verify the destination address. That is useful. But it is still not the same thing as settlement."
+      },
+      {
+        "type": "p",
+        "text": "A pending transaction is best understood as in flight."
+      },
+      {
+        "type": "p",
+        "text": "The payer may very well have done everything right. In most cases, they probably did. Still, until the transaction is confirmed, there is some remaining uncertainty. Depending on the fee rate and current network conditions, a pending transaction can sit for a while before miners pick it up. In some cases, especially if the fee is too low, it may not confirm when the recipient expects."
+      },
+      {
+        "type": "p",
+        "text": "That is why \"I can see it\" and \"it is settled\" are two different statements."
+      },
+      {
+        "type": "h2",
+        "text": "What a confirmed Bitcoin payment means"
+      },
+      {
+        "type": "p",
+        "text": "A Bitcoin payment becomes confirmed when it is included in a block that is accepted by the network."
+      },
+      {
+        "type": "p",
+        "text": "That first block gives the transaction 1 confirmation. After that, each additional block adds one more confirmation."
+      },
+      {
+        "type": "p",
+        "text": "A simple way to think about it:"
+      },
+      {
+        "type": "p",
+        "text": "1 confirmation - the transaction is now on-chain"
+      },
+      {
+        "type": "p",
+        "text": "3 confirmations - a common threshold for many ordinary payments"
+      },
+      {
+        "type": "p",
+        "text": "6 confirmations - a traditional standard for higher-value payments"
+      },
+      {
+        "type": "p",
+        "text": "The first confirmation is the big change. Before that, the payment is pending. After that, it has crossed into a more trustworthy state."
+      },
+      {
+        "type": "p",
+        "text": "Every confirmation after the first adds more weight behind the transaction."
+      },
+      {
+        "type": "h2",
+        "text": "Why confirmations matter"
+      },
+      {
+        "type": "p",
+        "text": "This is really a question of finality, not just visibility."
+      },
+      {
+        "type": "p",
+        "text": "A pending payment can look completely real because, most of the time, it is real. But if you are deciding whether to mark an invoice paid, deliver something of value, or close out a business process, \"probably fine\" is not always the same as \"settled enough.\""
+      },
+      {
+        "type": "p",
+        "text": "Each new block built on top of a transaction makes that transaction harder to reverse. Reversing it would require redoing more proof-of-work than the honest network has already added since that payment was confirmed."
+      },
+      {
+        "type": "p",
+        "text": "That is why confirmation count matters. It is not just trivia for block explorers. It is a rough measure of how much confidence you should place in the payment's finality."
+      },
+      {
+        "type": "p",
+        "text": "For lower-risk situations, one confirmation may be enough. For moderate-value payments, three confirmations is a common middle ground. For larger payments, six confirmations is still the conventional benchmark."
+      },
+      {
+        "type": "p",
+        "text": "There is no magic number that is correct in every case. The right threshold depends on the amount at risk and how conservative you want to be."
+      },
+      {
+        "type": "h2",
+        "text": "How long does Bitcoin confirmation take?"
+      },
+      {
+        "type": "p",
+        "text": "Bitcoin targets a new block about every 10 minutes on average."
+      },
+      {
+        "type": "p",
+        "text": "The important phrase there is on average."
+      },
+      {
+        "type": "p",
+        "text": "A transaction with a healthy fee often confirms in the next block or two. But there is no guarantee. Sometimes blocks come faster. Sometimes they take longer. If the network is busy or the fee is too low, a transaction may wait much longer than the sender expected."
+      },
+      {
+        "type": "p",
+        "text": "So when people say Bitcoin confirmations take ten minutes, that is a useful rule of thumb, not a promise."
+      },
+      {
+        "type": "h2",
+        "text": "Pending vs confirmed in real-world invoicing"
+      },
+      {
+        "type": "p",
+        "text": "This is where the distinction stops being theoretical."
+      },
+      {
+        "type": "p",
+        "text": "If someone pays a Bitcoin invoice, you will often see the transaction appear quickly as pending. That tells you something useful: a payment attempt exists, and you can start checking whether the amount and destination match what you expected."
+      },
+      {
+        "type": "p",
+        "text": "But that is not the end of the story."
+      },
+      {
+        "type": "p",
+        "text": "You still need to know things like:"
+      },
+      {
+        "type": "p",
+        "text": "does this transaction belong to the correct invoice?"
+      },
+      {
+        "type": "p",
+        "text": "is the amount correct?"
+      },
+      {
+        "type": "p",
+        "text": "is it still pending, or has it confirmed?"
+      },
+      {
+        "type": "p",
+        "text": "how many confirmations does it have?"
+      },
+      {
+        "type": "p",
+        "text": "has it crossed the settlement threshold you care about?"
+      },
+      {
+        "type": "p",
+        "text": "That is the real job here."
+      },
+      {
+        "type": "p",
+        "text": "The problem is not just detecting that some Bitcoin transaction exists. The problem is knowing whether the right payment arrived, whether it belongs to the right invoice, and whether it has settled far enough to trust."
+      },
+      {
+        "type": "p",
+        "text": "That is why pending and confirmed are not interchangeable labels. They describe two different stages of the payment lifecycle, and good invoicing workflow needs to treat them differently."
+      },
+      {
+        "type": "h2",
+        "text": "So what makes a Bitcoin payment trustworthy?"
+      },
+      {
+        "type": "p",
+        "text": "A Bitcoin payment becomes trustworthy when the uncertainty around it drops low enough for the situation at hand."
+      },
+      {
+        "type": "p",
+        "text": "That usually means a few things are true at the same time. The transaction matches the expected invoice. The amount is correct. The destination is correct. And it has enough confirmations for the level of risk involved."
+      },
+      {
+        "type": "p",
+        "text": "Trustworthiness in Bitcoin is not all-or-nothing the moment a transaction is broadcast. A pending transaction may be real, and often is, but it is still less settled than a confirmed one. Each confirmation reduces the remaining doubt and makes the transaction harder to reverse."
+      },
+      {
+        "type": "p",
+        "text": "What makes a Bitcoin payment trustworthy is not mere visibility, but verifiability and finality. You do not just want to know that a transaction exists. You want to know it is the right transaction, for the right amount, tied to the right invoice, and settled far enough to rely on."
+      }
+    ]
+  },
   {
     "slug": "artificial-intelligence-can-write-programs-continued",
     "title": "Artificial Intelligence Can Write Programs?! (continued)",

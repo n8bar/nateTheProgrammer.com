@@ -1326,6 +1326,17 @@ a:focus-visible .arrow--up-right {
   max-width: 70ch;
 }
 
+.post-origin {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.post-origin a {
+  color: var(--color-accent-text);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 /* ---- Playground ---- */
 .playground-disclaimer {
   margin: var(--space-2) 0 0;
