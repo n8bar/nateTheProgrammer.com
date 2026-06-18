@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { CaseStudy } from '@/content/work';
+import Arrow from '@/components/Arrow';
 
 export default function WorkCard({ study }: { study: CaseStudy }) {
   return (
@@ -23,7 +24,9 @@ export default function WorkCard({ study }: { study: CaseStudy }) {
               </span>
             ))}
           </div>
-          <span className="work-card-cta">Read case study →</span>
+          <span className="work-card-cta">
+            Read case study <Arrow />
+          </span>
         </div>
       </Link>
     </article>

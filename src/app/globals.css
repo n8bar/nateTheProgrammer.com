@@ -285,6 +285,21 @@ hr {
   color: var(--color-muted);
 }
 
+.arrow {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.72em;
+  margin-left: 0.45em;
+  vertical-align: middle;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+a:hover .arrow,
+a:focus-visible .arrow {
+  transform: translateX(4px);
+}
+
 .prose {
   max-width: var(--measure);
 }
@@ -917,14 +932,8 @@ hr {
 
 .featured-arrow {
   flex-shrink: 0;
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
+  display: inline-flex;
   color: var(--color-accent-text);
-  transition: transform 0.2s ease;
-}
-
-.featured-item:hover .featured-arrow {
-  transform: translateX(3px);
 }
 
 .skills-grid {

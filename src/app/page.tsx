@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getCaseStudies } from '@/content/work';
 import { hero, skills, testimonials } from '@/content/site';
+import Arrow from '@/components/Arrow';
 
 export default function Home() {
   const featured = getCaseStudies().slice(0, 3);
@@ -31,7 +32,7 @@ export default function Home() {
             See the work
           </Link>
           <Link href="/contact" className="hero-cta-secondary">
-            Get in touch →
+            Get in touch <Arrow />
           </Link>
         </div>
       </section>
@@ -40,7 +41,7 @@ export default function Home() {
         <div className="section-head">
           <h2>Selected work</h2>
           <Link href="/work" className="section-link">
-            All work →
+            All work <Arrow />
           </Link>
         </div>
         <ol className="featured-list">
@@ -52,7 +53,7 @@ export default function Home() {
                   <span className="featured-proof text-muted">{s.tagline}</span>
                 </span>
                 <span className="featured-arrow" aria-hidden>
-                  →
+                  <Arrow />
                 </span>
               </Link>
             </li>

@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-17 18:16
+- Replace the text "→" on go-to links with a small gold, round-cornered triangle (new `Arrow` component) — Home CTAs, featured-work rows, Work cards, and the Experience case-study link; nudges right on hover.
+
 ## 2026-06-17 16:32
 - Reposition from "IT Engineering Professional" to "Software Engineer" across the site (hero eyebrow, page title, OG image, meta description, JSON-LD jobTitle) and the design spec — the brand is nateTheProgrammer, and the proof is software.
 

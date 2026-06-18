@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { roles } from '@/content/experience';
 import { skills, education, certifications } from '@/content/site';
+import Arrow from '@/components/Arrow';
 
 export const metadata: Metadata = {
   title: 'Experience',
@@ -42,7 +43,7 @@ export default function ExperiencePage() {
               ) : null}
               {r.related ? (
                 <Link href={r.related.href} className="role-related">
-                  {r.related.label} →
+                  {r.related.label} <Arrow />
                 </Link>
               ) : null}
             </li>
