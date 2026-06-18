@@ -1,9 +1,18 @@
 // A small right-pointing triangle with softened corners, in the brand gold —
-// a designed accent rather than a text glyph. Decorative.
-export default function Arrow({ className = '' }: { className?: string }) {
+// a designed accent rather than a text glyph. Decorative. `dir` rotates it.
+type Dir = 'right' | 'left' | 'up' | 'up-right';
+
+export default function Arrow({
+  dir = 'right',
+  className = '',
+}: {
+  dir?: Dir;
+  className?: string;
+}) {
+  const dirClass = dir === 'right' ? '' : ` arrow--${dir}`;
   return (
     <svg
-      className={`arrow${className ? ` ${className}` : ''}`}
+      className={`arrow${dirClass}${className ? ` ${className}` : ''}`}
       viewBox="0 0 12 14"
       aria-hidden="true"
       focusable="false"

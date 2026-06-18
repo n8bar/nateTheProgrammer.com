@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { readdir, readFile } from 'fs/promises';
 import path from 'path';
+import Arrow from '@/components/Arrow';
 
 export const metadata: Metadata = {
   title: 'Playground',
@@ -77,7 +78,11 @@ export default async function PlaygroundPage() {
                     ))}
                   </div>
                 ) : null}
-                {href ? <span className="work-card-cta">Open ↗</span> : null}
+                {href ? (
+                  <span className="work-card-cta">
+                    Open <Arrow dir="up-right" />
+                  </span>
+                ) : null}
               </div>
             );
             return (

@@ -300,6 +300,36 @@ a:focus-visible .arrow {
   transform: translateX(4px);
 }
 
+/* Directional variants — same triangle, rotated; nudge follows the point. */
+.arrow--left {
+  transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 0.45em;
+}
+
+.arrow--up {
+  transform: rotate(-90deg);
+}
+
+.arrow--up-right {
+  transform: rotate(-45deg);
+}
+
+a:hover .arrow--left,
+a:focus-visible .arrow--left {
+  transform: rotate(180deg) translateX(4px);
+}
+
+a:hover .arrow--up,
+a:focus-visible .arrow--up {
+  transform: rotate(-90deg) translateX(4px);
+}
+
+a:hover .arrow--up-right,
+a:focus-visible .arrow--up-right {
+  transform: rotate(-45deg) translateX(4px);
+}
+
 .prose {
   max-width: var(--measure);
 }

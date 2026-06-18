@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { caseStudies, getCaseStudy } from '@/content/work';
+import Arrow from '@/components/Arrow';
 
 export function generateStaticParams() {
   return caseStudies.map((s) => ({ slug: s.slug }));
@@ -27,7 +28,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
     <article className="container stack-lg case-study">
       <div>
         <Link href="/work" className="back-link">
-          ← All work
+          <Arrow dir="left" /> All work
         </Link>
       </div>
 
@@ -60,7 +61,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                 className="case-link"
                 {...(l.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               >
-                {l.label} ↗
+                {l.label} <Arrow dir="up-right" />
               </a>
             ))}
           </div>

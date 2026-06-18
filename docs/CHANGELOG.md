@@ -1,5 +1,8 @@
 # Changelog
 
+## 2026-06-17 18:21
+- Match the back (←), to-top (↑), and external (↗) glyphs to the gold triangle: `Arrow` now takes a `dir` (left/up/up-right), same shape rotated, with the hover nudge following the point.
+
 ## 2026-06-17 18:16
 - Replace the text "→" on go-to links with a small gold, round-cornered triangle (new `Arrow` component) — Home CTAs, featured-work rows, Work cards, and the Experience case-study link; nudges right on hover.
 

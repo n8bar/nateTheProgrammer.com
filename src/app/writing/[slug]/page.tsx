@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { posts, getPost } from '@/content/writing';
+import Arrow from '@/components/Arrow';
 
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
@@ -57,7 +58,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       />
       <div>
         <Link href="/writing" className="back-link">
-          ← All writing
+          <Arrow dir="left" /> All writing
         </Link>
       </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
+import Arrow from '@/components/Arrow';
 
 export const metadata: Metadata = {
   title: 'Contact',
@@ -31,7 +32,7 @@ export default function ContactPage() {
             {SOCIALS.map((s) => (
               <li key={s.href}>
                 <a href={s.href} target="_blank" rel="noopener noreferrer">
-                  {s.label} ↗
+                  {s.label} <Arrow dir="up-right" />
                 </a>
               </li>
             ))}

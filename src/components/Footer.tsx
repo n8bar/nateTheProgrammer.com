@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Arrow from '@/components/Arrow';
 
 // Lead with proof: surface a few case studies (slugs match src/content/work.ts).
 const WORK_LINKS = [
@@ -94,7 +95,7 @@ export default function Footer() {
         </Link>
         <p className="footer-legal text-muted">© {year} NateTheProgrammer. All rights reserved.</p>
         <a href="#content" className="footer-backtop">
-          Back to top ↑
+          Back to top <Arrow dir="up" />
         </a>
       </div>
     </footer>
