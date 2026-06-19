@@ -28,6 +28,7 @@ export default function Home() {
         <h1>{hero.headline}</h1>
         <p className="hero-proof">{hero.proof}</p>
         <p className="lead text-muted prose">{hero.subhead}</p>
+        <p className="hero-tagline">{hero.tagline}</p>
         <div className="hero-cta">
           <Link href="/work" className="footer-cta-button">
             See the work

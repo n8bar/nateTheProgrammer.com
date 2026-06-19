@@ -886,12 +886,19 @@ a:focus-visible .arrow--up-right {
   color: var(--color-text);
 }
 
+.hero-tagline {
+  margin: var(--space-3) 0 0;
+  font-size: clamp(1.05rem, 0.95rem + 0.45vw, 1.25rem);
+  color: var(--color-text);
+  font-style: italic;
+}
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-4);
-  margin-top: var(--space-3);
+  margin-top: var(--space-5);
 }
 
 .hero-cta-secondary {
