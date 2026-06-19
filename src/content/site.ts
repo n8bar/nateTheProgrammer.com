@@ -6,8 +6,8 @@ export type Testimonial = { quote: string; name: string; title: string };
 
 export const hero = {
   eyebrow: 'Software Engineer',
-  headline: 'Whatever your software needs to do, I handle it.',
-  proof: 'A town’s fuel pumps, a shop’s interactive menu, a vibe-coder’s boredom.',
+  headline: 'Whatever your software needs to do, I’ve probably built it.',
+  proof: 'Billing a town’s fuel, powering a drive-thru’s menu, curing a vibe-coder’s boredom.',
   subhead:
     'I’m Nate Barlow — sixteen-plus years designing, building, and shipping full-stack systems end to end: municipal infrastructure, retail point-of-sale, business sites, and my own products. Making software efficient, effective, and easy.',
 };
