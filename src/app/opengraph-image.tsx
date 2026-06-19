@@ -31,7 +31,7 @@ export default async function OpengraphImage() {
           NateTheProgrammer
         </div>
         <div style={{ display: 'flex', fontSize: 40, color: '#95a3b8', maxWidth: 900 }}>
-          Whatever your software needs to do, I've probably built it.
+          Whatever your software needs to do, I can build it.
         </div>
         <div
           style={{
