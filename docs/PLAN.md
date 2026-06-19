@@ -114,6 +114,7 @@ This plan is the route to meeting the design specification. The intended outcome
          3) [ ] Outline rollback strategy
 5) [ ] QA + launch
    1) [ ] Performance pass, accessibility pass, content polish
+      1) [ ] Re-label the "BlackCloud POS" case study — it's a drive-thru **digital menu board** (self-sizing, catalog-driven display + back-office), not a point-of-sale/register. Fix the title/framing in `src/content/work.ts` and the notes in `.cybercreek/case-studies/` (currently slug/file `blackcloud-pos`). Decide separately whether to also rename the route slug (it's a live URL — `/work/blackcloud-pos`).
 
 ## Content Sources
 - Resume baseline: LinkedIn export, excluding non-IT roles.
