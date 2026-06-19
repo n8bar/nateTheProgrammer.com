@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import { getCaseStudies } from '@/content/work';
 import { hero, skills, testimonials } from '@/content/site';
 import Arrow from '@/components/Arrow';
 
 export default function Home() {
-  const featured = getCaseStudies().slice(0, 3);
   const quotes = testimonials.slice(0, 2);
 
   const personLd = {
@@ -37,30 +35,6 @@ export default function Home() {
             Get in touch <Arrow />
           </Link>
         </div>
-      </section>
-
-      <section className="stack">
-        <div className="section-head">
-          <h2>Selected work</h2>
-          <Link href="/work" className="section-link">
-            All work <Arrow />
-          </Link>
-        </div>
-        <ol className="featured-list">
-          {featured.map((s) => (
-            <li key={s.slug}>
-              <Link href={`/work/${s.slug}`} className="featured-item">
-                <span className="featured-text">
-                  <span className="featured-title">{s.title}</span>
-                  <span className="featured-proof text-muted">{s.tagline}</span>
-                </span>
-                <span className="featured-arrow" aria-hidden>
-                  <Arrow />
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ol>
       </section>
 
       <section className="stack">
