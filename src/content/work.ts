@@ -35,6 +35,10 @@ export const caseStudies: CaseStudy[] = [
       'Served as the fuel metering-and-billing system of record across multiple municipal fleets in two cities (Colorado City, AZ and Hildale, UT). On a program billing six figures a month, the fix stopped a recurring error that had effectively been giving away about a day’s fuel each month.',
     role: 'Sole developer — inherited the system in 2021 and owned it end to end.',
     tech: ['PHP', 'MSSQL', 'Apache', 'Windows stack'],
+    image: {
+      src: '/work/colorado-city-fuel.png',
+      alt: 'Colorado City Fuel Distribution Manager — diesel and gasoline tank-level gauges',
+    },
     order: 1,
   },
   {
