@@ -915,7 +915,20 @@ a:focus-visible .arrow--up-right {
 .skills-grid {
   display: grid;
   gap: var(--space-5);
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  grid-template-columns: 1fr;
+}
+
+/* 6 groups → clean even grids: 1 col (mobile) → 2 (3 rows) → 3 (2 rows). No orphan at any width. */
+@media (min-width: 600px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .skill-group {
