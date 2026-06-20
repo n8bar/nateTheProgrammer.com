@@ -24,7 +24,7 @@ export const caseStudies: CaseStudy[] = [
     slug: 'colorado-city-fuel',
     title: 'Municipal Fuel Metering & Billing',
     tagline:
-      'On a fuel program billing six figures a month, found and fixed a recurring error that was giving away about a day’s fuel every month.',
+      'On a system billing six figures a month, found and fixed a recurring error that was giving away about a day’s fuel every month.',
     context: 'Town of Colorado City, AZ — Public Works',
     status: 'In production 2021–2025 (legacy system, mostly retired 2025)',
     problem:
