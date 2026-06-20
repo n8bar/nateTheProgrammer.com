@@ -1,13 +1,6 @@
 import Link from 'next/link';
 import Arrow from '@/components/Arrow';
 
-// Lead with proof: surface a few case studies (slugs match src/content/work.ts).
-const WORK_LINKS = [
-  { href: '/work/colorado-city-fuel', label: 'Municipal Fuel System' },
-  { href: '/work/ticker-automotive', label: 'Ticker Automotive' },
-  { href: '/work/cryptozing', label: 'CryptoZing' },
-];
-
 const SITE_LINKS = [
   { href: '/', label: 'Home' },
   { href: '/work', label: 'Work' },
@@ -42,19 +35,6 @@ export default function Footer() {
         </div>
 
         <nav className="footer-columns" aria-label="Footer">
-          <div className="footer-col">
-            <span className="footer-col-title">Selected work</span>
-            <ul className="footer-link-list">
-              {WORK_LINKS.map((item) => (
-                <li key={item.href}>
-                  <Link href={item.href} className="footer-link">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           <div className="footer-col">
             <span className="footer-col-title">Site</span>
             <ul className="footer-link-list">

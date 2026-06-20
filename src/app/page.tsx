@@ -66,18 +66,6 @@ export default function Home() {
           ))}
         </div>
       </section>
-
-      <section className="home-cta card">
-        <div className="stack-sm">
-          <h2>Let’s talk.</h2>
-          <p className="text-muted">
-            If you’re hiring or have an interesting project in mind, I’d like to hear about it.
-          </p>
-        </div>
-        <Link href="/contact" className="footer-cta-button">
-          Contact Nate
-        </Link>
-      </section>
     </div>
   );
 }
