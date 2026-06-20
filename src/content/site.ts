@@ -20,7 +20,7 @@ export const skills: SkillGroup[] = [
     items: ['Laravel', 'Phoenix (Elixir)', 'React', 'Next.js', 'Node.js'],
   },
   { label: 'Data', items: ['PostgreSQL', 'MySQL / MariaDB', 'MSSQL'] },
-  { label: 'Platform & tooling', items: ['Docker', 'Linux', 'Git', 'REST APIs & integrations'] },
+  { label: 'Platform & tooling', items: ['Docker', 'Linux', 'Git', 'APIs & integrations', 'MCP servers'] },
   { label: 'CMS', items: ['WordPress', 'Joomla'] },
 ];
 
