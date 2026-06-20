@@ -239,7 +239,7 @@ hr {
 }
 
 .container {
-  width: min(1320px, 100% - var(--space-6) * 2);
+  width: min(1500px, 100% - var(--space-6) * 2);
   margin-inline: auto;
 }
 
@@ -915,7 +915,7 @@ a:focus-visible .arrow--up-right {
 .skills-grid {
   display: grid;
   gap: var(--space-5);
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
 }
 
 .skill-group {
