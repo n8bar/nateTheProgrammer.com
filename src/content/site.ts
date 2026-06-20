@@ -17,10 +17,11 @@ export const skills: SkillGroup[] = [
   { label: 'Languages', items: ['PHP', 'JavaScript / TypeScript', 'C#', 'SQL'] },
   {
     label: 'Frameworks',
-    items: ['Laravel', 'Phoenix (Elixir)', 'Next.js / React', 'Node.js', 'WordPress'],
+    items: ['Laravel', 'Phoenix (Elixir)', 'React', 'Next.js', 'Node.js'],
   },
   { label: 'Data', items: ['PostgreSQL', 'MySQL / MariaDB', 'MSSQL'] },
   { label: 'Platform & tooling', items: ['Docker', 'Linux', 'Git', 'REST APIs & integrations'] },
+  { label: 'CMS', items: ['WordPress', 'Joomla'] },
 ];
 
 // Verbatim (or faithfully trimmed) from real recommendations.
