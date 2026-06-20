@@ -25,8 +25,8 @@ export default function Footer() {
           <span className="eyebrow">Get in touch</span>
           <h2 className="footer-cta-title">Let&rsquo;s build something together.</h2>
           <p className="footer-cta-text text-muted">
-            I build practical software end to end. If you&rsquo;re looking for talent or have an
-            interesting project in mind, I&rsquo;d love to learn about it.
+            If you&rsquo;re looking for talent or have an interesting project in mind, I&rsquo;d love
+            to learn about it.
           </p>
           {/* Contact address stays server-only (UX guardrails) — link to the form, never print the email. */}
           <Link href="/contact" className="footer-cta-button">
