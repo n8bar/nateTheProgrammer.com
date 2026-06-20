@@ -107,7 +107,7 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       'Built like money software — custody-safe by design and developed with a disciplined, spec-first, milestone-driven process — a live system I run, not a demo.',
     role: 'Sole developer.',
-    tech: ['PHP', 'Laravel', 'Docker', 'Bitcoin (watch-only)'],
+    tech: ['PHP', 'Laravel', 'Docker', 'Bitcoin'],
     links: [
       { label: 'Live preview', href: 'https://cryptozing.app', external: true },
       { label: 'Source', href: 'https://github.com/n8bar/CryptoZing', external: true },
