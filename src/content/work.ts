@@ -15,7 +15,7 @@ export type CaseStudy = {
   role: string;
   tech: string[];
   links?: CaseLink[];
-  image?: { src: string; alt: string };
+  image?: { src: string; alt: string; width: number; height: number };
   order: number;
 };
 
@@ -38,6 +38,8 @@ export const caseStudies: CaseStudy[] = [
     image: {
       src: '/work/colorado-city-fuel.png',
       alt: 'Colorado City Fuel Distribution Manager — diesel and gasoline tank-level gauges',
+      width: 1707,
+      height: 1579,
     },
     order: 1,
   },
@@ -63,6 +65,8 @@ export const caseStudies: CaseStudy[] = [
     image: {
       src: '/work/ticker-automotive.png',
       alt: 'Ticker Automotive website — About Us page with shop photo, services nav, and contact details',
+      width: 2440,
+      height: 1579,
     },
     order: 2,
   },
@@ -81,22 +85,27 @@ export const caseStudies: CaseStudy[] = [
       'Ran a live drive-thru daily for about two years before the shop retired it — a menu staff could keep current themselves, on a system built and maintained end to end.',
     role: 'Sole developer — built end to end.',
     tech: ['PHP', 'JavaScript', 'MariaDB', 'Apache'],
-    image: { src: '/work/blackcloud-menu.png', alt: 'Black Cloud drive-thru menu display (1080×1920 portrait)' },
+    image: {
+      src: '/work/blackcloud-menu.png',
+      alt: 'Black Cloud drive-thru menu display (1080×1920 portrait)',
+      width: 1080,
+      height: 1920,
+    },
     order: 3,
   },
   {
     slug: 'cryptozing',
     title: 'CryptoZing — Custody-Safe Bitcoin Invoicing',
     tagline:
-      'A custody-safe, watch-only Bitcoin invoicing app — automatic on-chain payment tracking without ever holding your keys.',
+      'A custody-safe, watch-only Bitcoin invoicing app — USD invoices, a unique Bitcoin address per invoice, and automatic on-chain payment tracking.',
     context: 'Self-initiated product',
-    status: 'Release candidate — public beta approaching',
+    status: 'Live',
     problem:
       'Bitcoin invoicing forces a bad trade-off: tools that automate payment tracking tend to take custody of funds or risk misattributing payments, while staying safe means manual, error-prone checking.',
     built:
       'A BTC-native, self-hosted invoicing app: issue invoices in USD, derive a unique Bitcoin address per invoice, share public links and QR codes, and monitor on-chain payments (partial payments, confirmations, automatic status) — all watch-only, never holding private keys or seed phrases. Built spec-first around explicit fund-safety invariants.',
     outcome:
-      'Built like money software — custody-safe by design and developed with a disciplined, spec-first, milestone-driven process. Deployed as a live preview, with public beta approaching.',
+      'Built like money software — custody-safe by design and developed with a disciplined, spec-first, milestone-driven process — a live system I run, not a demo.',
     role: 'Sole developer.',
     tech: ['PHP', 'Laravel', 'Docker', 'Bitcoin (watch-only)'],
     links: [
@@ -106,6 +115,8 @@ export const caseStudies: CaseStudy[] = [
     image: {
       src: '/work/cryptozing.png',
       alt: 'CryptoZing landing page — Bitcoin invoicing with on-chain payment tracking and self-custody messaging',
+      width: 1774,
+      height: 1450,
     },
     order: 4,
   },
@@ -131,6 +142,8 @@ export const caseStudies: CaseStudy[] = [
     image: {
       src: '/work/termiweb.png',
       alt: 'TermiWeb in a phone browser — a live PowerShell session with on-screen terminal control keys above the mobile keyboard',
+      width: 720,
+      height: 1600,
     },
     order: 5,
   },

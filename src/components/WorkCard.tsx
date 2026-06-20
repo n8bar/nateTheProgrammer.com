@@ -7,8 +7,17 @@ export default function WorkCard({ study }: { study: CaseStudy }) {
     <article className="work-card">
       <Link href={`/work/${study.slug}`} className="work-card-link">
         {study.image ? (
-          <div className="work-card-media">
-            <img src={study.image.src} alt={study.image.alt} loading="lazy" />
+          <div
+            className="work-card-media"
+            style={{ aspectRatio: `${study.image.width} / ${study.image.height}` }}
+          >
+            <img
+              src={study.image.src}
+              alt={study.image.alt}
+              width={study.image.width}
+              height={study.image.height}
+              loading="lazy"
+            />
           </div>
         ) : null}
         <div className="work-card-body">

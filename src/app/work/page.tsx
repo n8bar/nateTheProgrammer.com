@@ -14,7 +14,7 @@ export default function WorkPage() {
     <div className="container stack-lg">
       <section className="stack-sm">
         <span className="eyebrow">Work</span>
-        <h1>Systems I&rsquo;ve built, shipped, and run.</h1>
+        <h1>Systems I&rsquo;ve built.</h1>
         <p className="lead text-muted prose">
           A few projects that show how I work end to end — the problem, what I built, and what it
           changed.
