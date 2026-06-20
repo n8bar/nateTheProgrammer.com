@@ -120,6 +120,10 @@ export const caseStudies: CaseStudy[] = [
       { label: 'Live site', href: 'https://termiweb.com', external: true },
       { label: 'Source', href: 'https://github.com/n8bar/TermiWeb', external: true },
     ],
+    image: {
+      src: '/work/termiweb.png',
+      alt: 'TermiWeb in a phone browser — a live PowerShell session with on-screen terminal control keys above the mobile keyboard',
+    },
     order: 5,
   },
 ];
