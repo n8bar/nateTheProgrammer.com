@@ -30,9 +30,9 @@ export const caseStudies: CaseStudy[] = [
     problem:
       'The town’s Public Works department metered and billed fuel for multiple government fleets — police, fire, the school district, and its own crews. The system that ran it had been inherited half-built, was undocumented, and was quietly losing money.',
     built:
-      'I took ownership of an undocumented codebase and brought it to a dependable production state: finished and customized the billing and reporting, repaired access control (department-leader roles and PIN handling), and consolidated two MSSQL servers that were awkwardly replicating to each other — one ingesting pump readings, the other running limited billing reports — into one workable setup. Along the way I discovered and fixed a recurring billing error that had been costing the town money.',
+      'I took ownership of an undocumented codebase and brought it to a dependable production state: finished the billing system and built the monthly accounts-receivable and weekly department/client reports I was asked to deliver, repaired access control (department-leader roles and PIN handling), and found two MSSQL servers replicating to each other as a workaround — one taking pump readings, the other running the site and billing — then pointed both at a single source of truth and re-provided the redundancy deliberately with scheduled backups. Along the way I discovered and fixed a recurring billing error that had been costing the town money.',
     outcome:
-      'Served as the fuel metering-and-billing system of record across multiple municipal fleets in two cities (Colorado City, AZ and Hildale, UT). On a program billing six figures a month, the fix stopped a recurring error that had effectively been giving away about a day’s fuel each month.',
+      'Served as the fuel metering-and-billing system of record across multiple municipal fleets in two cities (Colorado City, AZ and Hildale, UT). On a system billing six figures a month, a recurring error had been quietly giving away about a day’s fuel each month since 2014 — until it was caught.',
     role: 'Sole developer — inherited the system in 2021 and owned it end to end.',
     tech: ['PHP', 'MSSQL', 'Apache', 'Windows stack'],
     image: {
