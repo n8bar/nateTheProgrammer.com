@@ -26,7 +26,7 @@ export const caseStudies: CaseStudy[] = [
     tagline:
       'On a fuel program billing six figures a month, found and fixed a recurring error that was giving away about a day’s fuel every month.',
     context: 'Town of Colorado City, AZ — Public Works',
-    status: 'In production 2021–2025 (legacy system, largely retired 2025)',
+    status: 'In production 2021–2025 (legacy system, mostly retired 2025)',
     problem:
       'The town’s Public Works department metered and billed fuel for multiple government fleets — police, fire, the school district, and its own crews. The system that ran it had been inherited half-built, was undocumented, and was quietly losing money.',
     built:
