@@ -114,7 +114,7 @@ This plan is the route to meeting the design specification. The intended outcome
          3) [ ] Outline rollback strategy
 5) [ ] QA + launch
    1) [ ] Performance pass, accessibility pass, content polish
-      1) [ ] Re-label the "BlackCloud POS" case study — it's a drive-thru **digital menu board** (self-sizing, catalog-driven display + back-office), not a point-of-sale/register. Fix the title/framing in `src/content/work.ts` and the notes in `.cybercreek/case-studies/` (currently slug/file `blackcloud-pos`). Decide separately whether to also rename the route slug (it's a live URL — `/work/blackcloud-pos`).
+      1) [x] Re-label the "BlackCloud POS" case study as a drive-thru **menu board** (self-sizing display + back-office), not a point-of-sale [completed 26/06/19] — title/tagline/built de-POS'd in `src/content/work.ts`; route slug renamed `blackcloud-pos` → `blackcloud-menu` (done pre-launch, no live links to break). `.cybercreek/` working notes still use the old name (local-only, non-user-facing — left as-is).
 
 ## Content Sources
 - Resume baseline: LinkedIn export, excluding non-IT roles.
@@ -142,7 +142,7 @@ This plan is the route to meeting the design specification. The intended outcome
 ## Routing + Data Sources
 - `/` (Home): `src/content/site.json` (hero/value prop/CTA, featured case-study refs, skills summary, testimonials).
 - `/work`: case-study index from `src/content/work.ts`.
-- `/work/[slug]`: case-study detail (statically generated). Slugs: `colorado-city-fuel`, `ticker-automotive`, `blackcloud-pos`, `cryptozing`, `termiweb`.
+- `/work/[slug]`: case-study detail (statically generated). Slugs: `colorado-city-fuel`, `ticker-automotive`, `blackcloud-menu`, `cryptozing`, `termiweb`.
 - `/experience`: in-repo roles (`src/content/experience.ts`) + Credentials block (skills/education/certs) from `src/content/site.ts`.
 - `/writing`: post list from `src/content/writing.ts`.
 - `/writing/[slug]`: post detail (statically generated from in-repo content).

@@ -59,16 +59,16 @@ export const caseStudies: CaseStudy[] = [
     order: 2,
   },
   {
-    slug: 'blackcloud-pos',
-    title: 'Black Cloud — Drive-Thru POS Menu',
+    slug: 'blackcloud-menu',
+    title: 'Black Cloud — Drive-Thru Menu Board',
     tagline:
-      'A fast, glanceable drive-thru POS menu and back-office — catalog and image management with user roles, built end to end and run for two years.',
+      'A fast, glanceable drive-thru menu board and back-office — catalog and image management with user roles, built end to end and run for two years.',
     context: 'Drive-thru smoke/vape/gift shop — Colorado City, AZ',
     status: 'In production ~2 years (retired)',
     problem:
       'A drive-thru needs a large, glanceable product menu for fast service, plus a back office to keep products, images, and staff current.',
     built:
-      'A drive-thru POS system: a portrait 1080×1920 menu display that auto-fits product names and prices for split-second reads, backed by a management interface (product CRUD with image upload/crop/scale and visibility flags) and user management with roles and permissions.',
+      'A self-sizing drive-thru menu board: a portrait 1080×1920 display that auto-fits product names and prices for split-second reads, backed by a management interface (product CRUD with image upload/crop/scale and visibility flags) and user management with roles and permissions.',
     outcome:
       'Ran a live drive-thru daily for about two years before the shop retired it — a menu staff could keep current themselves, on a system built and maintained end to end.',
     role: 'Sole developer — built end to end.',
