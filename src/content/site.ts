@@ -28,12 +28,12 @@ export const skills: SkillGroup[] = [
 // Verbatim (or faithfully trimmed) from real recommendations.
 export const testimonials: Testimonial[] = [
   {
-    quote: 'Should the need arise, I would hire him again.',
+    quote: 'I would hire him again.',
     name: 'Mark Davis',
     title: 'CEO, MEP Tech',
   },
   {
-    quote: 'Super directable and easy to work with — very highly recommend him for any team.',
+    quote: 'Easy to work with — very highly recommend him for any team.',
     name: 'Joseph S. Bistline',
     title: 'Manager, Regal Electric',
   },
