@@ -60,6 +60,10 @@ export const caseStudies: CaseStudy[] = [
       { label: 'Live site', href: 'https://tickerautomotive.com', external: true },
       { label: 'Source', href: 'https://github.com/n8bar/TICKERAUTOMOTIVE', external: true },
     ],
+    image: {
+      src: '/work/ticker-automotive.png',
+      alt: 'Ticker Automotive website — About Us page with shop photo, services nav, and contact details',
+    },
     order: 2,
   },
   {
@@ -99,6 +103,10 @@ export const caseStudies: CaseStudy[] = [
       { label: 'Live preview', href: 'https://cryptozing.app', external: true },
       { label: 'Source', href: 'https://github.com/n8bar/CryptoZing', external: true },
     ],
+    image: {
+      src: '/work/cryptozing.png',
+      alt: 'CryptoZing landing page — Bitcoin invoicing with on-chain payment tracking and self-custody messaging',
+    },
     order: 4,
   },
   {
