@@ -41,7 +41,7 @@ export const caseStudies: CaseStudy[] = [
       width: 1707,
       height: 1579,
     },
-    order: 1,
+    order: 5,
   },
   {
     slug: 'ticker-automotive',
@@ -68,7 +68,7 @@ export const caseStudies: CaseStudy[] = [
       width: 2440,
       height: 1579,
     },
-    order: 2,
+    order: 3,
   },
   {
     slug: 'blackcloud-menu',
@@ -91,7 +91,7 @@ export const caseStudies: CaseStudy[] = [
       width: 1080,
       height: 1920,
     },
-    order: 3,
+    order: 4,
   },
   {
     slug: 'cryptozing',
@@ -118,7 +118,7 @@ export const caseStudies: CaseStudy[] = [
       width: 1774,
       height: 1450,
     },
-    order: 4,
+    order: 1,
   },
   {
     slug: 'termiweb',
@@ -145,7 +145,7 @@ export const caseStudies: CaseStudy[] = [
       width: 720,
       height: 1600,
     },
-    order: 5,
+    order: 2,
   },
 ];
 
