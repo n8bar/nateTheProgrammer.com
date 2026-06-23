@@ -78,11 +78,11 @@ export const caseStudies: CaseStudy[] = [
     context: 'Drive-thru smoke/vape/gift shop — Colorado City, AZ',
     status: 'In production ~2 years (retired)',
     problem:
-      'A drive-thru needs a large, glanceable product menu for fast service, plus a back office to keep products, images, and staff current.',
+      'The hard part was layout. Off-the-shelf autofit gave the owners the worst of both — dead space and text too small to read at a glance.',
     built:
-      'A self-sizing drive-thru menu board: a portrait 1080×1920 display that auto-fits product names and prices for split-second reads, backed by a management interface (product CRUD with image upload/crop/scale and visibility flags) and user management with roles and permissions.',
+      'A self-sizing drive-thru menu board (portrait, 1080×1920): custom client-side logic re-optimizes the layout live — every product as large and legible as the screen allows, no wasted space. Real optimization, not shrink-to-fit. Plus a back-office: product CRUD with image crop/scale, visibility flags, and role-based users.',
     outcome:
-      'Ran a live drive-thru daily for about two years before the shop retired it — a menu staff could keep current themselves, on a system built and maintained end to end.',
+      'It ran the drive-thru daily for about two years — staff kept the menu current themselves, and it just worked.',
     role: 'Sole developer — built end to end.',
     tech: ['PHP', 'JavaScript', 'MariaDB', 'Apache'],
     image: {
