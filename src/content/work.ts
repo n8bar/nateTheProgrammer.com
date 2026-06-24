@@ -101,7 +101,7 @@ export const caseStudies: CaseStudy[] = [
     context: 'Self-initiated product',
     status: 'Live',
     problem:
-      'Bitcoin invoicing forces a bad trade-off: tools that automate payment tracking tend to take custody of funds or risk misattributing payments, while staying safe means manual, error-prone checking.',
+      'Accepting Bitcoin payments usually costs you your keys or your hours: hand a processor custody for automation, or keep custody and reconcile every payment by hand.',
     built:
       'A BTC-native, self-hosted invoicing app: issue invoices in USD, derive a unique Bitcoin address per invoice, share public links and QR codes, and monitor on-chain payments (partial payments, confirmations, automatic status) — all watch-only, never holding private keys or seed phrases. Built spec-first around explicit fund-safety invariants.',
     outcome:
