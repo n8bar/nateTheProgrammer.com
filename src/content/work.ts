@@ -105,7 +105,7 @@ export const caseStudies: CaseStudy[] = [
     built:
       'A BTC-native, self-hosted invoicing app: issue invoices in USD, derive a unique Bitcoin address per invoice, share public links and QR codes, and monitor on-chain payments (partial payments, confirmations, automatic status) — all watch-only, never holding private keys or seed phrases. Built spec-first around explicit fund-safety invariants.',
     outcome:
-      'Built like money software — custody-safe by design and developed with a disciplined, spec-first, milestone-driven process — a live system I run, not a demo.',
+      'Every invoice gets its own receive address, so each payment is matched to its payer automatically — no guessing who paid what. Payments in the mempool show as pending, then flip to paid once the network confirms — underpayments and overpayments flagged on the spot. And the bar it’s built to: zero funds lost, ever — programmatically guaranteed.',
     role: 'Sole developer.',
     tech: ['PHP', 'Laravel', 'Docker', 'Bitcoin'],
     links: [
