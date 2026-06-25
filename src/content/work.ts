@@ -95,9 +95,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: 'cryptozing',
-    title: 'CryptoZing — Custody-Safe Bitcoin Invoicing',
+    title: 'CryptoZing — Non-Custodial Bitcoin Invoicing',
     tagline:
-      'A custody-safe, watch-only Bitcoin invoicing app — USD invoices, a unique Bitcoin address per invoice, and automatic on-chain payment tracking.',
+      'A non-custodial Bitcoin invoicing app — a unique Bitcoin address per invoice, and automatic on-chain payment tracking.',
     context: 'Self-initiated product',
     status: 'Live',
     problem:
