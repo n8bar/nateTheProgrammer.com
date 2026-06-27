@@ -69,7 +69,12 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
       </header>
 
       {study.image ? (
-        <figure className="case-figure">
+        <figure
+          className="case-figure"
+          style={{
+            maxWidth: `min(100%, calc(70vh * ${study.image.width} / ${study.image.height}))`,
+          }}
+        >
           <img src={study.image.src} alt={study.image.alt} loading="lazy" />
           <figcaption>{study.image.alt}</figcaption>
         </figure>
