@@ -124,15 +124,15 @@ export const caseStudies: CaseStudy[] = [
     slug: 'termiweb',
     title: 'TermiWeb — Browser Terminal for Windows',
     tagline:
-      'An open-source browser terminal that keeps a live Windows shell within reach across devices — shipped with an honest, documented trust model.',
+      'An open-source browser terminal for a Windows host — your full command line, reachable from any device.',
     context: 'Open-source (MIT)',
     status: 'Live · open-source',
     problem:
-      'Power users want a live shell within reach when they step away from the desk — without remoting the whole desktop.',
+      'It’s not the quick command that ties you down — it’s the long-running job that might sit untouched for an hour or need you two minutes after you step away, with no way to tell which. Remoting the whole desktop to babysit it is cumbersome on mobile and overkill; you want the actual shell, from whatever device is in reach.',
     built:
-      'A browser-first shared terminal for a Windows host: the same live shell follows you across devices, with a packaged Windows run surface (setup, start, stop, restart, uninstall, and optional before-sign-in auto-start), mobile controls and clipboard support, and sessions that survive restarts. Constraints are documented honestly — trusted-network-first, with multi-user auth and TLS called out as not yet shipped.',
+      'A browser-first terminal that puts a live shell for a Windows host on any device — a true, fully interactive pty session, so terminal apps and commands behave exactly as they would at the desk. A packaged Windows run surface handles setup, start, stop, restart, uninstall, and optional before-sign-in auto-start; mobile control keys and clipboard support make a phone genuinely usable. Access survives a server restart so you just refresh and begin a new session with a single click. Scoped to trusted networks by design: a live shell is powerful access to the machine.',
     outcome:
-      'Shipped open-source with a public site and download. Demonstrates terminal/pty internals, Windows packaging, and security judgment — documenting the trust model rather than overselling it.',
+      'A daily driver, built out of need and used every day. AI agents were the first itch, but TermiWeb isn’t a tool for agents; it’s your whole terminal, put in your pocket. The engineering shows where it’s hard: terminal/pty internals, Windows packaging, and a sober security boundary.',
     role: 'Sole developer.',
     tech: ['TypeScript', 'xterm.js', 'node-pty', 'Express', 'Vite', 'PowerShell'],
     links: [
