@@ -17,7 +17,7 @@ export const posts: Post[] = [
     "canonical": "https://cryptozing.app/learn/bitcoin-pending-vs-confirmed-payments/",
     "title": "Bitcoin Payment Confirmations Explained: What Pending Means",
     "date": "2026-04-12",
-    "excerpt": "When someone sends a Bitcoin payment, it doesn't go straight from sent to final — there's an in-between stage that matters, and good invoicing has to handle it.",
+    "excerpt": "When someone sends a Bitcoin payment, it doesn't go straight from sent to final. There's an in-between stage that matters, and good invoicing has to handle it.",
     "body": [
       {
         "type": "p",

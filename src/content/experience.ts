@@ -19,7 +19,7 @@ export const roles: Role[] = [
     location: 'Colorado City, AZ',
     summary: 'Ongoing software and technology support for a municipal government and its departments.',
     highlights: [
-      'Maintain and extend the production systems the town runs on — including its fuel metering-and-billing platform serving multiple government fleets.',
+      'Maintain and extend the production systems the town runs on, including its fuel metering-and-billing platform serving multiple government fleets.',
       'Work across the stack and into legacy databases and access control, on systems people depend on daily.',
     ],
     related: { label: 'Read the fuel system case study', href: '/work/colorado-city-fuel' },
@@ -39,7 +39,7 @@ export const roles: Role[] = [
     location: 'Colorado City, AZ',
     summary: 'Self-directed product and client work, owned end to end.',
     highlights: [
-      'Design, build, and ship full-stack products — including CryptoZing (custody-safe Bitcoin invoicing) and TermiWeb (an open-source browser terminal).',
+      'Design, build, and ship full-stack products, including CryptoZing (non-custodial Bitcoin invoicing) and TermiWeb (an open-source browser terminal).',
       'Own everything from architecture and UX through Docker-based deployment and maintenance.',
     ],
     related: { label: 'See the work', href: '/work' },

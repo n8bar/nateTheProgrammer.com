@@ -30,9 +30,9 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>NateTheProgrammer — Writing</title>
+    <title>NateTheProgrammer - Writing</title>
     <link>${base}/writing</link>
-    <description>Occasional writing — experiments and a few milestones.</description>
+    <description>Occasional writing, experiments and a few milestones.</description>
     <language>en-us</language>
 ${items}
   </channel>

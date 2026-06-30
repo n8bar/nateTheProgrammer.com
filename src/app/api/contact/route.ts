@@ -56,7 +56,7 @@ export async function POST(req: Request) {
         // Capture so a failed send never loses the lead.
         console.log('[contact] submission (delivery failed, captured)', JSON.stringify({ name, email, message }));
         return NextResponse.json(
-          { ok: false, error: 'Could not send right now — please try again.' },
+          { ok: false, error: 'Could not send right now. Please try again.' },
           { status: 502 },
         );
       }
@@ -65,7 +65,7 @@ export async function POST(req: Request) {
       console.error('[contact] resend error', err);
       console.log('[contact] submission (delivery error, captured)', JSON.stringify({ name, email, message }));
       return NextResponse.json(
-        { ok: false, error: 'Could not send right now — please try again.' },
+        { ok: false, error: 'Could not send right now. Please try again.' },
         { status: 502 },
       );
     }

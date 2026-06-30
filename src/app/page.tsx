@@ -60,7 +60,7 @@ export default function Home() {
             <blockquote key={q.name} className="quote-card">
               <p>“{q.quote}”</p>
               <cite>
-                {q.name} — {q.title}
+                {q.name} - {q.title}
               </cite>
             </blockquote>
           ))}

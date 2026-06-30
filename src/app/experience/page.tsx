@@ -17,7 +17,7 @@ export default function ExperiencePage() {
         <span className="eyebrow">Experience</span>
         <h1>Sixteen years building and running real systems.</h1>
         <p className="lead text-muted prose">
-          Roles across municipal government, SaaS, and small business — framed by what I owned and
+          Roles across municipal government, SaaS, and small business, framed by what I owned and
           what it did, not just the dates.
         </p>
       </section>

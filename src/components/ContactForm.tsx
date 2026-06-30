@@ -48,7 +48,7 @@ export default function ContactForm() {
       setFormError(json.error ?? 'Something went wrong. Please try again.');
       setStatus('error');
     } catch {
-      setFormError('Network error — please try again.');
+      setFormError('Network error. Please try again.');
       setStatus('error');
     }
   }
@@ -56,7 +56,7 @@ export default function ContactForm() {
   if (status === 'success') {
     return (
       <div className="form-success" role="status">
-        <h2>Thanks — message received.</h2>
+        <h2>Thanks, message received.</h2>
         <p className="text-muted">I&rsquo;ll get back to you. Talk soon.</p>
       </div>
     );

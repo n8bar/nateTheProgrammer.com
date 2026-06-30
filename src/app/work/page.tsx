@@ -16,7 +16,7 @@ export default function WorkPage() {
         <span className="eyebrow">Work</span>
         <h1>Systems I&rsquo;ve built.</h1>
         <p className="lead text-muted prose">
-          A few projects that show how I work end to end — the problem, what I built, and what it
+          A few projects that show how I work end to end: the problem, what I built, and what it
           changed.
         </p>
       </section>

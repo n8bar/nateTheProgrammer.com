@@ -5,7 +5,7 @@ import Arrow from '@/components/Arrow';
 
 export const metadata: Metadata = {
   title: 'Playground',
-  description: 'Experiments in progress — not core proof, just things in the works.',
+  description: 'Experiments in progress; not core proof, just things in the works.',
 };
 
 // Reflect local playground/* clones live (they are gitignored and added ad hoc).
@@ -51,7 +51,7 @@ export default async function PlaygroundPage() {
         <span className="eyebrow">Playground</span>
         <h1>Experiments in progress.</h1>
         <p className="lead text-muted prose">
-          Side experiments and works in progress — interesting, but not the core proof. The real
+          Side experiments and works in progress; interesting, but not the core proof. The real
           work lives under Work.
         </p>
         <p className="playground-disclaimer" role="note">
@@ -101,7 +101,7 @@ export default async function PlaygroundPage() {
       ) : (
         <section className="playground-empty">
           <p className="text-muted">
-            Nothing parked here yet — experiments will show up as I publish them.
+            Nothing parked here yet; experiments will show up as I publish them.
           </p>
         </section>
       )}
