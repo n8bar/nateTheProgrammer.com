@@ -1,5 +1,5 @@
-// IT roles, fresh-rewritten and results-framed (LinkedIn export is reference only).
-// Per the content decisions: IT-only; Tricom = Web Application Developer role; Red Oak = I.T.
+// Roles, fresh-rewritten and results-framed (LinkedIn export is reference only).
+// Red Oak wears its dual hat (Plumbing Estimator / I.T.) honestly; the platform thread ties Tricom → Red Oak.
 
 export type Role = {
   company: string;
@@ -8,6 +8,7 @@ export type Role = {
   location?: string;
   summary: string;
   highlights?: string[];
+  links?: { label: string; href: string }[];
   related?: { label: string; href: string };
 };
 
@@ -17,30 +18,27 @@ export const roles: Role[] = [
     title: 'Technology Consultant',
     period: '2020 – Present',
     location: 'Colorado City, AZ',
-    summary: 'Ongoing software and technology support for a municipal government and its departments.',
+    summary: 'Ongoing software development and technology implementation for a municipal government and its departments.',
     highlights: [
-      'Maintain and extend the production systems the town runs on, including its fuel metering-and-billing platform serving multiple government fleets.',
-      'Work across the stack and into legacy databases and access control, on systems people depend on daily.',
+      'Maintain and extend the town’s software and DevOps.',
+      'Also co-own the town’s wider technology, including its physical security.',
+      'Ran the same for the town’s neighbor, Hildale, through 2023: a separate contract, largely on infrastructure the two cities shared under an intergovernmental agreement.',
     ],
     related: { label: 'Read the fuel system case study', href: '/work/colorado-city-fuel' },
   },
   {
-    company: 'Hildale City, UT',
-    title: 'Technology Consultant',
-    period: '2020 – 2023',
-    location: 'Hildale, UT',
-    summary:
-      'Development and IT support for a neighboring municipality, often alongside the same systems serving Colorado City.',
-  },
-  {
-    company: 'NateTheProgrammer.com',
-    title: 'Independent Software Developer',
+    company: 'CyberCreek.us',
+    title: 'Independent Software Developer / Founder',
     period: '2018 – Present',
     location: 'Colorado City, AZ',
-    summary: 'Self-directed product and client work, owned end to end.',
+    summary: 'Self-directed projects and client work.',
     highlights: [
-      'Design, build, and ship full-stack products, including CryptoZing (non-custodial Bitcoin invoicing) and TermiWeb (an open-source browser terminal).',
-      'Own everything from architecture and UX through Docker-based deployment and maintenance.',
+      'Design, build, and ship full-stack products, including CryptoZing and TermiWeb.',
+      'See each project through, from architecture and UX to deployment and maintenance.',
+    ],
+    links: [
+      { label: 'CryptoZing', href: '/work/cryptozing' },
+      { label: 'TermiWeb', href: '/work/termiweb' },
     ],
     related: { label: 'See the work', href: '/work' },
   },
@@ -49,10 +47,11 @@ export const roles: Role[] = [
     title: 'Jr. Software Developer',
     period: '2017 – 2018',
     location: 'Hildale, UT',
-    summary: 'Part of a team building SaaS sales- and conversion-tracking products for call centers.',
+    summary: 'Part of a team building a SaaS platform for call centers.',
     highlights: [
-      'Built internal features for a comprehensive conversion-tracking and reporting platform.',
-      'Developed external sites and custom WordPress plugins, and contributed to RESTful API integrations.',
+      'Built product features and the logic behind them.',
+      'Developed external sites and custom WordPress plugins.',
+      'Worked both sides of REST APIs: writing endpoints and consuming them.',
     ],
   },
   {
@@ -60,25 +59,33 @@ export const roles: Role[] = [
     title: 'Technology Consultant',
     period: '2016 – 2017',
     location: 'Hildale, UT',
-    summary: 'Independent technology consulting for small-business clients.',
+    summary: 'Technology consulting for small-business clients.',
     highlights: [
       'Delivered custom software and websites alongside on-site and remote IT support.',
-      'Handled networking, telecom, security, and surveillance work.',
+      'Installed and serviced networking, telecom, security, and surveillance.',
     ],
   },
   {
     company: 'MEP Tech Inc',
-    title: 'Mobile Application Developer',
+    title: 'R&D Software Developer',
     period: '2015 – 2016',
     location: 'Hildale, UT',
-    summary: 'Built mobile applications as the company’s mobile developer.',
+    summary: 'Projected touch-screen technology: any surface becomes the display.',
+    highlights: [
+      'Prototyped the core product: cameras read finger touches on the projected surface and relayed them to the OS as native input.',
+      'Built across Android, Linux, and Windows, plus some augmented virtuality work.',
+    ],
   },
   {
     company: 'Red Oak LLC',
-    title: 'I.T.',
+    title: 'Plumbing Estimator / I.T.',
     period: '2014 – 2015',
     location: 'Mesa, AZ',
-    summary: 'Information technology support and systems work.',
+    summary: 'A year-plus estimating commercial plumbing at the family firm, where the software work found me anyway.',
+    highlights: [
+      'Brought along the operations platform I’d built at Tricom, adapting it for Red Oak.',
+      'Learned estimating from the inside: the discipline my own software had served for years.',
+    ],
   },
   {
     company: 'Tricom Communications Services',
@@ -87,8 +94,9 @@ export const roles: Role[] = [
     location: 'Las Vegas, NV',
     summary: 'Built and maintained the company’s custom operations platform.',
     highlights: [
-      'Designed and maintained a single in-house web app that combined estimating, project management and scheduling, a time clock, and inventory control.',
-      'Replaced a patchwork of separate tools with one system the business ran on.',
+      'Replaced a patchwork of tools with one system the business ran on: estimating, project management and scheduling, a time clock, and inventory control.',
+      'Built it mostly solo, while doubling as half the IT department.',
+      'The platform outlived the role: adapted for deployments at Red Oak, Creek Code, and one more company as late as 2023.',
     ],
   },
 ];
