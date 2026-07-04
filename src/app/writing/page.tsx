@@ -4,7 +4,7 @@ import { getPosts, type Post } from '@/content/writing';
 
 export const metadata: Metadata = {
   title: 'Writing',
-  description: 'Occasional writing, experiments and a few milestones along the way.',
+  description: 'Occasional writing, usually when a topic won’t let go until I understand it.',
 };
 
 function formatDate(iso: string): string {
@@ -55,9 +55,9 @@ export default function WritingPage() {
     <div className="container stack-lg">
       <section className="stack-sm">
         <span className="eyebrow">Writing</span>
-        <h1>Notes &amp; milestones.</h1>
+        <h1>Figuring things out.</h1>
         <p className="lead text-muted prose">
-          Occasional writing, a couple of experiments, and a few markers along the way.
+          Occasional writing, usually when a topic won’t let go until I understand it.
         </p>
       </section>
 

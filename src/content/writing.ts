@@ -115,7 +115,7 @@ export const posts: Post[] = [
     "slug": "btcpay-server-alternatives",
     "canonical": "https://cryptozing.app/learn/btcpay-server-alternatives/",
     "title": "BTCPay Server Alternatives: Simpler Bitcoin Invoicing for Small Businesses",
-    "date": "2026-04-18",
+    "date": "2026-04-21",
     "excerpt": "An honest comparison of BTCPay Server alternatives for freelancers and small businesses — what each tool does, what it costs, and what tradeoffs you are actually making.",
     "body": [
       { "type": "p", "text": "Your keys, your coins, without the overhead." },
