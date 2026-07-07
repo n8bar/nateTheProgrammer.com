@@ -56,8 +56,8 @@ export default function ContactForm() {
   if (status === 'success') {
     return (
       <div className="form-success" role="status">
-        <h2>Thanks, message received.</h2>
-        <p className="text-muted">I&rsquo;ll get back to you. Talk soon.</p>
+        <h2>Thanks, message sent.</h2>
+        <p className="text-muted">I read these myself.</p>
       </div>
     );
   }
